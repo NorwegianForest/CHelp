@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<!DOCTYPE taglib
+        PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+	"http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+
+<taglib>
+    <tlibversion>1.0</tlibversion>
+    <jspversion>1.1</jspversion>
+    <shortname>control</shortname>
+
+<tag>
+		<name>questions</name>
+    	<tagclass>com.taglib.QuestionsTag</tagclass>
+    	<bodycontent>empty</bodycontent>
+    	<attribute>
+    		<name>method</name>
+    		<required>false</required>
+        	<rtexprvalue>false</rtexprvalue>
+        </attribute>
+</tag>
+
+<tag>
+		<name>papers</name>
+    	<tagclass>com.taglib.PapersTag</tagclass>
+    	<bodycontent>JSP</bodycontent>   	
+    	<attribute>
+    		<name>paper_type</name>
+    		<required>false</required>
+        	<rtexprvalue>false</rtexprvalue>
+        </attribute>
+    	<attribute>
+    		<name>view_type</name>
+    		<required>false</required>
+        	<rtexprvalue>false</rtexprvalue>
+        </attribute>     
+        <attribute>
+    		<name>count</name>
+    		<required>false</required>
+        	<rtexprvalue>false</rtexprvalue>
+        </attribute>    
+        <attribute>
+    		<name>key_word</name>
+    		<required>false</required>
+        	<rtexprvalue>true</rtexprvalue>
+        </attribute>            
+</tag>
+
+<tag>
+		<name>materials</name>
+    	<tagclass>com.taglib.MaterialsTag</tagclass>
+    	<bodycontent>empty</bodycontent>
+    	<attribute>
+    		<name>count</name>
+    		<required>false</required>
+        	<rtexprvalue>false</rtexprvalue>
+        </attribute>
+        <attribute>
+    		<name>key_word</name>
+    		<required>false</required>
+        	<rtexprvalue>true</rtexprvalue>
+        </attribute>         
+</tag>
+
+<tag>
+		<name>videos</name>
+    	<tagclass>com.taglib.VideosTag</tagclass>
+    	<bodycontent>empty</bodycontent>
+    	<attribute>
+    		<name>page</name>
+    		<required>false</required>
+        	<rtexprvalue>true</rtexprvalue>
+        </attribute>       
+        <attribute>
+    		<name>key_word</name>
+    		<required>false</required>
+        	<rtexprvalue>true</rtexprvalue>
+        </attribute>         
+</tag>
+
+<tag>
+		<name>simulation</name>
+    	<tagclass>com.taglib.SimulationTag</tagclass>
+    	<bodycontent>empty</bodycontent>
+    	<attribute>
+    		<name>method</name>
+    		<required>false</required>
+        	<rtexprvalue>false</rtexprvalue>
+        </attribute>
+    	<attribute>
+    		<name>type</name>
+    		<required>false</required>
+        	<rtexprvalue>false</rtexprvalue>
+        </attribute>       
+        <attribute>
+    		<name>count</name>
+    		<required>false</required>
+        	<rtexprvalue>false</rtexprvalue>
+        </attribute> 
+</tag>
+
+</taglib>
