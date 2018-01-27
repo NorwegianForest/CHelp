@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:jsp="http://java.sun.com/xml/ns/javaee/jsp" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         id="WebApp_ID" version="3.0">
   <display-name>ctest2.5</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
@@ -51,52 +53,12 @@
     <url-pattern>/register</url-pattern>
   </servlet-mapping>
   <servlet>
-    <servlet-name>EditQuestionsServlet</servlet-name>
-    <servlet-class>com.servlet.EditQuestionsServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>EditQuestionsServlet</servlet-name>
-    <url-pattern>/edit_questions</url-pattern>
-  </servlet-mapping>
-  <servlet>
     <servlet-name>EditPaperServlet</servlet-name>
     <servlet-class>com.servlet.EditPaperServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>EditPaperServlet</servlet-name>
     <url-pattern>/edit_paper</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <servlet-name>AddQuestionServlet</servlet-name>
-    <servlet-class>com.servlet.AddQuestionServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>AddQuestionServlet</servlet-name>
-    <url-pattern>/add_question</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <servlet-name>CreateSimulationServlet</servlet-name>
-    <servlet-class>com.servlet.CreateSimulationServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>CreateSimulationServlet</servlet-name>
-    <url-pattern>/create_simulation</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <servlet-name>EditSimulationServlet</servlet-name>
-    <servlet-class>com.servlet.EditSimulationServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>EditSimulationServlet</servlet-name>
-    <url-pattern>/edit_simulation</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <servlet-name>AddSimulationServlet</servlet-name>
-    <servlet-class>com.servlet.AddSimulationServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>AddSimulationServlet</servlet-name>
-    <url-pattern>/add_simulation</url-pattern>
   </servlet-mapping>
   <servlet>
     <servlet-name>CreatePaperServlet</servlet-name>
@@ -106,10 +68,5 @@
     <servlet-name>CreatePaperServlet</servlet-name>
     <url-pattern>/create_paper</url-pattern>
   </servlet-mapping>
-  <jsp-config>
-    <taglib>
-      <taglib-uri>control</taglib-uri>
-      <taglib-location>/WEB-INF/mytag.tld</taglib-location>
-    </taglib>
-  </jsp-config>
+
 </web-app>

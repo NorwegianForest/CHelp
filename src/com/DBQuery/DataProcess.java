@@ -1,16 +1,16 @@
 package com.DBQuery;
 
+import java.io.UnsupportedEncodingException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+/**
+ * 涉及数据库的各种操作，所有方法都是静态方法
+ */
 public class DataProcess {
-	/**
-	 * 涉及数据库的各种操作
-	 */
-	DataProcess(){}
 
 	/**
 	 * 连接到数据库，数据库名ctest2,用户名root,密码root
@@ -115,5 +115,56 @@ public class DataProcess {
 		}
 
 		return false;
+	}
+
+	/**
+	 * 在某表中查询一条指定记录，并返回记录中的其他字段的值
+	 * @param tableName 数据表名
+	 * @param fieldName 要检索的字段名
+	 * @param record 与要检索的字段名对应的要检索的值
+	 * @param columnName 要获取的字段名
+	 * @return 要获取的字段名的值
+	 */
+	public static String query(String tableName, String fieldName, String record, String columnName) {
+		String sql = "select * from " + tableName + " where " + fieldName + "='" + record + "'";
+		Connection connection = DataProcess.getConnection();
+		ResultSet resultSet = DataProcess.getResult(sql, connection);
+		String queryResult = null;
+		try {
+			resultSet.next();
+			queryResult = resultSet.getString(columnName);
+			resultSet.close();
+			connection.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return queryResult;
+	}
+
+	/**
+	 * 将ISO字符编码转为UTF-8
+	 * 很多jsp页面在获取参数的时候，会有字符编码的问题，则需要用到此方法
+	 * @param str 需要转码的字符串
+	 * @return 转码后的UTF-8编码的字符串
+	 */
+	public static String transformToUTF8(String str) {
+		try {
+			return new String(str.getBytes("ISO-8859-1"),"utf-8");
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		} finally {
+			return "";
+		}
+	}
+
+	/**
+	 * 添加一道各参数都是默认值的题目到指定试卷
+	 * @param paperTitle 试卷名
+	 */
+	public static void addExercise(String paperTitle) {
+		String sql = "insert into exercises(exercise_title, a_option, b_option, c_option, d_option, answer, " +
+				"paper_title, difficulty, analysis)values('请输入题目','请输入A选项','请输入B选项','请输入C选项'," +
+				"'请输入D选项','1','" + paperTitle + "','1','无解析')";
+		DataProcess.updateDatabase(sql);
 	}
 }

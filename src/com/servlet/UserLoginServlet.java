@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.business.Admin_Manager;
+import com.business.OrdinUser;
 
 /**
  * Servlet implementation class UserLoginServlet
@@ -48,10 +48,8 @@ public class UserLoginServlet extends HttpServlet {
 		HttpSession ses = request.getSession();	
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
-
-		Admin_Manager user = new Admin_Manager(username, password, "users");
-		boolean tag = user.check();
-		if(tag)	{
+		// 如果此用户存在
+		if(new OrdinUser(1, username, password).checkLegal())	{
 			ses.setAttribute("username",username);			
 			RequestDispatcher requestDispatcher = request.getRequestDispatcher("index.jsp");			
 			requestDispatcher.forward(request,response);

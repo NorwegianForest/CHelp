@@ -1,7 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
-        <%@ page import="java.io.*, java.util.*" import="com.DBQuery.DataProcess" import="java.sql.*"%>
-<%@ taglib uri="/WEB INF/mytag.tld" prefix="control"%>
+<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ page import="com.business.OrdinUser" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <!-- 响应收藏操作，由paper.jsp转跳至此 -->
@@ -14,27 +12,13 @@
 <%@ include file = "banner.jsp" %>
 	<div class="container">
 	  <div class="content">
-	  
-<%if (username == null || "".equals(username) || "null".equals(username)) {
-	out.print("<SCRIPT language=javascript>alert('请先登录...');location.href='/user_login.jsp';</SCRIPT>");
-} else {
-	String exercise_id = request.getParameter("exercise_id");
-	String sql = "insert into collection(exercise_id,username)values('" + exercise_id + "','" + username + "')";
-	Connection con = DataProcess.getConnection();
-	Statement state = con.createStatement();
-	state.executeUpdate(sql);
-	state.close();
-	con.close();
-	
-	String sql1 = "delete from collection where(exercise_id,username) in (select exercise_id,username from(select exercise_id,username from collection group by exercise_id,username having count(*)>1) s1) and id not in(select id from (select id from collection group by exercise_id,username having count(*)>1) s2)";
-	Connection con1 = DataProcess.getConnection();
-	Statement state1 = con1.createStatement();
-	state1.executeUpdate(sql1);
-	state1.close();
-	con1.close();
-
-	response.sendRedirect("personal_paper.jsp?type=collection"); 
-}%>
+		<%--登录检测--%>
+		<%=new OrdinUser(username).checkLogin() %>
+		<%
+            // 根据用户名和试题id收藏试题
+			new OrdinUser(username).collection(request.getParameter("exercise_id"));
+			response.sendRedirect("personal_paper.jsp?type=collection");
+		%>
 
       <!-- end .content --></div>
     <!-- end .container --></div>

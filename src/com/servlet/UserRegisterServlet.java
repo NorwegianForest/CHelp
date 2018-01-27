@@ -28,7 +28,6 @@ public class UserRegisterServlet extends HttpServlet {
      */
     public UserRegisterServlet() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
 	/**
@@ -47,7 +46,7 @@ public class UserRegisterServlet extends HttpServlet {
 		} else if (!password.equals(confirm)) {
 			out.print("<SCRIPT language=javascript>alert('确认密码错误！');location.href='register.jsp';</SCRIPT>");
 		} else {
-			String sql = "insert into users(username,password)values('" + username + "','" + password + "')";
+			String sql = "insert into users(username,password,type)values('" + username + "','" + password + "','user')";
 			DataProcess.updateDatabase(sql);
 			out.print("<SCRIPT language=javascript>alert('注册成功，请登录...');location.href='user_login.jsp';</SCRIPT>");
 		}
@@ -57,7 +56,6 @@ public class UserRegisterServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
 

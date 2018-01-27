@@ -26,7 +26,6 @@ public class EditPaperServlet extends HttpServlet {
      */
     public EditPaperServlet() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
 	/**
@@ -51,16 +50,10 @@ public class EditPaperServlet extends HttpServlet {
 			Connection con = DataProcess.getConnection();
 			Statement state;
 			while(n < exercise_title.length) {	
-				String answer = null;
-				String difficulty = request.getParameter("difficulty" + exercise_id[n]);
-				switch(request.getParameter(exercise_id[n])) {
-				case "A":answer = "1";break;
-				case "B":answer = "2";break;
-				case "C":answer = "3";break;
-				case "D":answer = "4";break;
-				default:break;
-				}			
-				
+				String answer;
+				String difficulty = request.getParameter("dif" + exercise_id[n]);
+				answer = request.getParameter(exercise_id[n]);
+
 				try {
 					state = (Statement) con.createStatement();
 					String sql = "update exercises set exercise_title='" + exercise_title[n]
@@ -74,7 +67,6 @@ public class EditPaperServlet extends HttpServlet {
 					state.executeUpdate(sql);
 					state.close();				
 				} catch (SQLException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 				n ++;
@@ -83,12 +75,9 @@ public class EditPaperServlet extends HttpServlet {
 			try {
 				con.close();
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
-		
-
 		
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("success.jsp");			
 		requestDispatcher.forward(request,response); 
@@ -98,7 +87,6 @@ public class EditPaperServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
 

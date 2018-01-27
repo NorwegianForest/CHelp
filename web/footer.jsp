@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
+<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <!-- 此页面为所有页面的底部相关信息的脚注，其他文件的body标签结束前，必须include file此文件，即footer.jsp -->
@@ -42,12 +41,6 @@ a:hover, a:active, a:focus { /* 此组选择器将为键盘导航者提供与鼠
 	text-decoration: none;
 }
 
-/* ~~ 此固定宽度容器包含其它 div ~~ */
-.container {
-	width: 960px;
-	background-color: #FFF;
-	margin: 0 auto; /* 侧边的自动值与宽度结合使用，可以将布局居中对齐 */
-}
 /* ~~ 脚注 ~~ */
 .footer {
 	padding: 10px 0;

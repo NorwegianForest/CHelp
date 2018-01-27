@@ -1,6 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
-<%@ page import="java.io.*, java.util.*" import="com.DBQuery.DataProcess" import="java.sql.*"%>
+<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ page import="com.business.AdminUser"  %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <!-- 管理员创建新的一套试题，填写基本信息 -->
@@ -22,15 +21,11 @@ function CheckForm() {
 
 <body>
 
-<%
-if (session.getAttribute("adminname") == null || "".equals(session.getAttribute("adminname"))) {
-	response.sendRedirect("login.jsp");
-}
-%>
+<%--管理员登录检测--%>
+<%=new AdminUser(session.getAttribute("adminname")).checkLogin() %>
 
-<%
-String paper_type = request.getParameter("paper_type");
-session.setAttribute("paper_type", paper_type);
+<%	String paper_type = request.getParameter("paper_type");
+	session.setAttribute("paper_type", paper_type);
 %>
 
 <%@ include file = "banner.jsp" %>

@@ -1,6 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
-<%@ taglib uri="/WEB INF/mytag.tld" prefix="control"%>
+<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ page import="com.taglib.PapersTable" %>
+<%@ page import="com.taglib.MaterialsTable" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <!-- 网站主页 -->
@@ -21,13 +21,19 @@
        		<td width="50%" valign="top">
        		  <table width=440 >
        			<tr><td align="center" ><h2>章节试题</h2></td></tr>
-       			<tr><td><control:papers paper_type="chapter" view_type="paper" count="5" /></td></tr>
+       			<tr><td>
+					<%--插入5个章节试题链接列表--%>
+					<%= new PapersTable(PapersTable.CHAPTER, PapersTable.PAPER, 5).getHtmlCode() %>
+				</td></tr>
        		  </table>
        		</td>
        		<td width="50%" valign="top">
        		  <table width=440 >
        			<tr><td align="center" ><h2>模拟试题</h2></td></tr>
-       			<tr><td><control:papers paper_type="simulation" view_type="paper" count="5" /></td></tr>
+       			<tr><td>
+					<%--插入5个模拟试题链接列表--%>
+                    <%= new PapersTable(PapersTable.SIMULATION, PapersTable.PAPER, 5).getHtmlCode()%>
+				</td></tr>
        		  </table>
        		</td>
        	  </tr>
@@ -35,13 +41,19 @@
        		<td width="50%" valign="top">
        		  <table width=440 >
        			<tr><td align="center" ><h2>历年真题</h2></td></tr>
-       			<tr><td><control:papers paper_type="old" view_type="paper" count="5" /></td></tr>
+       			<tr><td>
+					<%--插入5个真题链接列表--%>
+					<%= new PapersTable(PapersTable.OLD, PapersTable.PAPER, 5).getHtmlCode()%>
+				</td></tr>
        		  </table>
        		</td>
        		<td width="50%" valign="top">
        		  <table width=440 >
        			<tr><td align="center" ><h2>学习资料</h2></td></tr>
-       			<tr><td><control:materials count="5" /></td></tr>
+       			<tr><td>
+					<%--插入5个学习资源链接列表--%>
+					<%= new MaterialsTable(5).getHtmlCode() %>
+				</td></tr>
        		  </table>
        		</td>
        	  </tr>

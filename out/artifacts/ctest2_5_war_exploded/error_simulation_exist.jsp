@@ -1,8 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
-    <%@ page import="java.io.*, java.util.*" import="com.DBQuery.DataProcess" import="java.sql.*"%>
-    <%@ taglib uri="control" prefix="control"%>
+<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!-- 检查管理员添加的试题标题是否以存在，由CreatePaperServlet和CreateSimulationServlet转跳至此 -->
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">

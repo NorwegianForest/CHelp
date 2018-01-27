@@ -1,16 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
+<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 
 <!-- 用户注册页面 -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <title>用户注册 | C Help</title>
-	<style type="text/css">
-	<!--
-	@import url("../css/OSX.css");
-	-->
-	</style>
 </head>
 
 <!-- 检查用户是否输入准确 -->

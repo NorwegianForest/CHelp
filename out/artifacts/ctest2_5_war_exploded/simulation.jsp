@@ -1,8 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
-<%@ taglib uri="/WEB INF/mytag.tld" prefix="control"%>
+<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ page import="com.taglib.PapersTable" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
+<!-- 显示所有模拟练习 -->
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -15,7 +15,10 @@
 	  	<div class="content">
 			<table align=center>
 				<tr><td><h1>模拟练习</h1></td></tr>
-				<tr><td align="left" ><control:papers paper_type="simulation" view_type="paper" count="100" /></td></tr>
+				<tr><td align="left" >
+                    <%--插入全部模拟试题链接列表--%>
+                    <%= new PapersTable(PapersTable.SIMULATION, PapersTable.PAPER).getHtmlCode() %>
+				</td></tr>
 			</table>
 			<br><br><br><br><br><br><br><br><br><br><br><br>
         <!-- end .content --></div>

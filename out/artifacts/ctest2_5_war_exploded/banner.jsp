@@ -1,6 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
+<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!-- 此页面为所有页面顶部的CHelp字样和搜索框，加上导航菜单栏，此文件定义了许多统一规范的css样式
+	 其他页面的body标签下必须先include file此文件，即banner.jsp
+	 其他文件的各标签样式都遵循此文件的设置 -->
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -67,48 +70,6 @@ a:hover, a:active, a:focus { /* 此组选择器将为键盘导航者提供与鼠
 	padding: 10px 0;
 }
 
-/* ~~ 脚注 ~~ */
-.footer {
-	padding: 10px 0;
-	background-color: #CCC49F;
-}
-
-/* ~~ 其它浮动/清除类 ~~ */
-.fltrt {  /* 此类可用于在页面中使元素向右浮动。浮动元素必须位于其在页面上的相邻元素之前。 */
-	float: right;
-	margin-left: 8px;
-}
-.fltlft { /* 此类可用于在页面中使元素向左浮动。浮动元素必须位于其在页面上的相邻元素之前。 */
-	float: left;
-	margin-right: 8px;
-}
-.clearfloat { /* 如果从 .container 中删除了 overflow:hidden，则可以将此类放置在 <br /> 或空 div 中，作为 #container 内最后一个浮动 div 之后的最终元素 */
-	clear:both;
-	height:0;
-	font-size: 1px;
-	line-height: 0px;
-}
-.search-field .shadow-x{
-   position:absolute;
-   top:0;
-   left:1px;
-   width:438px;
-   height:0;
-   border-top:1px solid #d0d0d0;
-   border-bottom:1px solid #f0f0f0;
-   overflow:hidden;
-   z-index:1;
-}
-.search-field .shadow-y{
-   position:absolute;
-   top:0;
-   left:0;
-   width:0;
-   height:30px;
-   border-left:1px solid #d0d0d0;
-   border-right:1px solid #f0f0f0;
-   overflow:hidden;
-}
 -->
 </style>
 <link href="/css/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
@@ -169,7 +130,6 @@ a:hover, a:active, a:focus { /* 此组选择器将为键盘导航者提供与鼠
 					out.print("用户：" + username + "&nbsp;&nbsp;");
 					out.print("<a href=\"personal.jsp\">[个人中心]</a>");
 				}
-				
 			  %>
 	          
 	          </td>
