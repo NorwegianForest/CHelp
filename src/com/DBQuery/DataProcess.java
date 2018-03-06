@@ -1,11 +1,15 @@
 package com.DBQuery;
 
+import com.business.*;
+
 import java.io.UnsupportedEncodingException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 涉及数据库的各种操作，所有方法都是静态方法
@@ -97,7 +101,11 @@ public class DataProcess {
 	 */
 	public static boolean isExist(String tableName, String fieldName, String record) {
 		String sql = "select * from " + tableName + " where " + fieldName + "='" + record + "'";
-		Connection con = DataProcess.getConnection();
+		return isExist(sql);
+	}
+
+	public static boolean isExist(String sql) {
+		Connection con = getConnection();
 		try {
 			Statement state = con.createStatement();
 			ResultSet rs = state.executeQuery(sql);
@@ -166,5 +174,251 @@ public class DataProcess {
 				"paper_title, difficulty, analysis)values('请输入题目','请输入A选项','请输入B选项','请输入C选项'," +
 				"'请输入D选项','1','" + paperTitle + "','1','无解析')";
 		DataProcess.updateDatabase(sql);
+	}
+
+	/**
+	 * 通过sql语句查找教师信息
+	 * @param sql 查询语句
+	 * @param teacher 教师用户对象
+	 */
+	public static void findTeacher(String sql, TeacherUser teacher) {
+		Connection con = getConnection();
+		try {
+			Statement s = con.createStatement();
+			ResultSet rs = s.executeQuery(sql);
+			rs.next();
+			teacher.setId(rs.getInt("id"));
+			teacher.setUniversity(rs.getString("university"));
+			teacher.setName(rs.getString("name"));
+			teacher.setTitle(rs.getString("title"));
+			teacher.setIntroduce(rs.getString("introduce"));
+			rs.close();
+			s.close();
+			con.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+	/**
+	 * 通过用户名查找对应的id
+	 * @param username 用户名
+	 * @return
+	 */
+	public static int findUserId(String username) {
+	    int userId = -1;
+	    if (username != null) {
+			String sql = "select * from users where username='" + username + "'";
+			Connection con = getConnection();
+			try {
+				Statement s = con.createStatement();
+				ResultSet rs = s.executeQuery(sql);
+				rs.next();
+				userId = rs.getInt("id");
+				rs.close();
+				s.close();
+				con.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		return userId;
+	}
+
+	/**
+	 * 根据教师用户id加载所开课程
+     * @param sql 查询语句
+	 * @param courseList 课程列表对象
+	 */
+	public static void loadCourseList(String sql, List<Course> courseList) {
+		Connection con = getConnection();
+		try {
+			Statement s = con.createStatement();
+			ResultSet rs = s.executeQuery(sql);
+			while (rs.next()) {
+				courseList.add(new Course(rs.getInt("id"),
+						rs.getString("title"),
+						rs.getString("start_date"),
+						rs.getString("end_date"),
+						rs.getString("introduce"),
+						rs.getString("img_url"),
+						rs.getInt("teacher_id")));
+			}
+			rs.close();
+			s.close();
+			con.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static void loadVideoList(String sql, List<Video> videoList) {
+		Connection con = getConnection();
+		try {
+			Statement s = con.createStatement();
+			ResultSet rs = s.executeQuery(sql);
+			while (rs.next()) {
+				videoList.add(new Video(rs.getString("order_number"),
+						rs.getString("video_title"),
+						rs.getString("youku_path"),
+						rs.getString("img_url"),
+						rs.getString("time")));
+			}
+			rs.close();
+			s.close();
+			con.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+	/**
+	 * 根据课程id加载课程其他数据
+	 * @param id 课程id
+	 * @param course 课程对象
+	 */
+	public static void loadCourse(int id, Course course) {
+		String sql = "select * from course where id=" + id;
+		Connection con = getConnection();
+		try {
+			Statement s = con.createStatement();
+			ResultSet rs = s.executeQuery(sql);
+			rs.next();
+			course.setTitle(rs.getString("title"));
+			course.setStartDate(rs.getString("start_date"));
+			course.setEndDate(rs.getString("end_date"));
+			course.setIntroduce(rs.getString("introduce"));
+			course.setImgUrl(rs.getString("img_url"));
+			course.setTeacherId(rs.getInt("teacher_id"));
+			rs.close();
+			s.close();
+			con.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+	/**
+	 * 加载课程的试题列表
+     * @param sql 查询语句
+	 * @param paperList 试题对象列表
+	 */
+	public static void loadPaperList(String sql, List<Paper> paperList) {
+		Connection con = getConnection();
+		try {
+			Statement s = con.createStatement();
+			ResultSet rs = s.executeQuery(sql);
+			while (rs.next()) {
+				paperList.add(new Paper(rs.getInt("paper_id"),
+						rs.getString("paper_title"),
+						rs.getString("paper_type"),
+						rs.getInt("course_id")));
+			}
+			rs.close();
+			s.close();
+			con.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static void loadMaterialList(String sql, List<Material> materialList) {
+		Connection con = getConnection();
+		try {
+			Statement s = con.createStatement();
+			ResultSet rs = s.executeQuery(sql);
+			while (rs.next()) {
+				materialList.add(new Material(rs.getString("materials_title"),
+						rs.getString("file_name")));
+			}
+			rs.close();
+			s.close();
+			con.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static String findTeacher(int teacherId) {
+		String sql = "select * from users where id=" + teacherId;
+		String name = null;
+		Connection con = getConnection();
+		try {
+			Statement s = con.createStatement();
+			ResultSet rs = s.executeQuery(sql);
+			rs.next();
+			name = rs.getString("name");
+			rs.close();
+			s.close();
+			con.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return name;
+	}
+
+	public static List<Video> getVideoList(int page) {
+		List<Video> videoList = new ArrayList<>();
+		int count = 30;
+		String from = Integer.toString(1 + count * (page - 1));
+		String to = Integer.toString(count * page);
+		String sql = "select * from videos where order_number between '" + from + "' and '" + to + "' order by order_number";
+		Connection con = getConnection();
+		try {
+			Statement s = con.createStatement();
+			ResultSet rs = s.executeQuery(sql);
+			while (rs.next()) {
+				videoList.add(new Video(rs.getString("order_number"),
+						rs.getString("video_title"),
+						rs.getString("youku_path"),
+						rs.getString("img_url"),
+						rs.getString("time")));
+			}
+			rs.close();
+			s.close();
+			con.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return videoList;
+	}
+
+	public static void loadCourseIdList(String sql, List<Integer> courseIdList) {
+		Connection con = getConnection();
+		try {
+			Statement s = con.createStatement();
+			ResultSet rs = s.executeQuery(sql);
+			while (rs.next()) {
+				courseIdList.add(rs.getInt("course_id"));
+			}
+			rs.close();
+			s.close();
+			con.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static Course findCourse(String sql) {
+	    Course course = null;
+	    Connection con = getConnection();
+	    try {
+	    	Statement s = con.createStatement();
+	    	ResultSet rs = s.executeQuery(sql);
+	    	rs.next();
+	    	course = new Course(rs.getInt("id"),
+					rs.getString("title"),
+					rs.getString("start_date"),
+					rs.getString("end_date"),
+					rs.getString("introduce"),
+					rs.getString("img_url"),
+					rs.getInt("teacher_id"));
+	    	rs.close();
+	    	s.close();
+	    	con.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return course;
 	}
 }

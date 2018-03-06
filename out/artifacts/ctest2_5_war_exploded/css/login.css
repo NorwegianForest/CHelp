@@ -1,0 +1,29 @@
+@charset "UTF-8";
+body {
+    padding: 0;
+    background: #fafafa;
+    position: relative;
+}
+#center-div {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content-div {
+    background: url(../images/bing1.jpg);
+    background-size: cover;
+    padding-top: 120px;
+}
+#login-div {
+    width: 20%;
+    height: 230px;
+    float: right;
+    background-color: #fafbfc;
+    padding: 15px 50px;
+    border-radius: 3px;
+}
+#button-div {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}

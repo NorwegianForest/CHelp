@@ -3,7 +3,9 @@ package com.business;
 /**
  * 描述用户和管理员的类，对应数据库中的users表
  */
+
 public class User {
+
     protected int id;
     protected String userName;
     protected String passWord;
@@ -18,7 +20,6 @@ public class User {
 
     public User(String userName) {
         this.userName = userName;
-        System.out.println("username:" + userName);
     }
 
     /**
@@ -31,5 +32,29 @@ public class User {
         } else {
             return "";
         }
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getPassWord() {
+        return passWord;
+    }
+
+    public void setPassWord(String passWord) {
+        this.passWord = passWord;
     }
 }

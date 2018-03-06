@@ -1,68 +1,106 @@
-<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
-
-<!-- 用户注册页面 -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%--
+  Created by IntelliJ IDEA.
+  User: szl
+  Date: 2018/2/17
+  Time: 15:48
+  注册页面
+--%>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
-<title>用户注册 | C Help</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>注册 | C Help</title>
+    <link rel="stylesheet" href="mdl/material.min.css">
+    <script src="mdl/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
-
-<!-- 检查用户是否输入准确 -->
-<SCRIPT language=javascript>
-function CheckForm(){
-	if(document.registerForm.username.value==""){
-		alert("请输入用户名！");
-		document.registerForm.username.focus();
-		return false;
-	}
-	if(document.registerForm.password.value == ""){
-		alert("请输入密码！");
-		document.registerForm.password.focus();
-		return false;
-	}
-	if(document.registerForm.confirm.value == ""){
-		alert("请确认密码！");
-		document.registerForm.confirm.focus();
-		return false;
-	}	
-	document.registerForm.submit();
-}
-</SCRIPT>
-
 <body>
-<%@ include file = "banner.jsp" %>
-	<div class="container">
-	  	<div class="content">
-	  
-	  	<br><br><br><br><br>
-		<div align="center">
-			<form name="registerForm" method="post" action="/UserRegisterServlet">
-				<table width="480" border="0" cellspacing="1" cellpadding="1" class="tableBorder">
-					<tr><td height="40" colspan="2" align="center" class="whitenormal" bgcolor="E4EEFA">C语言自学模考系统用户注册</td></tr>
-					<tr bgcolor="F2F3F5">
-					  <td height="40" width="30%" align="right" class="normalText">用户名:</td>
-					  <td height="40" width="70%"><input type="text" name="username" class="textBox"></td>
-					</tr>
-					<tr bgcolor="F2F3F5">
-						<td height="40" align="right" class="normalText">密&nbsp;&nbsp;码:</td>
-						<td height="40"><input type="password" name="password" class="textBox"></td>
-					</tr>
-					<tr bgcolor="F2F3F5">
-						<td height="40" align="right" class="normalText">确认密码:</td>
-						<td height="40"><input type="password" name="confirm" class="textBox"></td>
-					</tr>					
-					<tr align="center">
-						<td height="40" colspan="2" bgcolor="E4EEFA">
-							<input type="button" name="Submit" value="注册" onClick="CheckForm()">
-						</td>
-					</tr>
-				</table>
-			</form>
-		</div>
-		<br><br><br><br><br><br><br><br><br><br>
-			  
-      	<!-- end .content --></div>
-    <!-- end .container --></div>		
-<%@ include file = "footer.jsp" %>	  
+
+<div class="mdl-layout mdl-js-layout">
+
+    <jsp:include page="mdl_header.jsp"></jsp:include>
+
+    <style>
+        @import url(css/register.css);
+    </style>
+
+    <script>
+        window.onload=function () {
+            var content = document.getElementById("content-div");
+            var w = parseInt(content.clientWidth.toString());
+            content.style.height = (w * 0.625) + "px";
+        };
+
+        /**
+         * @return {boolean}
+         */
+        function CheckForm(){
+            if(document.register.username.value === ""){
+                alert("请输入用户名！");
+                document.register.username.focus();
+                return false;
+            } else {
+                if (document.register.password.value === "") {
+                    alert("请输入密码！");
+                    document.register.password.focus();
+                    return false;
+                } else {
+                    if (document.register.confirm.value === "") {
+                        alert("请再次输入密码！");
+                        document.register.confirm.focus();
+                        return false;
+                    } else {
+                        if (document.register.confirm.value === document.register.password.value) {
+                            document.register.submit();
+                        } else {
+                            alert("两次密码输入有误！");
+                            document.register.confirm.focus();
+                            return false;
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <main class="mdl-layout__content">
+
+        <div id="content-div">
+            <div id="center-div">
+                <div id="login-div">
+                    <form name="register" method="post" action="${pageContext.request.contextPath}/UserRegisterServlet">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" id="username" name="username">
+                            <label class="mdl-textfield__label" for="username">用户名</label>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="password" id="password" name="password">
+                            <label class="mdl-textfield__label" for="password">密码</label>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="password" id="confirm" name="confirm">
+                            <label class="mdl-textfield__label" for="confirm">确认密码</label>
+                        </div>
+                    </form>
+                    <div id="button-div">
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" onclick="CheckForm()">
+                            注册
+                        </button>
+                        <a href="login.jsp">
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                                登录
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <jsp:include page="mdl_footer.jsp"></jsp:include>
+
+    </main>
+
+</div>
+
 </body>
 </html>

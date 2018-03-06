@@ -1,0 +1,79 @@
+@charset "UTF-8";
+body {
+    padding: 0;
+    background: #fafafa;
+    position: relative;
+}
+@media screen and (max-width: 1050px) {
+    .mdl-layout__header {
+        display: block;
+    }
+}
+#header {
+    background-color: #C2185B;
+}
+.mdl-layout__tab:hover {
+    color: #FFF;
+}
+#tab-bar {
+    background-color: #C2185B;
+}
+.mdl-layout__tab-bar-button {
+    background-color: #C2185B;
+}
+#title
+{
+    padding: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #555;
+}
+#div-10-col
+{
+    margin: 0;
+    border: 0;
+    padding: 20px;
+}
+#div-2-col
+{
+    border: 0;
+    margin: 0;
+    background: #FFFFFF;
+    box-shadow: 0 -3px 5px #000;
+}
+#div-grid
+{
+    padding: 0;
+}
+.demo-list-item {
+    width: 100%;
+}
+.mdl-list__item:hover {
+    background-color: #EEE;
+    cursor: pointer;
+}
+.mdl-list__item-primary-content {
+    font-size: 14px;
+}
+#span-active {
+    font-weight: bold;
+    color: #FFF;
+}
+#li-active {
+    background-color: #3F51B5;
+}
+.a-list {
+    text-decoration: none;
+}
+.a-list-active {
+    text-decoration: none;
+}
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 25px;
+}
+#b-right {
+    float: right;
+}

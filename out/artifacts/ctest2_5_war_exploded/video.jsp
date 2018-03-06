@@ -1,28 +1,56 @@
-<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
-<%@ page import="com.DBQuery.DataProcess, com.business.Video"  %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page import="com.DBQuery.DataProcess" %>
+<%@ page import="com.business.Video" %><%--
+  Created by IntelliJ IDEA.
+  User: szl
+  Date: 2018/2/23
+  Time: 0:24
+--%>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <html>
-
-<!-- 观看视频页面 -->
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>解析视频 | C Help</title>
+  <title>视频 | C Help</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="mdl/material.min.css">
+  <script src="mdl/material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
-
 <body>
-<%@ include file = "banner.jsp" %>
-	<div class="container">
-		<div class="content">
-			<%
-				String path = DataProcess.query(Video.TABLENAME, Video.ORDERNUMBER, request.getParameter("number"), Video.YOUKUPATH);
-				String title = DataProcess.query(Video.TABLENAME, Video.ORDERNUMBER, request.getParameter("number"), Video.VIDEOTITLE);
-			%>
-			<div align="center">
-				<h1>视频资源：<%=title %></h1>
-				<iframe height=498 width=710 src='<%=path %>' frameborder=0 ></iframe>
-			</div>
-        <!-- end .content --></div>
-    <!-- end .container --></div>
-<%@ include file = "footer.jsp" %>	
+<div class="mdl-layout mdl-js-layout">
+  <%@ include file = "mdl_header.jsp" %>
+  <style>@import url(css/video.css);</style>
+  <%
+    String path = DataProcess.query(Video.TABLENAME, Video.ORDERNUMBER, request.getParameter("number"), Video.YOUKUPATH);
+    String title = DataProcess.query(Video.TABLENAME, Video.ORDERNUMBER, request.getParameter("number"), Video.VIDEOTITLE);
+  %>
+  <div class="top">
+    <div class="center-div">
+      <div class="video-title"><%=title%></div>
+    </div>
+  </div>
+  <div class="center-div">
+    <div class="main">
+      <div class="video">
+        <iframe height=525 width=700 src='<%=path%>' frameborder=0 'allowfullscreen'></iframe>
+      </div>
+      <div class="video-left">
+        <div class="left-title">相关视频</div>
+        <div class="scroll">
+          <%  for (Video video : Video.getNextSixVideos(1)) {%>
+          <a href="video.jsp?number=<%=video.getNumber()%>" class="video-a">
+            <div class="left-video">
+              <div class="left-img">
+                <img src="<%=video.getImgUrl()%>" width="100%" height="100%">
+              </div>
+              <div class="left-video-title"><%=video.getTitle()%></div>
+            </div>
+          </a>
+          <%  }%>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%@ include file = "mdl_footer.jsp" %>
+</div>
+
 </body>
 </html>

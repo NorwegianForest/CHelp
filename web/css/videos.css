@@ -1,0 +1,77 @@
+@charset "UTF-8";
+body {
+    padding: 0;
+    background: #fafafa;
+    position: relative;
+}
+#center-div {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.layer {
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.video-div {
+    width: 19%;
+    height: 100%;
+    border-radius: 2px;
+}
+.video-div:hover {
+    box-shadow: 0 0 5px #000;
+}
+.img-div {
+    height: 125px;
+    position: relative;
+    border-radius: 2px;
+}
+.time-div {
+    height: 17px;
+    width: 30px;
+    line-height: 17px;
+    margin: 0 10px 6px 0;
+    padding: 0 5px;
+    border-radius: 2px;
+    background: rgba(0,0,0,0.5);
+    color: #E7E7E7;
+    white-space: nowrap;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.title-div {
+    height: 55px;
+    padding: 8px;
+    line-height: 19px;
+}
+.video-a {
+    text-decoration: none;
+    color: #323232;
+}
+.video-a:hover {
+    color: #C2185B;
+}
+@media screen and (max-width: 1050px) {
+    .mdl-layout__header {
+        display: block;
+    }
+}
+.mdl-layout__tab-bar-button {
+    background-color: #3E82F7;
+}
+.mdl-layout__tab:hover {
+    color: #FFF;
+}
+.page {
+    display: flex;
+    justify-content: center;
+}
+.mdl-button {
+    min-width: 36px;
+}

@@ -1,5 +1,10 @@
 package com.business;
 
+import com.DBQuery.DataProcess;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 描述一章学习资料，对应数据库中的materials表
  */
@@ -12,6 +17,13 @@ public class Material {
     public Material(String title, String fileName) {
         this.title = title;
         this.fileName = fileName;
+    }
+
+    public static List<Material> getFiveMaterialList() {
+        List<Material> materialList = new ArrayList<>();
+        String sql = "select * from materials limit 5";
+        DataProcess.loadMaterialList(sql, materialList);
+        return materialList;
     }
 
     public int getNumber() {

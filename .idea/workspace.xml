@@ -7,96 +7,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="287ef496-7f9b-4d17-96c8-4f90b161bf10" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/business/AdminUser.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/business/Exercise.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/business/Material.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/business/OrdinUser.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/business/Paper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/business/PreNexPage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/business/User.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/business/Video.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/taglib/MaterialsTable.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/taglib/PapersTable.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/taglib/VideosTable.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/business/Course.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/business/TeacherUser.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/servlet/CollectionServlet.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/servlet/JoinCourseServlet.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/servlet/Servlet.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/taglib/CourseTable.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/course.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/css/course.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/css/index.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/css/login.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/css/material.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/css/paper.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/css/personal.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/css/register.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/css/video.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/css/videos.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/mdl_footer.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/mdl_header.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/personal_collection.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/personal_course.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/personal_mistake.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/teacher_personal.jsp" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/CTest2.5.iml" afterPath="$PROJECT_DIR$/CTest2.5.iml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/WEB INF/mytag.tld" afterPath="" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/WEB INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/WEB INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/WEB-INF/mytag.tld" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/add_exercise.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/add_exercise.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/banner.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/banner.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/chapters.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/chapters.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/collection.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/collection.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/create_paper.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/create_paper.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/delete_exercise.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/delete_exercise.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/edit_paper.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/edit_paper.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/error_simulation_exist.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/error_simulation_exist.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/failure.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/failure.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/footer.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/footer.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/images/timg (2).jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/images/timg (3).jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/images/timg (4).jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/images/timg (5).jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/images/timg (6).jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/images/timg (7).jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/images/timg.jpg" afterPath="" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/index.jsp" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/login.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/login.jsp" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/materials.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/materials.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/olds.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/olds.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-tutorial.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-tutorial.jsp" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/paper.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/paper.jsp" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/paper_results.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/paper_results.jsp" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/personal.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/personal.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/personal_paper.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/personal_paper.jsp" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/register.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/register.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/search_results.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/search_results.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/simulation.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/simulation.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/success.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/success.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/user_login.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/user_login.jsp" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/video.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/video.jsp" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/videos.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/videos.jsp" />
       <change beforePath="$PROJECT_DIR$/src/com/DBQuery/DataProcess.java" afterPath="$PROJECT_DIR$/src/com/DBQuery/DataProcess.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/business/Admin_Manager.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/servlet/CreatePaperServlet.java" afterPath="$PROJECT_DIR$/src/com/servlet/CreatePaperServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/servlet/EditPaperServlet.java" afterPath="$PROJECT_DIR$/src/com/servlet/EditPaperServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/servlet/LoginServlet.java" afterPath="$PROJECT_DIR$/src/com/servlet/LoginServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/servlet/UserLoginServlet.java" afterPath="$PROJECT_DIR$/src/com/servlet/UserLoginServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/servlet/UserRegisterServlet.java" afterPath="$PROJECT_DIR$/src/com/servlet/UserRegisterServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/taglib/MaterialsTag.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/taglib/PapersTag.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/taglib/QuestionsTag.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/taglib/SimulationTag.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/taglib/VideosTag.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/WEB INF/mytag.tld" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/business/Material.java" afterPath="$PROJECT_DIR$/src/com/business/Material.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/business/OrdinUser.java" afterPath="$PROJECT_DIR$/src/com/business/OrdinUser.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/business/Paper.java" afterPath="$PROJECT_DIR$/src/com/business/Paper.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/business/User.java" afterPath="$PROJECT_DIR$/src/com/business/User.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/business/Video.java" afterPath="$PROJECT_DIR$/src/com/business/Video.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/taglib/PapersTable.java" afterPath="$PROJECT_DIR$/src/com/taglib/PapersTable.java" />
       <change beforePath="$PROJECT_DIR$/web/WEB INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/mytag.tld" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/add_exercise.jsp" afterPath="$PROJECT_DIR$/web/add_exercise.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/banner.jsp" afterPath="$PROJECT_DIR$/web/banner.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/chapters.jsp" afterPath="$PROJECT_DIR$/web/chapters.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/collection.jsp" afterPath="$PROJECT_DIR$/web/collection.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/create_paper.jsp" afterPath="$PROJECT_DIR$/web/create_paper.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/delete_exercise.jsp" afterPath="$PROJECT_DIR$/web/delete_exercise.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/edit_paper.jsp" afterPath="$PROJECT_DIR$/web/edit_paper.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/error_simulation_exist.jsp" afterPath="$PROJECT_DIR$/web/error_simulation_exist.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/failure.jsp" afterPath="$PROJECT_DIR$/web/failure.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/footer.jsp" afterPath="$PROJECT_DIR$/web/footer.jsp" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
       <change beforePath="$PROJECT_DIR$/web/login.jsp" afterPath="$PROJECT_DIR$/web/login.jsp" />
       <change beforePath="$PROJECT_DIR$/web/materials.jsp" afterPath="$PROJECT_DIR$/web/materials.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/olds.jsp" afterPath="$PROJECT_DIR$/web/olds.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/meterials/c-tutorial.jsp" afterPath="$PROJECT_DIR$/web/meterials/c-tutorial.jsp" />
       <change beforePath="$PROJECT_DIR$/web/paper.jsp" afterPath="$PROJECT_DIR$/web/paper.jsp" />
       <change beforePath="$PROJECT_DIR$/web/paper_results.jsp" afterPath="$PROJECT_DIR$/web/paper_results.jsp" />
       <change beforePath="$PROJECT_DIR$/web/personal.jsp" afterPath="$PROJECT_DIR$/web/personal.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/personal_paper.jsp" afterPath="$PROJECT_DIR$/web/personal_paper.jsp" />
       <change beforePath="$PROJECT_DIR$/web/register.jsp" afterPath="$PROJECT_DIR$/web/register.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/search_results.jsp" afterPath="$PROJECT_DIR$/web/search_results.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/simulation.jsp" afterPath="$PROJECT_DIR$/web/simulation.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/success.jsp" afterPath="$PROJECT_DIR$/web/success.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/user_login.jsp" afterPath="$PROJECT_DIR$/web/user_login.jsp" />
       <change beforePath="$PROJECT_DIR$/web/video.jsp" afterPath="$PROJECT_DIR$/web/video.jsp" />
       <change beforePath="$PROJECT_DIR$/web/videos.jsp" afterPath="$PROJECT_DIR$/web/videos.jsp" />
     </list>
@@ -113,54 +77,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="240">
-                <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user_login.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/user_login.jsp">
+      <file leaf-file-name="paper.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/paper.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="48" lean-forward="false" selection-start-line="0" selection-start-column="48" selection-end-line="0" selection-end-column="48" />
+            <state relative-caret-position="137">
+              <caret line="103" column="57" lean-forward="false" selection-start-line="103" selection-start-column="57" selection-end-line="103" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="banner.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/banner.jsp">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="132" column="15" lean-forward="false" selection-start-line="132" selection-start-column="15" selection-end-line="132" selection-end-column="15" />
+            <state relative-caret-position="1020">
+              <caret line="68" column="44" lean-forward="false" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/register.jsp">
+      <file leaf-file-name="CreatePaperServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/servlet/CreatePaperServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-448">
-              <caret line="0" column="46" lean-forward="false" selection-start-line="0" selection-start-column="46" selection-end-line="0" selection-end-column="46" />
+            <state relative-caret-position="120">
+              <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/footer.jsp">
+      <file leaf-file-name="CollectionServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/servlet/CollectionServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="12" column="48" lean-forward="false" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="paper.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/css/paper.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -171,9 +132,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="HTML File" />
+        <option value="Jsp File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -191,57 +154,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/collection.jsp" />
-        <option value="$PROJECT_DIR$/web/personal.jsp" />
-        <option value="$PROJECT_DIR$/web/personal_paper.jsp" />
-        <option value="$PROJECT_DIR$/web/videos.jsp" />
-        <option value="$PROJECT_DIR$/src/com/taglib/VideosTable.java" />
-        <option value="$PROJECT_DIR$/src/com/business/Admin_Manager.java" />
-        <option value="$PROJECT_DIR$/src/com/business/Exercise.java" />
-        <option value="$PROJECT_DIR$/src/com/business/Paper.java" />
-        <option value="$PROJECT_DIR$/web/paper.jsp" />
-        <option value="$PROJECT_DIR$/web/error_simulation_exist.jsp" />
-        <option value="$PROJECT_DIR$/src/com/business/Paper.java" />
-        <option value="$PROJECT_DIR$/src/com/business/Video.java" />
-        <option value="$PROJECT_DIR$/web/video.jsp" />
-        <option value="$PROJECT_DIR$/src/com/servlet/LoginServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/servlet/UserLoginServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/business/OrdinUser.java" />
-        <option value="$PROJECT_DIR$/web/videos.jsp" />
-        <option value="$PROJECT_DIR$/web/simulation.jsp" />
-        <option value="$PROJECT_DIR$/web/personal.jsp" />
-        <option value="$PROJECT_DIR$/web/personal_paper.jsp" />
-        <option value="$PROJECT_DIR$/web/paper.jsp" />
-        <option value="$PROJECT_DIR$/web/olds.jsp" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/web/collection.jsp" />
-        <option value="$PROJECT_DIR$/web/chapters.jsp" />
-        <option value="$PROJECT_DIR$/src/com/business/Exercise.java" />
         <option value="$PROJECT_DIR$/src/com/business/User.java" />
-        <option value="$PROJECT_DIR$/web/success.jsp" />
-        <option value="$PROJECT_DIR$/src/com/business/AdminUser.java" />
-        <option value="$PROJECT_DIR$/src/com/taglib/VideosTable.java" />
-        <option value="$PROJECT_DIR$/web/search_results.jsp" />
-        <option value="$PROJECT_DIR$/web/paper_results.jsp" />
-        <option value="$PROJECT_DIR$/src/com/taglib/MaterialsTable.java" />
-        <option value="$PROJECT_DIR$/src/com/business/PreNexPage.java" />
-        <option value="$PROJECT_DIR$/web/materials.jsp" />
+        <option value="$PROJECT_DIR$/web/teacher_personal.jsp" />
         <option value="$PROJECT_DIR$/src/com/taglib/PapersTable.java" />
-        <option value="$PROJECT_DIR$/web/delete_exercise.jsp" />
-        <option value="$PROJECT_DIR$/web/create_paper.jsp" />
-        <option value="$PROJECT_DIR$/web/add_exercise.jsp" />
-        <option value="$PROJECT_DIR$/src/com/DBQuery/DataProcess.java" />
-        <option value="$PROJECT_DIR$/web/edit_paper.jsp" />
-        <option value="$PROJECT_DIR$/src/com/servlet/EditPaperServlet.java" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/web/user_login.jsp" />
-        <option value="$PROJECT_DIR$/src/com/servlet/UserRegisterServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/servlet/CreatePaperServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/taglib/CourseTable.java" />
+        <option value="$PROJECT_DIR$/src/com/servlet/JoinCourseServlet.java" />
+        <option value="$PROJECT_DIR$/web/MDL.html" />
+        <option value="$PROJECT_DIR$/web/WEB INF/test.jsp" />
+        <option value="$PROJECT_DIR$/web/mdl_footer.html" />
+        <option value="$PROJECT_DIR$/web/h.html" />
+        <option value="$PROJECT_DIR$/web/meterials/c-tutorial.jsp" />
+        <option value="$PROJECT_DIR$/web/test.jsp" />
+        <option value="$PROJECT_DIR$/web/mdl_footer.jsp" />
+        <option value="$PROJECT_DIR$/web/index_test.jsp" />
+        <option value="$PROJECT_DIR$/web/login_test.jsp" />
+        <option value="$PROJECT_DIR$/web/css/material.css" />
+        <option value="$PROJECT_DIR$/src/com/servlet/UserLoginServlet.java" />
+        <option value="$PROJECT_DIR$/web/css/login.css" />
+        <option value="$PROJECT_DIR$/web/css/register.css" />
         <option value="$PROJECT_DIR$/web/register.jsp" />
         <option value="$PROJECT_DIR$/web/login.jsp" />
-        <option value="$PROJECT_DIR$/web/failure.jsp" />
-        <option value="$PROJECT_DIR$/web/footer.jsp" />
-        <option value="$PROJECT_DIR$/web/banner.jsp" />
+        <option value="$PROJECT_DIR$/web/mdl_header.jsp" />
+        <option value="$PROJECT_DIR$/web/materials.jsp" />
+        <option value="$PROJECT_DIR$/src/com/business/Paper.java" />
+        <option value="$PROJECT_DIR$/src/com/business/Paper.java" />
+        <option value="$PROJECT_DIR$/src/com/business/Material.java" />
+        <option value="$PROJECT_DIR$/web/paper_result.jsp" />
+        <option value="$PROJECT_DIR$/web/paper_results.jsp" />
+        <option value="$PROJECT_DIR$/web/css/personal.css" />
+        <option value="$PROJECT_DIR$/web/css/course.css" />
+        <option value="$PROJECT_DIR$/web/video_old.jsp" />
+        <option value="$PROJECT_DIR$/web/css/video.css" />
+        <option value="$PROJECT_DIR$/web/video.jsp" />
+        <option value="$PROJECT_DIR$/src/com/business/Video.java" />
+        <option value="$PROJECT_DIR$/web/personal.jsp" />
+        <option value="$PROJECT_DIR$/web/personal_collection.jsp" />
+        <option value="$PROJECT_DIR$/web/personal_mistake.jsp" />
+        <option value="$PROJECT_DIR$/web/course.jsp" />
+        <option value="$PROJECT_DIR$/src/com/business/TeacherUser.java" />
+        <option value="$PROJECT_DIR$/src/com/business/Course.java" />
+        <option value="$PROJECT_DIR$/src/com/DBQuery/DataProcess.java" />
+        <option value="$PROJECT_DIR$/src/com/business/OrdinUser.java" />
+        <option value="$PROJECT_DIR$/web/personal_course.jsp" />
+        <option value="$PROJECT_DIR$/web/css/index.css" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/css/videos.css" />
+        <option value="$PROJECT_DIR$/web/videos.jsp" />
+        <option value="$PROJECT_DIR$/web/css/paper.css" />
+        <option value="$PROJECT_DIR$/src/com/servlet/CollectionServlet.java" />
+        <option value="$PROJECT_DIR$/web/WEB INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/paper.jsp" />
+        <option value="$PROJECT_DIR$/web/paper.jsp" />
       </list>
     </option>
   </component>
@@ -325,6 +288,9 @@
             <id>Java 7Java language level migration aidsJava</id>
           </State>
           <State>
+            <id>Java EE issues</id>
+          </State>
+          <State>
             <id>Java language level migration aidsJava</id>
           </State>
           <State>
@@ -378,7 +344,7 @@
         </expanded-state>
         <selected-state>
           <State>
-            <id>Spelling</id>
+            <id>WebProperties</id>
           </State>
         </selected-state>
       </profile-state>
@@ -402,79 +368,87 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="CTest2.5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ctest2.5" type="462c0819:PsiDirectoryNode" />
+              <item name="CHelp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CHelp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CTest2.5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ctest2.5" type="462c0819:PsiDirectoryNode" />
+              <item name="CHelp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CHelp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CTest2.5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ctest2.5" type="462c0819:PsiDirectoryNode" />
+              <item name="CHelp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CHelp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CTest2.5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ctest2.5" type="462c0819:PsiDirectoryNode" />
+              <item name="CHelp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CHelp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="business" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CTest2.5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ctest2.5" type="462c0819:PsiDirectoryNode" />
+              <item name="CHelp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CHelp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="DBQuery" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CTest2.5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ctest2.5" type="462c0819:PsiDirectoryNode" />
+              <item name="CHelp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CHelp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="servlet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CTest2.5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ctest2.5" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="taglib" type="462c0819:PsiDirectoryNode" />
+              <item name="CHelp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CHelp" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CTest2.5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ctest2.5" type="462c0819:PsiDirectoryNode" />
+              <item name="CHelp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CHelp" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CHelp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CHelp" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Android_program/BatteryServer" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JSP" />
     <property name="settings.editor.splitter.proportion" value="0.25121713" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\STUDY\J2ee_program\CHelp\web" />
       <recent name="F:\STUDY\J2ee_program\ctest2.5\web" />
     </key>
   </component>
@@ -737,6 +711,18 @@
       <workItem from="1516863047731" duration="3448000" />
       <workItem from="1516953608713" duration="27057000" />
       <workItem from="1517020506525" duration="32522000" />
+      <workItem from="1518332999112" duration="10989000" />
+      <workItem from="1518501000631" duration="17965000" />
+      <workItem from="1518587844184" duration="29333000" />
+      <workItem from="1518668196529" duration="26506000" />
+      <workItem from="1518844686820" duration="23108000" />
+      <workItem from="1518936611348" duration="4001000" />
+      <workItem from="1519017105013" duration="17256000" />
+      <workItem from="1519192976869" duration="11004000" />
+      <workItem from="1519316113330" duration="8681000" />
+      <workItem from="1519459486802" duration="10767000" />
+      <workItem from="1519536420147" duration="5371000" />
+      <workItem from="1519799028982" duration="641000" />
     </task>
     <task id="LOCAL-00001" summary="在README增加项目细节">
       <created>1516604784827</created>
@@ -749,41 +735,41 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100048000" />
+    <option name="totallyTimeSpent" value="265670000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.022776572" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32868218" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.459375" sideWeight="0.5087848" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32868218" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1921875" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4046875" sideWeight="0.49121523" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2774524" sideWeight="0.6778742" order="7" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25238097" sideWeight="0.3251634" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2774524" sideWeight="0.7984375" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2774524" sideWeight="0.2015625" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22559524" sideWeight="0.32212582" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
@@ -800,477 +786,414 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/taglib/MaterialsTag.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/taglib/VideosTag.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/taglib/PapersTag.java" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/mytag.tld" />
-    <entry file="file://$PROJECT_DIR$/web/WEB INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/web/css/material.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        <state relative-caret-position="-585">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/register_test.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB INF/mytag.tld" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/List.java">
+    <entry file="file://$PROJECT_DIR$/web/css/register.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-169">
-          <caret line="543" column="6" lean-forward="false" selection-start-line="543" selection-start-column="6" selection-end-line="543" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/business/Admin_Manager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/business/Exercise.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-135">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#743#744#0" expanded="false" />
-            <element signature="e#771#772#0" expanded="false" />
-            <element signature="e#3859#3860#0" expanded="false" />
-            <element signature="e#3884#3885#0" expanded="false" />
-            <element signature="e#3917#3918#0" expanded="false" />
-            <element signature="e#3945#3946#0" expanded="false" />
-            <element signature="e#3977#3978#0" expanded="false" />
-            <element signature="e#4005#4006#0" expanded="false" />
-            <element signature="e#4047#4048#0" expanded="false" />
-            <element signature="e#4081#4082#0" expanded="false" />
-            <element signature="e#4115#4116#0" expanded="false" />
-            <element signature="e#4145#4146#0" expanded="false" />
-            <element signature="e#4179#4180#0" expanded="false" />
-            <element signature="e#4209#4210#0" expanded="false" />
-            <element signature="e#4243#4244#0" expanded="false" />
-            <element signature="e#4273#4274#0" expanded="false" />
-            <element signature="e#4307#4308#0" expanded="false" />
-            <element signature="e#4337#4338#0" expanded="false" />
-            <element signature="e#4370#4371#0" expanded="false" />
-            <element signature="e#4399#4400#0" expanded="false" />
-            <element signature="e#4436#4437#0" expanded="false" />
-            <element signature="e#4469#4470#0" expanded="false" />
-            <element signature="e#4503#4504#0" expanded="false" />
-            <element signature="e#4536#4537#0" expanded="false" />
-            <element signature="e#4569#4570#0" expanded="false" />
-            <element signature="e#4601#4602#0" expanded="false" />
-            <element signature="e#4635#4636#0" expanded="false" />
-            <element signature="e#4667#4668#0" expanded="false" />
-            <element signature="e#4702#4703#0" expanded="false" />
-            <element signature="e#4733#4734#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/business/OrdinUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-315">
-          <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#1257#1258#0" expanded="true" />
-            <element signature="e#1302#1303#0" expanded="true" />
-            <element signature="e#1729#1730#0" expanded="true" />
-            <element signature="e#1764#1765#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/business/Paper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-115">
-          <caret line="68" column="52" lean-forward="false" selection-start-line="68" selection-start-column="52" selection-end-line="68" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2507#2508#0" expanded="true" />
-            <element signature="e#2542#2543#0" expanded="true" />
-            <element signature="e#2577#2578#0" expanded="true" />
-            <element signature="e#2606#2607#0" expanded="true" />
-            <element signature="e#2640#2641#0" expanded="true" />
-            <element signature="e#2695#2696#0" expanded="true" />
-            <element signature="e#2726#2727#0" expanded="true" />
-            <element signature="e#2754#2755#0" expanded="true" />
-            <element signature="e#2796#2797#0" expanded="true" />
-            <element signature="e#2830#2831#0" expanded="true" />
-            <element signature="e#2861#2862#0" expanded="true" />
-            <element signature="e#2888#2889#0" expanded="true" />
-            <element signature="e#2928#2929#0" expanded="true" />
-            <element signature="e#2960#2961#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/business/Video.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/business/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/business/AdminUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="e#244#245#0" expanded="true" />
-            <element signature="e#289#290#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/taglib/VideosTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="32" column="31" lean-forward="false" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
-          <folding>
-            <element signature="e#793#794#0" expanded="false" />
-            <element signature="e#872#873#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/servlet/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="50" column="15" lean-forward="false" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
-          <folding />
+        <state relative-caret-position="345">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/servlet/UserLoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="51" column="20" lean-forward="true" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+        <state relative-caret-position="77">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/banner.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="126" column="20" lean-forward="false" selection-start-line="126" selection-start-column="20" selection-end-line="126" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/servlet-api.jar!/javax/servlet/http/HttpServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="284" column="0" lean-forward="false" selection-start-line="284" selection-start-column="0" selection-end-line="284" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/videos_old.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/business/Material.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="330">
+          <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
           <folding>
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/taglib/MaterialsTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="90" column="45" lean-forward="false" selection-start-line="90" selection-start-column="45" selection-end-line="90" selection-end-column="45" />
-          <folding>
-            <element signature="e#2593#2594#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/business/PreNexPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-          <folding>
-            <element signature="e#1581#1582#0" expanded="true" />
-            <element signature="e#1607#1608#0" expanded="true" />
-            <element signature="e#1637#1638#0" expanded="true" />
-            <element signature="e#1663#1664#0" expanded="true" />
-            <element signature="e#1698#1699#0" expanded="true" />
-            <element signature="e#1729#1730#0" expanded="true" />
-            <element signature="e#1764#1765#0" expanded="true" />
-            <element signature="e#1795#1796#0" expanded="true" />
-            <element signature="e#1829#1830#0" expanded="true" />
-            <element signature="e#1859#1860#0" expanded="true" />
-            <element signature="e#1893#1894#0" expanded="true" />
-            <element signature="e#1923#1924#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/taglib/PapersTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="90" column="34" lean-forward="false" selection-start-line="90" selection-start-column="34" selection-end-line="90" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/DBQuery/DataProcess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding>
-            <marker date="1517053556823" expanded="true" signature="2237:2309" ph="select * fro... missingValue" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/servlet/EditPaperServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-475">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="e#715#716#0" expanded="true" />
-            <marker date="1517054250619" expanded="true" signature="1970:2344" ph="update exercises... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/video.jsp">
+    <entry file="file://$PROJECT_DIR$/web/materials.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="46" lean-forward="false" selection-start-line="0" selection-start-column="46" selection-end-line="0" selection-end-column="46" />
+          <caret line="69" column="37" lean-forward="false" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/simulation.jsp">
+    <entry file="file://$PROJECT_DIR$/web/mdl/material.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="43" lean-forward="false" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-          <folding />
+        <state relative-caret-position="-16477">
+          <caret line="7" column="7608" lean-forward="false" selection-start-line="7" selection-start-column="7608" selection-end-line="7" selection-end-column="7608" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/search_results.jsp">
+    <entry file="file://$PROJECT_DIR$/web/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="25" column="44" lean-forward="false" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
-          <folding />
+        <state relative-caret-position="330">
+          <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/personal_paper.jsp">
+    <entry file="file://$PROJECT_DIR$/web/paper_result.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/paper_results_old.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/personal.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/paper_results.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="33" lean-forward="false" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/paper.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="31" column="71" lean-forward="true" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
+        <state relative-caret-position="425">
+          <caret line="43" column="19" lean-forward="true" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/olds.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/materials.jsp">
+    <entry file="file://$PROJECT_DIR$/web/mdl_header.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        <state relative-caret-position="845">
+          <caret line="68" column="33" lean-forward="false" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+    <entry file="file://$PROJECT_DIR$/web/paper_old.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="65" column="6" lean-forward="false" selection-start-line="65" selection-start-column="6" selection-end-line="65" selection-end-column="6" />
+        <state relative-caret-position="290">
+          <caret line="35" column="26" lean-forward="false" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/error_simulation_exist.jsp">
+    <entry file="file://$PROJECT_DIR$/web/paper_results.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        <state relative-caret-position="215">
+          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/edit_paper.jsp">
+    <entry file="file://$PROJECT_DIR$/web/css/course.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="46" column="28" lean-forward="false" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+        <state relative-caret-position="630">
+          <caret line="48" column="20" lean-forward="false" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/video.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/video_old.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/delete_exercise.jsp">
+    <entry file="file://$PROJECT_DIR$/web/video.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="66" lean-forward="false" selection-start-line="1" selection-start-column="66" selection-end-line="1" selection-end-column="66" />
-          <folding>
-            <marker date="1517052566590" expanded="true" signature="526:611" ph="delete from exercises... " />
-          </folding>
+        <state relative-caret-position="335">
+          <caret line="43" column="62" lean-forward="false" selection-start-line="43" selection-start-column="62" selection-end-line="43" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/business/Video.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="49" column="98" lean-forward="false" selection-start-line="49" selection-start-column="98" selection-end-line="49" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/sql/SQLException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="48" column="7" lean-forward="false" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/business/Exercise.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="48" column="16" lean-forward="false" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/personal.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/personal.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="16" lean-forward="true" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/create_paper.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/personal_mistake.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-176">
+          <caret line="101" column="63" lean-forward="false" selection-start-line="101" selection-start-column="63" selection-end-line="101" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/personal_collection.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="135" column="10" lean-forward="false" selection-start-line="135" selection-start-column="10" selection-end-line="135" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/personal_paper.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/course_old.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="29" column="9" lean-forward="false" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/business/TeacherUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="28" column="40" lean-forward="false" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/course.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="49" lean-forward="true" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/business/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="11" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/DBQuery/DataProcess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="387" column="0" lean-forward="false" selection-start-line="387" selection-start-column="0" selection-end-line="387" selection-end-column="0" />
+          <folding>
+            <marker date="1519463192815" expanded="true" signature="5071:5124" ph="select * fro... users" />
+            <marker date="1519463192815" expanded="true" signature="6742:6772" ph="select * fro... course" />
+            <marker date="1519463192815" expanded="true" signature="8373:8402" ph="select * fro... users" />
+            <marker date="1519463192815" expanded="true" signature="8964:9043" ph="select * fro... videos" />
+            <marker date="1519463192815" expanded="true" signature="8964:9052" ph="select * fro... videos" />
+            <marker date="1519463192815" expanded="true" signature="8964:9065" ph="select * fro... videos" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/business/Course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+          <folding>
+            <element signature="e#2132#2133#0" expanded="false" />
+            <element signature="e#2189#2190#0" expanded="false" />
+            <element signature="e#3262#3263#0" expanded="false" />
+            <element signature="e#3291#3292#0" expanded="false" />
+            <element signature="e#3335#3336#0" expanded="false" />
+            <element signature="e#3371#3372#0" expanded="false" />
+            <element signature="e#3414#3415#0" expanded="false" />
+            <element signature="e#3448#3449#0" expanded="false" />
+            <element signature="e#3507#3508#0" expanded="false" />
+            <element signature="e#3553#3554#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/personal_course.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="122" column="68" lean-forward="true" selection-start-line="122" selection-start-column="68" selection-end-line="122" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/business/OrdinUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/videos.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="64" column="28" lean-forward="false" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/collection.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/chapters.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/add_exercise.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        <state relative-caret-position="390">
+          <caret line="26" column="6" lean-forward="false" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/videos.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+        <state relative-caret-position="-390">
+          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/success.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/business/Paper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        <state relative-caret-position="184">
+          <caret line="76" column="17" lean-forward="false" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/servlet/UserRegisterServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding>
-            <element signature="e#711#712#0" expanded="true" />
-            <element signature="e#734#735#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/servlet/CreatePaperServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <element signature="e#717#718#0" expanded="true" />
-            <element signature="e#740#741#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/servlet/CollectionServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="12" column="48" lean-forward="false" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="68" column="44" lean-forward="false" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/paper.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1665">
+          <caret line="27" column="50" lean-forward="false" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-562">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="195">
+          <caret line="48" column="32" lean-forward="true" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/failure.jsp">
+    <entry file="file://$PROJECT_DIR$/web/paper.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="137">
+          <caret line="103" column="57" lean-forward="false" selection-start-line="103" selection-start-column="57" selection-end-line="103" selection-end-column="57" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/banner.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="132" column="15" lean-forward="false" selection-start-line="132" selection-start-column="15" selection-end-line="132" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-448">
-          <caret line="0" column="46" lean-forward="false" selection-start-line="0" selection-start-column="46" selection-end-line="0" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/footer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/user_login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="48" lean-forward="false" selection-start-line="0" selection-start-column="48" selection-end-line="0" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="240">
-            <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-            <folding />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1293,7 +1216,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Web</last-edited>
+          <last-edited>Web (CTest2.5)|Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1328,7 +1251,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>5|CTest2</last-edited>
+          <last-edited>Web|5|CTest2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

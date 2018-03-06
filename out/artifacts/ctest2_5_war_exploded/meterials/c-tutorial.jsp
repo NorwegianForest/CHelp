@@ -1,6 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="gb2312"%>
-    <%@ page import="java.io.*, java.util.*" import="com.DBQuery.DataProcess" import="java.sql.*"%>
+<%@ page contentType="text/html; charset=utf-8"
+         pageEncoding="gb2312"%>
     
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -46,12 +45,6 @@ int main()
       <li><strong>stdio.h</strong>是一个头文件(标准输入输出头文件),<strong>#include</strong>是一个预处理命令，用来引入头文件。当编译器遇到<strong>printf()</strong>函数时，如果没有找到<strong>stdio.h</strong>头文件，会发生编译错误。</li>
       <li><strong>return0;</strong>语句用于表示退出程序。</li>
     </ul>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    
 
-    
 </body>
 </html>

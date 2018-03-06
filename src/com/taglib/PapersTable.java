@@ -18,7 +18,7 @@ import java.util.List;
  */
 public class PapersTable {
 
-    private List<Paper> paperList = new ArrayList<>(); // 保存在数据库中查询到的试卷信息
+    private List<Paper> paperList; // 保存在数据库中查询到的试卷信息
     private String htmlCode; // 输出到jsp页面的html代码
     private String sql;
     private String url; // 即paper或者edit_paper
@@ -66,21 +66,16 @@ public class PapersTable {
      * 根据构造好的sql语句进行查询，保存查询结果于paperList
      * @throws SQLException
      */
-    private void loadPaperList() throws SQLException {
-        Connection con = DataProcess.getConnection();
-        ResultSet rs = DataProcess.getResult(sql, con);
-        while (rs.next()) {
-            paperList.add(new Paper(rs.getString("paper_title"), rs.getString("paper_type")));
-        }
-        rs.close();
-        con.close();
+    private void loadPaperList() {
+        paperList = new ArrayList<>();
+        DataProcess.loadPaperList(sql, paperList);
     }
 
     /**
      * 根据查询结果，构造HTML代码
      * @throws SQLException
      */
-    private void loadHTMLCode() throws SQLException {
+    private void loadHTMLCode() {
         loadPaperList();
         StringBuffer codeBuffer = new StringBuffer("<table align=left>");
         if (paperList.isEmpty()) {
@@ -89,8 +84,8 @@ public class PapersTable {
             for (Paper paper : paperList) {
                 codeBuffer.append("<tr><td>&nbsp;&nbsp;<a href=\"");
                 codeBuffer.append(url);
-                codeBuffer.append(".jsp?paper_title=");
-                codeBuffer.append(paper.getTitle());
+                codeBuffer.append(".jsp?paper_id=");
+                codeBuffer.append(paper.getId());
                 codeBuffer.append("\">");
                 codeBuffer.append(paper.getTitle());
                 codeBuffer.append("</a></td></tr>");
@@ -105,7 +100,7 @@ public class PapersTable {
      * @return 输出到jsp页面的HTML代码
      * @throws SQLException
      */
-    public String getHtmlCode() throws SQLException {
+    public String getHtmlCode() {
         loadHTMLCode();
         return htmlCode;
     }

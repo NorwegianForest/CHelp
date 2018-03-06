@@ -14,8 +14,10 @@ import java.util.List;
  */
 public class Paper {
 
+    private int id; // 数据库自增id
     private String title; // 试卷的标题
     private String type; // 试卷的类型
+    private int courseId; // 对应的课程id
     private List<Exercise> exerciseList = new ArrayList<>(); // 试卷包含的试题
     private int wrongCount; // 用户在此试题卷答对的提数
 
@@ -26,6 +28,11 @@ public class Paper {
      */
     public Paper(String title) throws SQLException {
         this.title = title;
+        loadExerciseList();
+    }
+
+    public Paper(int id) throws SQLException {
+        this.id = id;
         loadExerciseList();
     }
 
@@ -41,14 +48,14 @@ public class Paper {
 
     /**
      * 构造出一份由用户作答过的试卷，带有额外参数
-     * @param title 试卷标题
+     * @param id 试卷id
      * @param request 上一个页面的请求，带有用户的作答参数
      * @param userName 用户名，用户未登录则为null
      * @throws SQLException
      */
-    public Paper(String title, HttpServletRequest request, String userName) throws SQLException {
+    public Paper(int id, HttpServletRequest request, String userName) throws SQLException {
         wrongCount = 0;
-        this.title = title;
+        this.id = id;
         loadExerciseList();
         for (Exercise exercise : exerciseList) {
             // 根据题目的id查找request的对应参数，得到用户选择的选项，再赋值给对应的Exercise对象，并判断正误，并保存错题
@@ -56,12 +63,19 @@ public class Paper {
         }
     }
 
+    public Paper(int id, String title, String type, int courseId) {
+        this.id = id;
+        this.title = title;
+        this.type = type;
+        this.courseId = courseId;
+    }
+
     /**
-     * 根据标题从数据库载入试卷的所有题目
+     * 根据id从数据库载入试卷的所有题目
      * @throws SQLException
      */
     private void loadExerciseList() throws SQLException {
-        String sql = "select * from exercises where paper_title='" + title + "'";
+        String sql = "select * from exercises where paper_id='" + id + "'";
         Connection connection = DataProcess.getConnection();
         ResultSet resultSet = DataProcess.getResult(sql, connection);
         while (resultSet.next()) {
@@ -78,6 +92,13 @@ public class Paper {
         }
         resultSet.close();
         connection.close();
+    }
+
+    public static List<Paper> getFivePaperList(String type) {
+        List<Paper> paperList = new ArrayList<>();
+        String sql = "select * from papers where paper_type='" + type + "' limit 5";
+        DataProcess.loadPaperList(sql, paperList);
+        return paperList;
     }
 
     public List<Exercise> getExerciseList() {
@@ -105,5 +126,33 @@ public class Paper {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getCourseId() {
+        return courseId;
+    }
+
+    public void setCourseId(int courseId) {
+        this.courseId = courseId;
+    }
+
+    public void setExerciseList(List<Exercise> exerciseList) {
+        this.exerciseList = exerciseList;
+    }
+
+    public int getWrongCount() {
+        return wrongCount;
+    }
+
+    public void setWrongCount(int wrongCount) {
+        this.wrongCount = wrongCount;
     }
 }

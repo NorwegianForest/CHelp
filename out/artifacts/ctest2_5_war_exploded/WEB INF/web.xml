@@ -68,5 +68,20 @@
     <servlet-name>CreatePaperServlet</servlet-name>
     <url-pattern>/create_paper</url-pattern>
   </servlet-mapping>
-
+  <servlet>
+    <servlet-name>JoinCourseServlet</servlet-name>
+    <servlet-class>com.servlet.JoinCourseServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JoinCourseServlet</servlet-name>
+    <url-pattern>/join_course</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>CollectionServlet</servlet-name>
+    <servlet-class>com.servlet.CollectionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CollectionServlet</servlet-name>
+    <url-pattern>/collection</url-pattern>
+  </servlet-mapping>
 </web-app>
