@@ -1,7 +1,9 @@
 <%@ page import="com.business.Paper" %>
-<%@ page import="com.business.Exercise" %><%--
+<%@ page import="com.business.Exercise" %>
+<%@ page import="com.business.Program" %>
+<%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
-  User: Administrator
+  User: szl
   Date: 2018/2/19
   Time: 17:10
   To change this template use File | Settings | File Templates.
@@ -14,6 +16,32 @@
   <link rel="stylesheet" href="mdl/material.min.css">
   <script src="mdl/material.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <SCRIPT>
+      window.onload = function () {
+          var wide = document.body.clientWidth - 20;
+          var right = document.getElementById('right');
+          if (wide > 1000)
+          {
+              right.style.left = (wide - 1000) / 2 + 717;
+          }
+          else
+          {
+              right.style.left = 717;
+          }
+      };
+      window.onresize = function () {
+          var wide = document.body.clientWidth - 20;
+          var right = document.getElementById('right');
+          if (wide > 1000)
+          {
+              right.style.left = (wide - 1000) / 2 + 717;
+          }
+          else
+          {
+              right.style.left = 717;
+          }
+      };
+  </SCRIPT>
 </head>
 <body>
 
@@ -23,7 +51,7 @@
     @import url(css/paper.css);
   </style>
   <main class="mdl-layout__content">
-    <div class="center-div">
+    <div class="center-div" id="center">
 
       <%String paper_id = request.getParameter("paper_id");
         Paper paper = new Paper(Integer.parseInt(paper_id), request, username);%>
@@ -36,9 +64,9 @@
           <div class="title1">一、选择题(每小题1分，共40分)</div>
           <%int orderNumer = 0;
             int optionCount = 1;
-            for (Exercise exercise : paper.getExerciseList()) { orderNumer++;%>
-          <div class="single">
-            <div class="title"><span class="order-number"><%=orderNumer%>&nbsp;[单选题]</span><%=exercise.getTitle()%></div>
+            for (Exercise exercise : paper.getExerciseList()) {%>
+          <div class="single" id="single-<%=++orderNumer%>">
+            <div class="title"><span class="order-number"><%=orderNumer%>&nbsp;[单选题]</span><%=exercise.getHTMLTitle()%></div>
             <div class="option-div">
               <div class="option">
                 <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="<%=optionCount%>">
@@ -78,27 +106,101 @@
             </div>
             <div class="answer">参考答案:&nbsp;<span class="answer-text"><%=exercise.getAnswer()%></span></div>
             <div class="analysis">
-              <div class="analysis-inside">试题难度:&nbsp;<%=exercise.getDifficulty()%></div>
               <div class="analysis-inside">参考解析:&nbsp;<%=exercise.getAnalysis()%></div>
             </div>
           </div>
           <%}%>
+
+          <%List<Program> programList = paper.getProgramList();%>
+          <%if (!programList.isEmpty()) {%>
+          <div class="single" id="single-<%=++orderNumer%>">
+            <div class="title"><span class="order-number"><%=orderNumer%>&nbsp;[程序填空题]&nbsp;</span>
+              <%=programList.get(0).getProgramTitle()%>
+            </div>
+            <div class="code-div">
+              <div class="mdl-textfield mdl-js-textfield">
+                  <textarea class="mdl-textfield__input" type="text" rows= "20" id="code1" name="code<%=programList.get(0).getProgramId()%>"><%=paper.getUserProgram().get(0)%>
+                  </textarea>
+                <label class="mdl-textfield__label" for="code1">code...</label>
+              </div>
+            </div>
+            <div class="answer">参考答案:&nbsp;<br><span class="answer-text"><%=programList.get(0).getHTMLProgramAnswer()%></span></div>
+            <div class="analysis">
+              <div class="analysis-inside">参考解析:&nbsp;<%=programList.get(0).getProgramAnalysis()%></div>
+            </div>
+          </div>
+
+          <div class="single" id="single-<%=++orderNumer%>">
+            <div class="title"><span class="order-number"><%=orderNumer%>&nbsp;[程序改错题]&nbsp;</span>
+              <%=programList.get(1).getProgramTitle()%>
+            </div>
+            <div class="code-div">
+              <div class="mdl-textfield mdl-js-textfield">
+                  <textarea class="mdl-textfield__input" type="text" rows= "20" id="code2" name="code<%=programList.get(1).getProgramId()%>"><%=paper.getUserProgram().get(1)%>
+                  </textarea>
+                <label class="mdl-textfield__label" for="code2">code...</label>
+              </div>
+            </div>
+            <div class="answer">参考答案:&nbsp;<br><span class="answer-text"><%=programList.get(1).getHTMLProgramAnswer()%></span></div>
+            <div class="analysis">
+              <div class="analysis-inside">参考解析:&nbsp;<%=programList.get(1).getProgramAnalysis()%></div>
+            </div>
+          </div>
+
+          <div class="single" id="single-<%=++orderNumer%>">
+            <div class="title"><span class="order-number"><%=orderNumer%>&nbsp;[程序设计题]&nbsp;</span>
+              <%=programList.get(2).getProgramTitle()%>
+            </div>
+            <div class="code-div">
+              <div class="mdl-textfield mdl-js-textfield">
+                  <textarea class="mdl-textfield__input" type="text" rows= "20" id="code3" name="code<%=programList.get(2).getProgramId()%>"><%=paper.getUserProgram().get(2)%>
+                  </textarea>
+                <label class="mdl-textfield__label" for="code3">code...</label>
+              </div>
+            </div>
+            <div class="answer">参考答案:&nbsp;<br><span class="answer-text"><%=programList.get(2).getHTMLProgramAnswer()%></span></div>
+            <div class="analysis">
+              <div class="analysis-inside">参考解析:&nbsp;<%=programList.get(2).getProgramAnalysis()%></div>
+            </div>
+          </div>
+          <%}%>
+
         </div>
-        <div class="main-right">
-          <div class="card-title">答题卡&nbsp;&nbsp;&nbsp;<span class="progress">0/43</span></div>
+        <div class="main-right" id="right">
+          <div class="card-title">答题卡&nbsp;&nbsp;&nbsp;<span class="progress"><%=paper.getCheckCount()%>/<%=orderNumer++%></span></div>
           <div class="card">
-            <div class="card-top">
-              <div class="number">1</div>
-              <div class="number">2</div>
-              <div class="number">3</div>
-              <div class="number">4</div>
-              <div class="number">5</div>
-              <div class="number">6</div>
-              <div class="number">7</div>
-              <div class="number">8</div>
-              <div class="number">9</div>
-              <div class="number">10</div>
-              <div class="number">11</div>
+            <div class="card-top" id="card-top">
+              <script>
+                  var card_top = document.getElementById('card-top');
+                  var resultArrayStr = '<%=paper.getResultArray()%>';
+                  var resultArray = resultArrayStr.split(" ");
+                  for (var i = 1; i < <%=orderNumer%>; i++)
+                  {
+                      var number_a = document.createElement('a');
+                      number_a.href = '#single-' + i.toString();
+                      number_a.className = 'number-a';
+                      var number_div = document.createElement('div');
+                      number_div.className = 'number';
+                      number_div.id = 'number-' + i.toString();
+                      number_div.innerText = i.toString();
+                      if ('0' === resultArray[i-1])
+                      {
+                          number_div.style.backgroundColor = '#FF4040';
+                          number_div.style.color = '#FFF';
+                      }
+                      if ('1' === resultArray[i-1])
+                      {
+                          number_div.style.backgroundColor = '#7CCD7C';
+                          number_div.style.color = '#FFF';
+                      }
+                      number_a.appendChild(number_div);
+                      card_top.appendChild(number_a);
+                  }
+              </script>
+            </div>
+            <div class="card-bottom">
+              <%int size = paper.getExerciseList().size();%>
+              选择题:共<%=size%>道,正确<%=size-paper.getWrongCount()%>道，错误<%=paper.getWrongCount()%>道
             </div>
           </div>
         </div>

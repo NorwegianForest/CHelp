@@ -65,7 +65,7 @@ public class Course {
         return courseList;
     }
 
-    public String getTeacherName() {
+    public TeacherUser getTeacher() {
         return DataProcess.findTeacher(teacherId);
     }
 

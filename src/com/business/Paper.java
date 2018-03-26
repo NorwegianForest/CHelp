@@ -1,9 +1,15 @@
 package com.business;
 
+import cn.superman.sandbox.core.RequestQueue;
+import cn.superman.sandbox.core.ResponseQueue;
+import cn.superman.sandbox.core.Sandbox;
+import cn.superman.sandbox.dto.Request;
 import com.DBQuery.DataProcess;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.xml.crypto.Data;
 import java.sql.Connection;
+import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -19,7 +25,11 @@ public class Paper {
     private String type; // 试卷的类型
     private int courseId; // 对应的课程id
     private List<Exercise> exerciseList = new ArrayList<>(); // 试卷包含的试题
-    private int wrongCount; // 用户在此试题卷答对的提数
+    private int wrongCount; // 用户在此试题卷答错的提数
+    private int checkCount;
+    private List<String> userProgram;
+
+    public Paper(){}
 
     /**
      * 构造出一份试卷并包含所有试题
@@ -55,11 +65,33 @@ public class Paper {
      */
     public Paper(int id, HttpServletRequest request, String userName) throws SQLException {
         wrongCount = 0;
+        checkCount = 0;
         this.id = id;
         loadExerciseList();
         for (Exercise exercise : exerciseList) {
             // 根据题目的id查找request的对应参数，得到用户选择的选项，再赋值给对应的Exercise对象，并判断正误，并保存错题
             exercise.setUserCheck(this, request.getParameter(Integer.toString(exercise.getId())), userName);
+        }
+        userProgram = new ArrayList<>();
+        for (Program program : getProgramList()) {
+            userProgram.add(request.getParameter("code" + program.getProgramId()));
+        }
+        // TODO 在此处判断程序题正误然后存入数据库
+
+        Sandbox sandbox = new Sandbox();
+        RequestQueue requestQueue = new RequestQueue();
+        ResponseQueue responseQueue = new ResponseQueue();
+        Request codeRequest = new Request();
+        codeRequest.setData(userProgram.get(0));
+        codeRequest.setuserId(userName);
+        codeRequest.setproblemID("1");
+        try {
+            RequestQueue.requestQueue.put(codeRequest);
+            sandbox.startSandbox();
+            responseQueue.startResponseQueue();
+            requestQueue.startRequestQueue();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
     }
 
@@ -105,8 +137,29 @@ public class Paper {
         return exerciseList;
     }
 
+    public List<Program> getProgramList() {
+        String sql = "select * from program where paper_id=" + id + " order by program_type";
+        return DataProcess.getProgramList(sql);
+    }
+
+    public String getResultArray() {
+        StringBuilder str = new StringBuilder();
+        for (Exercise exercise : exerciseList) {
+            if (exercise.isCorrect()) {
+                str.append("1 ");
+            } else {
+                str.append("0 ");
+            }
+        }
+        return str.toString();
+    }
+
     public void addWrongCount() {
         wrongCount ++;
+    }
+
+    public void addCheckCount() {
+        checkCount ++;
     }
 
     public int getRightCount() {
@@ -150,6 +203,22 @@ public class Paper {
 
     public int getWrongCount() {
         return wrongCount;
+    }
+
+    public List<String> getUserProgram() {
+        return userProgram;
+    }
+
+    public void setUserProgram(List<String> userProgram) {
+        this.userProgram = userProgram;
+    }
+
+    public int getCheckCount() {
+        return checkCount;
+    }
+
+    public void setCheckCount(int checkCount) {
+        this.checkCount = checkCount;
     }
 
     public void setWrongCount(int wrongCount) {

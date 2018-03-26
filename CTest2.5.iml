@@ -40,5 +40,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="material" level="application" />
+    <orderEntry type="library" name="jna" level="project" />
   </component>
 </module>

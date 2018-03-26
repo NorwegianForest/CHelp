@@ -339,22 +339,30 @@ public class DataProcess {
 		}
 	}
 
-	public static String findTeacher(int teacherId) {
+	public static TeacherUser findTeacher(int teacherId) {
 		String sql = "select * from users where id=" + teacherId;
-		String name = null;
+		TeacherUser teacherUser = null;
 		Connection con = getConnection();
 		try {
 			Statement s = con.createStatement();
 			ResultSet rs = s.executeQuery(sql);
-			rs.next();
-			name = rs.getString("name");
+			if (rs.next()) {
+				teacherUser = new TeacherUser();
+				teacherUser.setId(rs.getInt("id"));
+				teacherUser.setUserName(rs.getString("username"));
+				teacherUser.setUniversity(rs.getString("university"));
+				teacherUser.setName(rs.getString("name"));
+				teacherUser.setTitle(rs.getString("title"));
+				teacherUser.setIntroduce(rs.getString("introduce"));
+			}
 			rs.close();
 			s.close();
 			con.close();
+			return teacherUser;
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		return name;
+		return null;
 	}
 
 	public static List<Video> getVideoList(int page) {
@@ -420,5 +428,30 @@ public class DataProcess {
 			e.printStackTrace();
 		}
 		return course;
+	}
+
+	public static List<Program> getProgramList(String sql) {
+		List<Program> programList = new ArrayList<>();
+		Connection con = getConnection();
+		try {
+			Statement s = con.createStatement();
+			ResultSet rs = s.executeQuery(sql);
+			while (rs.next()) {
+				programList.add(new Program(rs.getInt("program_id"),
+						rs.getString("program_title"),
+						rs.getString("program_code"),
+						rs.getString("program_answer"),
+						rs.getString("program_analysis"),
+						rs.getInt("program_type"),
+						rs.getInt("paper_id")));
+			}
+			rs.close();
+			s.close();
+			con.close();
+			return programList;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return null;
 	}
 }

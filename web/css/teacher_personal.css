@@ -1,0 +1,30 @@
+@charset "UTF-8";
+.main-top {
+    background-color: #5c7ba3;
+    padding: 40px;
+}
+.main-top-center, .main-main {
+    margin-right: auto;
+    margin-left: auto;
+    width: 800px;
+}
+.teacher-name {
+    color: #FFF;
+    font-size: 24px;
+}
+.teacher-intro {
+    color: #FFF;
+    font-size: 12px;
+}
+.main-main {
+    padding-top: 40px;
+}
+.title {
+    font-size: 20px;
+}
+.line {
+    height: 1px;
+    background-color: #BBBBBB;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

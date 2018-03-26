@@ -7,6 +7,15 @@
         <element id="directory" name="classes">
           <element id="module-output" name="CTest2.5" />
         </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/lib/jna.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/jasper.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/jsp-api.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/jasper-el.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/jstl-1.0.2.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/servlet-api.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/mysql-connector-java-5.1.7-bin.jar" />
+        </element>
       </element>
     </root>
   </artifact>

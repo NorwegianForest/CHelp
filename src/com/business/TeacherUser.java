@@ -17,9 +17,9 @@ public class TeacherUser extends OrdinUser {
         super();
     }
 
-    public TeacherUser(String name) {
-        this.name = name;
-        String sql = "select * from users where name='" + name + "'";
+    public TeacherUser(String userName) {
+        this.userName = userName;
+        String sql = "select * from users where username='" + userName + "'";
         DataProcess.findTeacher(sql, this);
     }
 

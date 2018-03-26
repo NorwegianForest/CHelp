@@ -45,6 +45,17 @@ form {
 }
 .main-right {
     width: 285px;
+    bottom: 28px;
+    left: 0;
+    position: fixed;
+}
+.fix {
+    height: 200px;
+    width: 285px;
+    position: fixed;
+    left: 200px;
+    top: 200px;
+    background-color: #000;
 }
 .title1 {
     height: 50px;
@@ -147,4 +158,11 @@ form {
 }
 .number-a {
     text-decoration: none;
+}
+.code-div {
+    background-color: #FFF;
+    padding: 40px;
+}
+.mdl-textfield, .mdl-js-textfield {
+    width: 605px;
 }

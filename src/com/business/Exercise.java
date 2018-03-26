@@ -75,6 +75,9 @@ public class Exercise {
      */
     public void setUserCheck(Paper paper, String userCheck, String userName) {
         this.userCheck = userCheck == null ? 0:Integer.parseInt(userCheck);
+        if (this.userCheck != 0) {
+            paper.addCheckCount();
+        }
         isCorrect = parseAnswerToInt() == this.userCheck ? true : false; // 判断用户是否作答正确
         if (!isCorrect) { // 错误作答保存错题
             paper.addWrongCount();
@@ -114,6 +117,11 @@ public class Exercise {
 
     public String getTitle() {
         return title;
+    }
+
+    public String getHTMLTitle() {
+        return title.replaceAll(" ", "&nbsp;")
+                .replaceAll("<", "&lt;").replaceAll("\n", "<br>");
     }
 
     public void setTitle(String title) {

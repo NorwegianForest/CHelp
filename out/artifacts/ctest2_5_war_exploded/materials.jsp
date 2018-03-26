@@ -68,7 +68,7 @@
             <a href="materials.jsp?file_name=c-tutorial" class="mdl-layout__tab is-active">在线学习</a>
             <a href="" class="mdl-layout__tab">模考训练</a>
             <a href="videos.jsp?page=1" class="mdl-layout__tab">视频解析</a>
-            <a href="" class="mdl-layout__tab">预测试题</a>
+            <a href="recommend.jsp" class="mdl-layout__tab">推荐试题</a>
         </div>
     </header>
     <main class="mdl-layout__content">

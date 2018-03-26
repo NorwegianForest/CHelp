@@ -28,7 +28,7 @@ public class User {
      */
     public String checkLogin() {
         if (userName == null || "".equals(userName) || "null".equals(userName)) {
-            return "<SCRIPT language=javascript>alert('请先登录...');location.href='user_login.jsp';</SCRIPT>";
+            return "<SCRIPT language=javascript>alert('请先登录...');location.href='login.jsp';</SCRIPT>";
         } else {
             return "";
         }
