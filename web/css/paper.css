@@ -166,3 +166,8 @@ form {
 .mdl-textfield, .mdl-js-textfield {
     width: 605px;
 }
+.right-bottom {
+    right: 40px;
+    bottom: 20px;
+    position: fixed;
+}

@@ -19,7 +19,7 @@ public class MaterialsTable {
     private String htmlCode; // 写入jsp页面的HTML代码
     private StringBuffer sqlBuffer = new StringBuffer("select * from materials"); // 查询语句
 
-    public MaterialsTable() throws SQLException {
+    public MaterialsTable() {
         loadMaterialsList();
     }
 
@@ -44,16 +44,19 @@ public class MaterialsTable {
 
     /**
      * 查询并将结果保存于materialsList中
-     * @throws SQLException
      */
-    private void loadMaterialsList() throws SQLException {
+    private void loadMaterialsList() {
         Connection con = DataProcess.getConnection();
         ResultSet rs = DataProcess.getResult(sqlBuffer.toString(), con);
-        while (rs.next()) {
-            materialList.add(new Material(rs.getString("materials_title"), rs.getString("file_name")));
+        try {
+            while (rs.next()) {
+                materialList.add(new Material(rs.getString("materials_title"), rs.getString("file_name")));
+            }
+            rs.close();
+            con.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
-        rs.close();
-        con.close();
     }
 
     /**

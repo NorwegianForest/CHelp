@@ -107,6 +107,14 @@ public class Exercise {
         }
     }
 
+    public String getCheck(int pos) {
+        String check = "";
+        if (pos == parseAnswerToInt()) {
+            check = "checked";
+        }
+        return check;
+    }
+
     public int getId() {
         return id;
     }

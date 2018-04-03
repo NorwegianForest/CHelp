@@ -5,46 +5,96 @@
   Time: 13:50
   MDL风格的header
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>header</title>
-    <style>
-        @media screen and (max-width: 1050px) {
-            .mdl-layout__header {
-                display: block;
-            }
+<%@ page contentType="text/html;charset=UTF-8" %>
+<%
+    String tab = request.getParameter("tab");
+    String title = "C Help";
+    String color = "#2E323E";
+    String deColor = "#FF4081";
+    switch (tab) {
+        case "2":
+            color = "#C2185B";
+            deColor = "#18FFFF";
+            title = "C语言学习资源";
+            break;
+        case "3":
+            color = "#1A237E";
+            title = "模拟试题";
+            break;
+        case "4":
+            color = "#8E24AA";
+            title = "课程列表";
+            break;
+        case "5":
+            color = "#3E82F7";
+            title = "视频解析";
+            break;
+        case "6":
+            title = "推荐视频";
+            break;
+        default:
+            break;
+    }
+%>
+<style>
+    @media screen and (max-width: 1050px) {
+        .mdl-layout__header {
+            display: block;
         }
-        .mdl-layout__tab-bar-button {
-            background-color: #2E323E;
-        }
-        .mdl-layout__tab:hover {
-            color: #FFF;
-        }
-    </style>
-</head>
-<body>
-
-<header class="mdl-layout__header mdl-layout__header--scroll" style="background-color: #2E323E;">
+    }
+    .mdl-layout__tab-bar-button {
+        background-color: <%=color%>;
+    }
+    .mdl-layout__tab:hover {
+        color: #FFF;
+    }
+    #header {
+        background-color: <%=color%>;
+    }
+    .mdl-layout__tab:hover {
+        color: #FFF;
+    }
+    #tab-bar {
+        background-color: <%=color%>;
+    }
+    .mdl-layout__tab-bar-button {
+        background-color: <%=color%>;
+    }
+    .mdl-list__item:hover {
+        /*background-color: #EEE;*/
+        cursor: pointer;
+    }
+    /*.mdl-list__item-primary-content {*/
+        /*font-size: 14px;*/
+    /*}*/
+    .mdl-layout.is-upgraded .mdl-layout__tab.is-active::after {
+        background: <%=deColor%>;
+    }
+    .mdl-textfield--expandable {
+        height: 67px;
+    }
+    .mdl-layout__drawer-button {
+        height: 24px;
+        margin: 20px 12px;
+    }
+</style>
+<header class="mdl-layout__header mdl-layout__header--scroll" id="header">
     <div class="mdl-layout__header-row">
         <!-- Title -->
-        <span class="mdl-layout-title">C Help</span>
+        <span class="mdl-layout-title"><%=title%></span>
         <div class="mdl-layout-spacer"></div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
             <label class="mdl-button mdl-js-button mdl-button--icon" for="waterfall-exp">
                 <i class="material-icons">search</i>
             </label>
             <div class="mdl-textfield__expandable-holder">
-                <form name="searchForm" method="post" action="search_results.jsp" style="margin-bottom: 0;">
-                    <input class="mdl-textfield__input" type="text" name="keyWord" id="waterfall-exp">
-                </form>
+                <input class="mdl-textfield__input" type="text" name="sample" id="waterfall-exp">
             </div>
         </div>
-        <%  String username = (String)session.getAttribute("username");
-            if (username == null || "".equals(username)) { %>
+        <%  String username = request.getParameter("username");
+            if (username == null || "".equals(username) || "null".equals(username)) { %>
         <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="login.jsp">登录·注册</a>
+            <a class="mdl-navigation__link" href="login.jsp" id="login">登录&nbsp;·&nbsp;注册</a>
         </nav>
         <%  } else { %>
         <ul class="demo-list-icon mdl-list">
@@ -58,18 +108,26 @@
             </li>
         </ul>
         <%  }%>
-        <!-- Add spacer, to align navigation to the right -->
-        <!-- Navigation -->
     </div>
     <!-- Tabs -->
-    <div class="mdl-layout__tab-bar mdl-js-ripple-effect  " style="background-color: #2E323E;">
-        <a href="index.jsp" class="mdl-layout__tab">首页</a>
-        <a href="materials.jsp?file_name=c-tutorial" class="mdl-layout__tab">在线学习</a>
-        <a href="" class="mdl-layout__tab">模考训练</a>
-        <a href="videos.jsp?page=1" class="mdl-layout__tab">视频解析</a>
-        <a href="recommend.jsp" class="mdl-layout__tab">推荐试题</a>
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect" id="tab-bar">
+        <a href="index.jsp" class="mdl-layout__tab<%="1".equals(tab)?" is-active":""%>">首页</a>
+        <a href="materials.jsp?file_name=c-tutorial" class="mdl-layout__tab<%="2".equals(tab)?" is-active":""%>">在线学习</a>
+        <a href="" class="mdl-layout__tab<%="3".equals(tab)?" is-active":""%>">模考训练</a>
+        <a href="" class="mdl-layout__tab<%="4".equals(tab)?" is-active":""%>">课程列表</a>
+        <a href="videos.jsp?page=1" class="mdl-layout__tab<%="5".equals(tab)?" is-active":""%>">视频解析</a>
+        <a href="recommend.jsp" class="mdl-layout__tab<%="6".equals(tab)?" is-active":""%>">推荐试题</a>
     </div>
 </header>
-
-</body>
-</html>
+<div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">C Help</span>
+    <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="index.jsp">首页</a>
+        <a class="mdl-navigation__link" href="personal.jsp">个人中心</a>
+        <a class="mdl-navigation__link" href="materials.jsp?file_name=c-tutorial">在线学习</a>
+        <a class="mdl-navigation__link" href="videos.jsp?page=1">模考训练</a>
+        <a class="mdl-navigation__link" href="">课程列表</a>
+        <a class="mdl-navigation__link" href="">视频解析</a>
+        <a class="mdl-navigation__link" href="">推荐试题</a>
+    </nav>
+</div>

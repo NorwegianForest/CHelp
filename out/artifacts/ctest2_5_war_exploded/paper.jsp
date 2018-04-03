@@ -47,28 +47,16 @@
 <body>
 <div class="mdl-layout mdl-js-layout">
 
-  <%@ include file = "mdl_header.jsp" %>
+  <%String username = (String)session.getAttribute("username");%>
+  <jsp:include page="mdl_header.jsp">
+    <jsp:param name="tab" value="3"/>
+    <jsp:param name="username" value="<%=username%>"/>
+  </jsp:include>
 
   <style>
     @import url(css/paper.css);
   </style>
 
-  <script>
-      function checkboxOnclick(checkbox)
-      {
-          if (checkbox.checked === true)
-          {
-              var checkbox_id = checkbox.id;
-              var num = checkbox_id.split('-')[1];
-              var form_id = 'form-' + num;
-              console.log(form_id);
-              checkbox.form.submit();
-          }
-          else
-          {
-          }
-      }
-  </script>
   <main class="mdl-layout__content">
     <div class="center-div" id="center">
 
@@ -76,7 +64,7 @@
           Paper paper = new Paper(Integer.parseInt(paper_id));%>
 
       <div class="paper-title-div">
-        <div class="paper-title"><div><%=paper.getExerciseList().get(0).getPaperTitle()%></div></div>
+        <div class="paper-title"><div><%=paper.getTitle()%></div></div>
         <div class="paper-detial">本卷共分为 4大题 43小题，作答时间为 120分钟，总分 100 分，60 分及格。</div>
       </div>
 
@@ -126,25 +114,29 @@
               <div class="option-div">
                 <div class="option">
                   <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="<%=optionCount%>">
-                    <input type="radio" id="<%=optionCount++%>" class="mdl-radio__button" name=<%=exercise.getId()%> value="1" onchange="radioCheck(<%=orderNumer%>);">
+                    <input type="radio" id="<%=optionCount++%>" class="mdl-radio__button" name=<%=exercise.getId()%>
+                            value="1" onchange="radioCheck(<%=orderNumer%>);">
                     <span class="mdl-radio__label">A.&nbsp;<%=exercise.getaOption()%></span>
                   </label>
                 </div>
                 <div class="option">
                   <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="<%=optionCount%>">
-                    <input type="radio" id="<%=optionCount++%>" class="mdl-radio__button" name=<%=exercise.getId()%> value="2" onchange="radioCheck(<%=orderNumer%>);">
+                    <input type="radio" id="<%=optionCount++%>" class="mdl-radio__button" name=<%=exercise.getId()%>
+                            value="2" onchange="radioCheck(<%=orderNumer%>);">
                     <span class="mdl-radio__label">B.&nbsp;<%=exercise.getbOption()%></span>
                   </label>
                 </div>
                 <div class="option">
                   <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="<%=optionCount%>">
-                    <input type="radio" id="<%=optionCount++%>" class="mdl-radio__button" name=<%=exercise.getId()%> value="3" onchange="radioCheck(<%=orderNumer%>);">
+                    <input type="radio" id="<%=optionCount++%>" class="mdl-radio__button" name=<%=exercise.getId()%>
+                            value="3" onchange="radioCheck(<%=orderNumer%>);">
                     <span class="mdl-radio__label">C.&nbsp;<%=exercise.getcOption()%></span>
                   </label>
                 </div>
                 <div class="option">
                   <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="<%=optionCount%>">
-                    <input type="radio" id="<%=optionCount++%>" class="mdl-radio__button" name=<%=exercise.getId()%> value="4" onchange="radioCheck(<%=orderNumer%>);">
+                    <input type="radio" id="<%=optionCount++%>" class="mdl-radio__button" name=<%=exercise.getId()%>
+                            value="4" onchange="radioCheck(<%=orderNumer%>);">
                     <span class="mdl-radio__label">D.&nbsp;<%=exercise.getdOption()%></span>
                   </label>
                 </div>
@@ -173,7 +165,8 @@
               </div>
               <div class="code-div">
                 <div class="mdl-textfield mdl-js-textfield">
-                  <textarea class="mdl-textfield__input" type="text" rows= "20" id="code1" name="code<%=programList.get(0).getProgramId()%>"><%=programList.get(0).getProgramCode()%>
+                  <textarea class="mdl-textfield__input" type="text" rows= "20" id="code1"
+                            name="code<%=programList.get(0).getProgramId()%>"><%=programList.get(0).getProgramCode()%>
                   </textarea>
                   <label class="mdl-textfield__label" for="code1">code...</label>
                 </div>
@@ -186,7 +179,8 @@
               </div>
               <div class="code-div">
                 <div class="mdl-textfield mdl-js-textfield">
-                  <textarea class="mdl-textfield__input" type="text" rows= "20" id="code2" name="code<%=programList.get(1).getProgramId()%>"><%=programList.get(1).getProgramCode()%>
+                  <textarea class="mdl-textfield__input" type="text" rows= "20" id="code2"
+                            name="code<%=programList.get(1).getProgramId()%>"><%=programList.get(1).getProgramCode()%>
                   </textarea>
                   <label class="mdl-textfield__label" for="code2">code...</label>
                 </div>
@@ -199,7 +193,8 @@
               </div>
               <div class="code-div">
                 <div class="mdl-textfield mdl-js-textfield">
-                  <textarea class="mdl-textfield__input" type="text" rows= "20" id="code3" name="code<%=programList.get(2).getProgramId()%>"><%=programList.get(2).getProgramCode()%>
+                  <textarea class="mdl-textfield__input" type="text" rows= "20" id="code3"
+                            name="code<%=programList.get(2).getProgramId()%>"><%=programList.get(2).getProgramCode()%>
                   </textarea>
                   <label class="mdl-textfield__label" for="code3">code...</label>
                 </div>
@@ -210,7 +205,10 @@
 
         </div>
         <div class="main-right" id="right">
-          <div class="card-title">答题卡&nbsp;&nbsp;&nbsp;<span class="progress" id="progress">0</span><span class="progress">/<%=orderNumer++%></span></div>
+          <div class="card-title">答题卡&nbsp;&nbsp;&nbsp;
+            <span class="progress" id="progress">0</span>
+            <span class="progress">/<%=orderNumer++%></span>
+          </div>
           <div class="card">
             <div class="card-top" id="card-top">
               <script>
@@ -246,7 +244,7 @@
       </div>
 
     </div>
-    <jsp:include page="mdl_footer.jsp"></jsp:include>
+    <jsp:include page="mdl_footer.jsp"/>
   </main>
 </div>
 

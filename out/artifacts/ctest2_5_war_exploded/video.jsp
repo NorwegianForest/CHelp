@@ -13,11 +13,23 @@
   <link rel="stylesheet" href="mdl/material.min.css">
   <script src="mdl/material.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <style>@import url(css/video.css);</style>
+  <style type="text/css">
+    @media screen and (max-width: 1050px) {
+      .mdl-layout__header {
+        display: block;
+      }
+    }
+  </style>
 </head>
 <body>
 <div class="mdl-layout mdl-js-layout">
-  <%@ include file = "mdl_header.jsp" %>
-  <style>@import url(css/video.css);</style>
+  <%String username = (String)session.getAttribute("username");%>
+  <jsp:include page="mdl_header.jsp">
+    <jsp:param name="tab" value="5"/>
+    <jsp:param name="username" value="<%=username%>"/>
+  </jsp:include>
+
   <%
     String path = DataProcess.query(Video.TABLENAME, Video.ORDERNUMBER, request.getParameter("number"), Video.YOUKUPATH);
     String title = DataProcess.query(Video.TABLENAME, Video.ORDERNUMBER, request.getParameter("number"), Video.VIDEOTITLE);
@@ -49,6 +61,8 @@
       </div>
     </div>
   </div>
+  <main class="mdl-layout__content">
+  </main>
   <%@ include file = "mdl_footer.jsp" %>
 </div>
 

@@ -18,7 +18,11 @@
 
 <div class="mdl-layout mdl-js-layout">
 
-    <jsp:include page="mdl_header.jsp"></jsp:include>
+    <%String username = (String)session.getAttribute("username");%>
+    <jsp:include page="mdl_header.jsp">
+      <jsp:param name="tab" value="1"/>
+      <jsp:param name="username" value="<%=username%>"/>
+    </jsp:include>
 
     <script>
         window.onload=function () {
@@ -80,7 +84,7 @@
             </div>
         </div>
 
-        <jsp:include page="mdl_footer.jsp"></jsp:include>
+        <jsp:include page="mdl_footer.jsp"/>
 
     </main>
 

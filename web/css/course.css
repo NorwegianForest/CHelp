@@ -45,12 +45,24 @@ body {
     font-size: 20px;
     font-weight: bold;
     color: #333333;
-    margin: 10px 0;
-    padding-top: 3px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    display: flex;
 }
 .intro {
     font-size: 16px;
     color: #666666;
-    margin: 10px 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
     padding-left: 24px;
+}
+.intro-title-text {
+    padding-top: 2px;
+}
+.mdl-textfield__input {
+    font-size: 24px;
+}
+form {
+    padding: 0;
+    margin: 0;
 }

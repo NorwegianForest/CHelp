@@ -16,7 +16,6 @@
 <%--需要转码，由于获取参数时有字符编码问题--%>
 <%	String keyWord = DataProcess.transformToUTF8(request.getParameter("keyWord"));%>
 
-<%@ include file = "banner.jsp" %>
 	<div class="container">
 	  	<div class="content">
 			<h1>查找'<%=keyWord %>'的结果：</h1>
@@ -55,6 +54,5 @@
 	  
       	<!-- end .content --></div>
     <!-- end .container --></div>
-<%@ include file = "footer.jsp" %>	  
 </body>
 </html>

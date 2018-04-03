@@ -219,3 +219,7 @@ body {
 .right-right {
     width: 78%;
 }
+.mdl-layout__drawer-button {
+    height: 24px;
+    margin: 20px 12px;
+}

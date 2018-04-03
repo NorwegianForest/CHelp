@@ -23,62 +23,12 @@
 </head>
 <body>
 <div class="mdl-layout mdl-js-layout">
+    <%String username = (String)session.getAttribute("username");%>
+    <jsp:include page="mdl_header.jsp">
+        <jsp:param name="tab" value="1"/>
+        <jsp:param name="username" value="<%=username%>"/>
+    </jsp:include>
 
-    <%--<header class="mdl-layout__header mdl-layout__header--scroll" id="header">--%>
-    <header class="mdl-layout__header mdl-layout__header--waterfall" style="background-color: #2E323E;">
-        <div class="mdl-layout__header-row">
-            <!-- Title -->
-            <span class="mdl-layout-title">C Help</span>
-            <div class="mdl-layout-spacer"></div>
-            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
-                <label class="mdl-button mdl-js-button mdl-button--icon" for="waterfall-exp">
-                    <i class="material-icons">search</i>
-                </label>
-                <div class="mdl-textfield__expandable-holder">
-                    <form name="searchForm" method="post" action="search_results.jsp" style="margin-bottom: 0;">
-                        <input class="mdl-textfield__input" type="text" name="keyWord" id="waterfall-exp">
-                    </form>
-                </div>
-            </div>
-            <%  String username = (String)session.getAttribute("username");
-                if (username == null || "".equals(username)) { %>
-            <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="login.jsp">登录·注册</a>
-            </nav>
-            <%  } else { %>
-            <ul class="demo-list-icon mdl-list">
-                <li class="mdl-list__item">
-                    <a href="personal.jsp" style="text-decoration: none;">
-                    <span class="mdl-list__item-primary-content" style="color: #FFF;">
-                        <i class="material-icons mdl-list__item-icon" style="color: #FFF; margin-right: 12px;">person</i>
-                        <%=username%>
-                    </span>
-                    </a>
-                </li>
-            </ul>
-            <%  }%>
-            <!-- Add spacer, to align navigation to the right -->
-            <!-- Navigation -->
-        </div>
-        <!-- Tabs -->
-        <div class="mdl-layout__tab-bar mdl-js-ripple-effect  " id="tab-bar">
-            <a href="index.jsp" class="mdl-layout__tab is-active">首页</a>
-            <a href="materials.jsp?file_name=c-tutorial" class="mdl-layout__tab">在线学习</a>
-            <a href="" class="mdl-layout__tab">模考训练</a>
-            <a href="videos.jsp?page=1" class="mdl-layout__tab">视频解析</a>
-            <a href="recommend.jsp" class="mdl-layout__tab">推荐试题</a>
-        </div>
-    </header>
-    <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title">C Help</span>
-        <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="index.jsp">首页</a>
-            <a class="mdl-navigation__link" href="personal.jsp">个人中心</a>
-            <a class="mdl-navigation__link" href="materials.jsp?file_name=c-tutorial">在线学习</a>
-            <a class="mdl-navigation__link" href="videos.jsp?page=1">模考训练</a>
-            <a class="mdl-navigation__link" href="">视频解析</a>
-        </nav>
-    </div>
     <main class="mdl-layout__content">
       <div class="center-content"><br><br>
 
@@ -275,7 +225,7 @@
 
       </div>
 
-      <jsp:include page='mdl_footer.jsp' ></jsp:include>
+      <jsp:include page='mdl_footer.jsp'/>
 
     </main>
 

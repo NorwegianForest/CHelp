@@ -105,6 +105,10 @@ public class Course {
         return introduce;
     }
 
+    public String getHTMLIntroduce() {
+        return introduce.replaceAll(" ", "&nbsp;").replaceAll("\r\n", "<br>");
+    }
+
     public void setIntroduce(String introduce) {
         this.introduce = introduce;
     }

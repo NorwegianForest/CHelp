@@ -7,11 +7,10 @@ import cn.superman.sandbox.dto.Request;
 import com.DBQuery.DataProcess;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.xml.crypto.Data;
 import java.sql.Connection;
-import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,16 +33,16 @@ public class Paper {
     /**
      * 构造出一份试卷并包含所有试题
      * @param title 试卷标题
-     * @throws SQLException
      */
-    public Paper(String title) throws SQLException {
+    public Paper(String title) {
         this.title = title;
         loadExerciseList();
     }
 
-    public Paper(int id) throws SQLException {
+    public Paper(int id) {
         this.id = id;
         loadExerciseList();
+        loadTitle();
     }
 
     /**
@@ -61,9 +60,8 @@ public class Paper {
      * @param id 试卷id
      * @param request 上一个页面的请求，带有用户的作答参数
      * @param userName 用户名，用户未登录则为null
-     * @throws SQLException
      */
-    public Paper(int id, HttpServletRequest request, String userName) throws SQLException {
+    public Paper(int id, HttpServletRequest request, String userName) {
         wrongCount = 0;
         checkCount = 0;
         this.id = id;
@@ -104,26 +102,47 @@ public class Paper {
 
     /**
      * 根据id从数据库载入试卷的所有题目
-     * @throws SQLException
      */
-    private void loadExerciseList() throws SQLException {
+    private void loadExerciseList()  {
         String sql = "select * from exercises where paper_id='" + id + "'";
         Connection connection = DataProcess.getConnection();
         ResultSet resultSet = DataProcess.getResult(sql, connection);
-        while (resultSet.next()) {
-            exerciseList.add(new Exercise(resultSet.getInt("exercise_id"),
-                resultSet.getString("exercise_title"),
-                resultSet.getString("a_option"),
-                resultSet.getString("b_option"),
-                resultSet.getString("c_option"),
-                resultSet.getString("d_option"),
-                resultSet.getString("answer"),
-                resultSet.getString("paper_title"),
-                resultSet.getInt("difficulty"),
-                resultSet.getString("analysis")));
+        try {
+            while (resultSet.next()) {
+                exerciseList.add(new Exercise(resultSet.getInt("exercise_id"),
+                        resultSet.getString("exercise_title"),
+                        resultSet.getString("a_option"),
+                        resultSet.getString("b_option"),
+                        resultSet.getString("c_option"),
+                        resultSet.getString("d_option"),
+                        resultSet.getString("answer"),
+                        resultSet.getString("paper_title"),
+                        resultSet.getInt("difficulty"),
+                        resultSet.getString("analysis")));
+            }
+            resultSet.close();
+            connection.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
-        resultSet.close();
-        connection.close();
+    }
+
+    private void loadTitle() {
+        String sql = "select * from papers where paper_id=" + id;
+        Connection con = DataProcess.getConnection();
+        try {
+            Statement s = con.createStatement();
+            ResultSet rs = s.executeQuery(sql);
+            if (rs.next()) {
+                title = rs.getString("paper_title");
+                courseId = rs.getInt("course_id");
+            }
+            rs.close();
+            s.close();
+            con.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     public static List<Paper> getFivePaperList(String type) {

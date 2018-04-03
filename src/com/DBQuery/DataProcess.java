@@ -81,16 +81,38 @@ public class DataProcess {
 	 * @param sql 要执行的语句
 	 */
 	public static void updateDatabase(String sql) {
-		Connection con = DataProcess.getConnection();
+		Connection connection = getConnection();
+		Statement statement = null;
 		try {
-			Statement state = con.createStatement();
-			state.executeUpdate(sql);
-			state.close();
-			con.close();
+			if (connection != null) {
+				statement = connection.createStatement();
+				statement.executeUpdate(sql);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		try {
+			if (statement != null) {
+				statement.close();
+			}
+			if (connection != null) {
+				connection.close();
+			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 	}
+//	public static void updateDatabase(String sql) {
+//		Connection con = DataProcess.getConnection();
+//		try {
+//			Statement state = con.createStatement();
+//			state.executeUpdate(sql);
+//			state.close();
+//			con.close();
+//		} catch (SQLException e) {
+//			e.printStackTrace();
+//		}
+//	}
 
 	/**
 	 * 判断某数据表的某字段中，是否存在这条记录
@@ -186,12 +208,13 @@ public class DataProcess {
 		try {
 			Statement s = con.createStatement();
 			ResultSet rs = s.executeQuery(sql);
-			rs.next();
-			teacher.setId(rs.getInt("id"));
-			teacher.setUniversity(rs.getString("university"));
-			teacher.setName(rs.getString("name"));
-			teacher.setTitle(rs.getString("title"));
-			teacher.setIntroduce(rs.getString("introduce"));
+			if (rs.next()) {
+				teacher.setId(rs.getInt("id"));
+				teacher.setUniversity(rs.getString("university"));
+				teacher.setName(rs.getString("name"));
+				teacher.setTitle(rs.getString("title"));
+				teacher.setIntroduce(rs.getString("introduce"));
+			}
 			rs.close();
 			s.close();
 			con.close();

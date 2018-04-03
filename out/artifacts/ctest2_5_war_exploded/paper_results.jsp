@@ -46,7 +46,11 @@
 <body>
 
 <div class="mdl-layout mdl-js-layout">
-  <%@ include file = "mdl_header.jsp" %>
+  <%String username = (String)session.getAttribute("username");%>
+  <jsp:include page="mdl_header.jsp">
+    <jsp:param name="tab" value="3"/>
+    <jsp:param name="username" value="<%=username%>"/>
+  </jsp:include>
   <style>
     @import url(css/paper.css);
   </style>

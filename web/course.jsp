@@ -16,7 +16,11 @@
 </head>
 <body>
 <div class="mdl-layout mdl-js-layout">
-  <%@ include file = "mdl_header.jsp" %>
+    <%String username = (String)session.getAttribute("username");%>
+    <jsp:include page="mdl_header.jsp">
+      <jsp:param name="tab" value="4"/>
+      <jsp:param name="username" value="<%=username%>"/>
+    </jsp:include>
   <style>@import url(css/course.css);</style>
   <%  String id = request.getParameter("id");
       Course course = new Course(Integer.parseInt(id));%>
@@ -39,9 +43,15 @@
       </div>
     </div>
     <div class="main-div">
-      <div class="intro-title"><i class="material-icons">insert_comment</i>课程简介</div>
-      <div class="intro"><%=course.getIntroduce()%></div>
-      <div class="intro-title"><i class="material-icons">format_list_bulleted</i>试题列表</div>
+      <div class="intro-title">
+        <i class="material-icons">insert_comment</i>
+        <div class="intro-title-text">课程简介</div>
+      </div>
+      <div class="intro"><%=course.getHTMLIntroduce()%></div>
+      <div class="intro-title">
+        <i class="material-icons">format_list_bulleted</i>
+        <div class="intro-title-text">试题列表</div>
+      </div>
       <div class="intro">
         <%if (!course.getPaperList().isEmpty()) {
             for (Paper paper : course.getPaperList()) { %>
@@ -51,6 +61,8 @@
       </div>
     </div>
   </div>
-  <%@ include file = "mdl_footer.jsp" %>
+      <main class="mdl-layout__content">
+      </main>
+  <jsp:include page="mdl_footer.jsp"/>
 </body>
 </html>

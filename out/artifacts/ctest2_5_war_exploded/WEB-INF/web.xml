@@ -84,4 +84,28 @@
     <servlet-name>CollectionServlet</servlet-name>
     <url-pattern>/collection</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>EditCourseServlet</servlet-name>
+    <servlet-class>com.servlet.EditCourseServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditCourseServlet</servlet-name>
+    <url-pattern>/edit_course</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>CreateCoursePaperServlet</servlet-name>
+    <servlet-class>com.servlet.CreateCoursePaperServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateCoursePaperServlet</servlet-name>
+    <url-pattern>/create_course_paper</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>EditCoursePaperServlet</servlet-name>
+    <servlet-class>com.servlet.EditCoursePaperServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditCoursePaperServlet</servlet-name>
+    <url-pattern>/edit_course_paper</url-pattern>
+  </servlet-mapping>
 </web-app>

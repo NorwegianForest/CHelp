@@ -1,0 +1,23 @@
+@charset "UTF-8";
+.main-left {
+    margin-left: auto;
+    margin-right: auto;
+}
+.clear-button {
+    float: right;
+}
+.option-div {
+    padding: 3px 30px;
+}
+.analysis-input {
+    font-size: 14px;
+}
+.title {
+    padding: 15px 15px 0 30px;
+}
+.title-input {
+    font-size: 24px;
+}
+.paper-title {
+    padding-bottom: 0;
+}
