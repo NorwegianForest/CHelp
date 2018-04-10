@@ -1,20 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="gb2312"%>
-    <%@ page import="java.io.*, java.util.*" import="com.DBQuery.DataProcess" import="java.sql.*"%>
-    
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link href="../highlight/styles/default.css" rel="stylesheet">  
-<title>C 语言教程 | C Help</title>
-</head>
-<body>
-<script src="../highlight/highlight.pack.js"></script>  
-<script >hljs.initHighlightingOnLoad();</script>
-
-
-	  
+<%@ page contentType="text/html; charset=utf-8" pageEncoding="gb2312"%>
     <h1>C 程序结构</h1>
     <p>在我们学习 C 语言的基本构建块之前，让我们先来看看一个最小的 C 程序结构，在接下来的章节中可以以此作为参考。</p>
     <hr />
@@ -66,8 +50,3 @@ int main()
 $ ./a.out<br>
 Hello, World!</pre>
     <p>请确保您的路径中已包含 gcc 编译器，并确保在包含源文件 hello.c 的目录中运行它。</p>
-    
-
-    
-</body>
-</html>

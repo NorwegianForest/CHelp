@@ -61,12 +61,8 @@
         background-color: <%=color%>;
     }
     .mdl-list__item:hover {
-        /*background-color: #EEE;*/
         cursor: pointer;
     }
-    /*.mdl-list__item-primary-content {*/
-        /*font-size: 14px;*/
-    /*}*/
     .mdl-layout.is-upgraded .mdl-layout__tab.is-active::after {
         background: <%=deColor%>;
     }
@@ -113,8 +109,8 @@
     <div class="mdl-layout__tab-bar mdl-js-ripple-effect" id="tab-bar">
         <a href="index.jsp" class="mdl-layout__tab<%="1".equals(tab)?" is-active":""%>">首页</a>
         <a href="materials.jsp?file_name=c-tutorial" class="mdl-layout__tab<%="2".equals(tab)?" is-active":""%>">在线学习</a>
-        <a href="" class="mdl-layout__tab<%="3".equals(tab)?" is-active":""%>">模考训练</a>
-        <a href="" class="mdl-layout__tab<%="4".equals(tab)?" is-active":""%>">课程列表</a>
+        <a href="papers.jsp" class="mdl-layout__tab<%="3".equals(tab)?" is-active":""%>">模考训练</a>
+        <a href="courses.jsp" class="mdl-layout__tab<%="4".equals(tab)?" is-active":""%>">课程列表</a>
         <a href="videos.jsp?page=1" class="mdl-layout__tab<%="5".equals(tab)?" is-active":""%>">视频解析</a>
         <a href="recommend.jsp" class="mdl-layout__tab<%="6".equals(tab)?" is-active":""%>">推荐试题</a>
     </div>
@@ -125,9 +121,9 @@
         <a class="mdl-navigation__link" href="index.jsp">首页</a>
         <a class="mdl-navigation__link" href="personal.jsp">个人中心</a>
         <a class="mdl-navigation__link" href="materials.jsp?file_name=c-tutorial">在线学习</a>
-        <a class="mdl-navigation__link" href="videos.jsp?page=1">模考训练</a>
-        <a class="mdl-navigation__link" href="">课程列表</a>
-        <a class="mdl-navigation__link" href="">视频解析</a>
-        <a class="mdl-navigation__link" href="">推荐试题</a>
+        <a class="mdl-navigation__link" href="papers.jsp">模考训练</a>
+        <a class="mdl-navigation__link" href="courses.jsp">课程列表</a>
+        <a class="mdl-navigation__link" href="videos.jsp?page=1">视频解析</a>
+        <a class="mdl-navigation__link" href="recommend.jsp">推荐试题</a>
     </nav>
 </div>

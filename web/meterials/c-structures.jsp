@@ -1,18 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
-    <%@ page import="java.io.*, java.util.*" import="com.DBQuery.DataProcess" import="java.sql.*"%>
-    
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link href="../highlight/styles/default.css" rel="stylesheet">   
-<title>C 语言教程 | C Help</title>
-</head>
-<body>
-<script src="../highlight/highlight.pack.js"></script>  
-<script >hljs.initHighlightingOnLoad();</script>
-
+<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <h1>C 结构体</h1>
 <div>
   <p>C 数组允许定义可存储相同类型数据项的变量，<strong>结构</strong>是 C 编程中另一种用户自定义的可用的数据类型，它允许您存储不同类型的数据项。</p>
@@ -350,8 +336,3 @@ Book book_id : 6495700</pre>
   </div>
 </div>
 <p>上例程序中定义了位域结构 bs，三个位域为 a、b、c。说明了 bs 类型的变量 bit 和指向 bs 类型的指针变量 pbit。这表示位域也是可以使用指针的。</p>	  
-	  
-	  
-
-</body>
-</html>

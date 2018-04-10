@@ -35,6 +35,18 @@ public class TeacherUser extends OrdinUser {
         DataProcess.loadCourseList(sql, courseList);
     }
 
+    public String checkTeacher() {
+        if (userName == null || "".equals(userName) || "null".equals(userName)) {
+            return "<SCRIPT language=javascript>alert('请先登录...');location.href='login.jsp';</SCRIPT>";
+        } else {
+            if (this.name == null || "".equals(name) || "null".equals(name)) {
+                return "<SCRIPT language=javascript>alert('请先注册教师用户...');location.href='register_teacher.jsp';</SCRIPT>";
+            } else {
+                return "";
+            }
+        }
+    }
+
     public List<Course> getCourseList() {
         return courseList;
     }

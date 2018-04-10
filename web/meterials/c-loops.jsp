@@ -1,20 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
-    <%@ page import="java.io.*, java.util.*" import="com.DBQuery.DataProcess" import="java.sql.*"%>
-    
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link href="../highlight/styles/default.css" rel="stylesheet">   
-<title>C 语言教程 | C Help</title>
-</head>
-<body>
-<script src="../highlight/highlight.pack.js"></script>  
-<script >hljs.initHighlightingOnLoad();</script>
-
-
-	  
+<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
   <h1>C 循环</h1>
   <div>
     <p>有的时候，我们可能需要多次执行同一块代码。一般情况下，语句是按顺序执行的：函数中的第一个语句先执行，接着是第二个语句，依此类推。</p>
@@ -94,8 +78,3 @@ int main ()
   </div>
   <p>当条件表达式不存在时，它被假设为真。您也可以设置一个初始值和增量表达式，但是一般情况下，C 程序员偏向于使用 for(;;) 结构来表示一个无限循环。</p>
   <p><strong>注意：</strong>您可以按 Ctrl + C 键终止一个无限循环。</p>	  
-	  
-	  
-
-</body>
-</html>

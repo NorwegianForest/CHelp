@@ -97,7 +97,7 @@ public class Exercise {
      * 将字符串类型的字母转换成数字
      * @return 1234对应ABCD
      */
-    public int parseAnswerToInt() {
+    private int parseAnswerToInt() {
         switch (answer) {
             case "A": return 1;
             case "B": return 2;
@@ -107,12 +107,34 @@ public class Exercise {
         }
     }
 
+    public String getUserOption() {
+        String option;
+        switch (userCheck) {
+            case 1: option = "A";break;
+            case 2: option = "B";break;
+            case 3: option = "C";break;
+            case 4: option = "D";break;
+            default: option = "N";break;
+        }
+        return option;
+    }
+
     public String getCheck(int pos) {
         String check = "";
         if (pos == parseAnswerToInt()) {
             check = "checked";
         }
         return check;
+    }
+
+    public String getCollection(String username) {
+        String collection = "";
+        String sql = "select count(*) from collection where exercise_id=" + id + " and username='" + username + "'";
+        int count = DataProcess.getCount(sql);
+        if (count == 1) {
+            collection = " checked ";
+        }
+        return collection;
     }
 
     public int getId() {

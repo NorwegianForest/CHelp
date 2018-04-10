@@ -1,19 +1,14 @@
 package com.servlet;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.sql.Statement;
-
+import com.DBQuery.DataProcess;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.DBQuery.DataProcess;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 
 /**
@@ -48,7 +43,7 @@ public class UserRegisterServlet extends HttpServlet {
 		} else {
 			String sql = "insert into users(username,password,type)values('" + username + "','" + password + "','user')";
 			DataProcess.updateDatabase(sql);
-			out.print("<SCRIPT language=javascript>alert('注册成功，请登录...');location.href='user_login.jsp';</SCRIPT>");
+			out.print("<SCRIPT language=javascript>alert('注册成功，请登录...');location.href='login.jsp';</SCRIPT>");
 		}
 	}
 

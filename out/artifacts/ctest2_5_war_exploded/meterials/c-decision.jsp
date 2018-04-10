@@ -1,20 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
-    <%@ page import="java.io.*, java.util.*" import="com.DBQuery.DataProcess" import="java.sql.*"%>
-    
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link href="../highlight/styles/default.css" rel="stylesheet">   
-<title>C 语言教程 | C Help</title>
-</head>
-<body>
-<script src="../highlight/highlight.pack.js"></script>  
-<script >hljs.initHighlightingOnLoad();</script>
-
-
-	  
+<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
     <h1>C 判断</h1>
     <div>
       <p>判断结构要求程序员指定一个或多个要评估或测试的条件，以及条件为真时要执行的语句（必需的）和条件为假时要执行的语句（可选的）。</p>
@@ -77,9 +61,3 @@ int main()
       </div>
     </div>
     <p>&nbsp;</p>	  
-	  
-	  
-	  
-
-</body>
-</html>

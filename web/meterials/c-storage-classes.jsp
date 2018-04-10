@@ -1,20 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="gb2312"%>
-    <%@ page import="java.io.*, java.util.*" import="com.DBQuery.DataProcess" import="java.sql.*"%>
-    
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link href="../highlight/styles/default.css" rel="stylesheet">  
-<title>C 语言教程 | C Help</title>
-</head>
-<body>
-<script src="../highlight/highlight.pack.js"></script>  
-<script >hljs.initHighlightingOnLoad();</script>
-
-
-	
+<%@ page contentType="text/html; charset=utf-8" pageEncoding="gb2312"%>
     <h1>C 存储类</h1>
     <div>
       <p>存储类定义 C 程序中变量/函数的范围（可见性）和生命周期。这些说明符放置在它们所修饰的类型之前。下面列出 C 程序中可用的存储类：</p>
@@ -136,8 +120,3 @@ void write_extern(void)
     <pre> $ gcc main.c support.c</pre>
     <p>这会产生 <strong>a.out</strong> 可执行程序，当程序被执行时，它会产生下列结果：</p>
     <pre>count is 5</pre>
-    
-
-    
-</body>
-</html>

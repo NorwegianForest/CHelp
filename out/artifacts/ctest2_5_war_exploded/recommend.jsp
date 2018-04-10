@@ -14,32 +14,9 @@
   <link rel="stylesheet" href="mdl/material.min.css">
   <script src="mdl/material.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <SCRIPT>
-      window.onload = function () {
-          var wide = document.body.clientWidth - 20;
-          var right = document.getElementById('right');
-          if (wide > 1000)
-          {
-              right.style.left = (wide - 1000) / 2 + 717;
-          }
-          else
-          {
-              right.style.left = 717;
-          }
-      };
-      window.onresize = function () {
-          var wide = document.body.clientWidth - 20;
-          var right = document.getElementById('right');
-          if (wide > 1000)
-          {
-              right.style.left = (wide - 1000) / 2 + 717;
-          }
-          else
-          {
-              right.style.left = 717;
-          }
-      };
-  </SCRIPT>
+  <style type="text/css">@import url(css/paper.css);</style>
+  <script src="js/paper_card.js"></script>
+  <link rel="icon" href="images/logo16.png" type="image/x-icon">
 </head>
 <body>
 <div class="mdl-layout mdl-js-layout">
@@ -48,9 +25,6 @@
     <jsp:param name="tab" value="6"/>
     <jsp:param name="username" value="<%=username%>"/>
   </jsp:include>
-  <style type="text/css">
-    @import url(css/paper.css);
-  </style>
   <main class="mdl-layout__content">
     <div class="center-div" id="center">
       <div class="paper-title-div">
@@ -58,7 +32,6 @@
         <div class="paper-detial">本卷根据您的作答情况，自动推荐。</div>
       </div>
         <%RecommendPaper paper = new RecommendPaper(username);%>
-
         <div class="main-div">
           <div class="main-left">
             <div class="title1">一、选择题</div>
@@ -91,46 +64,49 @@
                     return false;
                 }
             </script>
-
             <form name="paper" action="recommend_result.jsp" method="post">
               <input type="hidden" name="list" value="<%=paper.getSelectedStr()%>">
               <%int orderNumer = 0;
                 int optionCount = 1;
-                for (Exercise exercise : paper.getExerciseList()) { orderNumer++;%>
-
+                for (Exercise e : paper.getExerciseList()) { orderNumer++;%>
               <div class="single" id="single-<%=orderNumer%>">
                 <div class="title"><span class="order-number"><%=orderNumer%>&nbsp;[单选题]</span>
-                  <span><%=exercise.getHTMLTitle()%></span>
+                  <span><%=e.getHTMLTitle()%></span>
                 </div>
                 <div class="option-div">
                   <div class="option">
                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="<%=optionCount%>">
-                      <input type="radio" id="<%=optionCount++%>" class="mdl-radio__button" name=<%=exercise.getId()%> value="1" onchange="radioCheck(<%=orderNumer%>);">
-                      <span class="mdl-radio__label">A.&nbsp;<%=exercise.getaOption()%></span>
+                      <input type="radio" id="<%=optionCount++%>" class="mdl-radio__button" name=<%=e.getId()%> 
+                              value="1" onchange="radioCheck(<%=orderNumer%>);">
+                      <span class="mdl-radio__label">A.&nbsp;<%=e.getaOption()%></span>
                     </label>
                   </div>
                   <div class="option">
                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="<%=optionCount%>">
-                      <input type="radio" id="<%=optionCount++%>" class="mdl-radio__button" name=<%=exercise.getId()%> value="2" onchange="radioCheck(<%=orderNumer%>);">
-                      <span class="mdl-radio__label">B.&nbsp;<%=exercise.getbOption()%></span>
+                      <input type="radio" id="<%=optionCount++%>" class="mdl-radio__button" name=<%=e.getId()%> 
+                              value="2" onchange="radioCheck(<%=orderNumer%>);">
+                      <span class="mdl-radio__label">B.&nbsp;<%=e.getbOption()%></span>
                     </label>
                   </div>
                   <div class="option">
                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="<%=optionCount%>">
-                      <input type="radio" id="<%=optionCount++%>" class="mdl-radio__button" name=<%=exercise.getId()%> value="3" onchange="radioCheck(<%=orderNumer%>);">
-                      <span class="mdl-radio__label">C.&nbsp;<%=exercise.getcOption()%></span>
+                      <input type="radio" id="<%=optionCount++%>" class="mdl-radio__button" name=<%=e.getId()%> 
+                              value="3" onchange="radioCheck(<%=orderNumer%>);">
+                      <span class="mdl-radio__label">C.&nbsp;<%=e.getcOption()%></span>
                     </label>
                   </div>
                   <div class="option">
                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="<%=optionCount%>">
-                      <input type="radio" id="<%=optionCount++%>" class="mdl-radio__button" name=<%=exercise.getId()%> value="4" onchange="radioCheck(<%=orderNumer%>);">
-                      <span class="mdl-radio__label">D.&nbsp;<%=exercise.getdOption()%></span>
+                      <input type="radio" id="<%=optionCount++%>" class="mdl-radio__button" name=<%=e.getId()%> 
+                              value="4" onchange="radioCheck(<%=orderNumer%>);">
+                      <span class="mdl-radio__label">D.&nbsp;<%=e.getdOption()%></span>
                     </label>
                   </div>
                   <div class="collection">
                     <div>
                       <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="icon-<%=orderNumer%>">
-                        <input type="checkbox" id="icon-<%=orderNumer%>" class="mdl-icon-toggle__input">
+                        <input type="checkbox" id="icon-<%=orderNumer%>" class="mdl-icon-toggle__input" 
+                               onclick="clc(<%=e.getId()%>, '<%=username%>')" <%=e.getCollection(username)%>>
                         <i class="mdl-icon-toggle__label material-icons">star</i>
                       </label>
                     </div>
@@ -138,12 +114,14 @@
                   </div>
                 </div>
               </div>
-
               <%}%>
             </form>
           </div>
           <div class="main-right" id="right">
-            <div class="card-title">答题卡&nbsp;&nbsp;&nbsp;<span class="progress" id="progress">0</span><span class="progress">/<%=orderNumer++%></span></div>
+            <div class="card-title">
+              答题卡&nbsp;&nbsp;&nbsp;
+              <span class="progress" id="progress">0</span><span class="progress">/<%=orderNumer++%></span>
+            </div>
             <div class="card">
               <div class="card-top" id="card-top">
                 <script>
@@ -160,14 +138,12 @@
                         number_a.appendChild(number_div);
                         card_top.appendChild(number_a);
                     }
+                    function Submit()
+                    {
+                        document.paper.submit();
+                    }
                 </script>
               </div>
-              <script>
-                  function Submit()
-                  {
-                      document.paper.submit();
-                  }
-              </script>
               <div class="card-bottom">
                 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="Submit()">
                   完成测试
@@ -177,13 +153,8 @@
           </div>
         </div>
     </div>
-
-
-
-    <jsp:include page="mdl_footer.jsp"></jsp:include>
+    <jsp:include page="mdl_footer.jsp"/>
   </main>
-
 </div>
-
 </body>
 </html>

@@ -1,0 +1,53 @@
+@charset "UTF-8";
+.courses-center {
+    width: 800px;
+    margin: 30px auto;
+}
+.courses-title {
+    background-color: #EEEEEE;
+    padding: 10px 0 10px 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.course-a {
+    text-decoration: none;
+}
+.course-single {
+    padding: 20px 15px 20px 0;
+    display: flex;
+    border-bottom: 1px solid #E6E6E6;
+}
+.course-single:hover {
+    background-color: #F5F5F7;
+}
+.image {
+    width: 350px;
+    height: 150px;
+}
+.intro-div {
+    width: 100%;
+    padding-left: 15px;
+}
+.title {
+    font-size: 18px;
+    line-height: 30px;
+    color: #333;
+}
+.teacher {
+    color: #999;
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 5px;
+}
+.intro {
+    color: #666;
+    font-size: 13px;
+    line-height: 22px;
+    margin-top: 15px;
+}
+.time {
+    color: #999;
+    font-size: 13px;
+    line-height: 15px;
+    margin-top: 22px;
+}

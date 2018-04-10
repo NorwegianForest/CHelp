@@ -1,19 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
-    <%@ page import="java.io.*, java.util.*" import="com.DBQuery.DataProcess" import="java.sql.*"%>
-    
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link href="../highlight/styles/default.css" rel="stylesheet">   
-<title>C 语言教程 | C Help</title>
-</head>
-<body>
-<script src="../highlight/highlight.pack.js"></script>  
-<script >hljs.initHighlightingOnLoad();</script>
-
-
+<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <h1>C 错误处理</h1>
 <div>
   <p>C 语言不提供对错误处理的直接支持，但是作为一种系统编程语言，它以返回值的形式允许您访问底层数据。在发生错误时，大多数的 C 或 UNIX 函数调用返回 1 或 NULL，同时会设置一个错误代码 <strong>errno</strong>，该错误代码是全局变量，表示在函数调用期间发生了错误。您可以在 &lt;error.h&gt; 头文件中找到各种各样的错误代码。</p>
@@ -99,8 +84,3 @@ main()
 }</code></pre>
 <p>当上面的代码被编译和执行时，它会产生下列结果：</p>
 <pre>quotient 变量的值为 : 4</pre>	  
-	  
-	  
-	 
-</body>
-</html>

@@ -1,20 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="gb2312"%>
-    <%@ page import="java.io.*, java.util.*" import="com.DBQuery.DataProcess" import="java.sql.*"%>
-    
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link href="../highlight/styles/default.css" rel="stylesheet">  
-<title>C 语言教程 | C Help</title>
-</head>
-<body>
-<script src="../highlight/highlight.pack.js"></script>  
-<script >hljs.initHighlightingOnLoad();</script>
-
-
-	  
+<%@ page contentType="text/html; charset=utf-8" pageEncoding="gb2312"%>
     <h1>C 常量</h1>
     <div>
       <p>常量是固定值，在程序执行期间不会改变。这些固定的值，又叫做<strong>字面量</strong>。</p>
@@ -198,8 +182,3 @@ int main()
     <p>当上面的代码被编译和执行时，它会产生下列结果：</p>
     <pre>value of area : 50</pre>
     <p>请注意，把常量定义为大写字母形式，是一个很好的编程实践。</p>
-    
-
-    
-</body>
-</html>

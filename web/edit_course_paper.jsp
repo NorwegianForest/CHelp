@@ -1,12 +1,11 @@
-<%@ page import="com.business.OrdinUser" %>
-<%@ page import="com.business.Paper" %>
+<%@ page import="com.business.Course" %>
 <%@ page import="com.business.Exercise" %>
-<%@ page import="com.business.Course" %><%--
+<%@ page import="com.business.Paper" %>
+<%--
   Created by IntelliJ IDEA.
   User: szl
   Date: 2018/4/2
   Time: 14:55
-  To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
@@ -15,6 +14,8 @@
   <jsp:include page="mdl_personal_head.jsp"/>
   <style>@import url(css/paper.css);</style>
   <style>@import url(css/edit_course_paper.css);</style>
+  <script src="js/edit_course_paper.js"></script>
+  <link rel="icon" href="images/logo16.png" type="image/x-icon">
 </head>
 <body>
 <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
@@ -23,41 +24,8 @@
     <jsp:param name="username" value="<%=username%>"/>
   </jsp:include>
   <main class="mdl-layout__content">
-    <%--登录检测--%>
-    <%=new OrdinUser(username).checkLogin() %>
     <%String paper_id = request.getParameter("paper_id");
       Paper paper = new Paper(Integer.parseInt(paper_id));%>
-    <script type="text/javascript">
-      function delSub (exercise_id) {
-          var upForm = document.getElementById("update");
-          var delInput = document.getElementById("delete_id");
-          var addInput = document.getElementById("add");
-          delInput.value = exercise_id;
-          addInput.value = 0;
-          upForm.submit();
-      }
-      function addSub () {
-          var upForm = document.getElementById("update");
-          var delInput = document.getElementById("delete_id");
-          var addInput = document.getElementById("add");
-          delInput.value = 0;
-          addInput.value = 1;
-          upForm.submit();
-      }
-      function upSub () {
-          var upForm = document.getElementById("update");
-          var delInput = document.getElementById("delete_id");
-          var addInput = document.getElementById("add");
-          delInput.value = 0;
-          addInput.value = 0;
-          upForm.submit();
-      }
-      function check () {
-          var delInput = document.getElementById("delete_id");
-          var addInput = document.getElementById("add");
-          return !(delInput.value == null || addInput.value == null);
-      }
-    </script>
     <form method="post" id="update" action="/edit_course_paper" onsubmit="check()">
       <input type="hidden" name="paper_id" value="<%=paper_id%>">
       <input type="hidden" name="delete_id" id="delete_id">
@@ -88,7 +56,7 @@
             <div class="title">
               <span class="order-number"><%=num%>&nbsp;[单选题]</span>
               <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored clear-button"
-                      onclick="delSub(<%=e.getId()%>)">
+                      style="height: 35px;min-width: 35px;width: 35px;" onclick="delSub(<%=e.getId()%>)">
                 <i class="material-icons">clear</i>
               </button>
               <input type="hidden" name="exercise_id" value="<%=e.getId()%>">
@@ -164,7 +132,6 @@
         </div>
       </div>
     </form>
-
   </main>
 </div>
 </body>

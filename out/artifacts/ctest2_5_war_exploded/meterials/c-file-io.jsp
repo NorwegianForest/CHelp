@@ -1,19 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
-    <%@ page import="java.io.*, java.util.*" import="com.DBQuery.DataProcess" import="java.sql.*"%>
-    
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link href="../highlight/styles/default.css" rel="stylesheet">   
-<title>C 语言教程 | C Help</title>
-</head>
-<body>
-<script src="../highlight/highlight.pack.js"></script>  
-<script >hljs.initHighlightingOnLoad();</script>
-
-	  
+<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <h1>C 文件读写</h1>
 <div>
   <p>上一章我们讲解了 C 语言处理的标准输入和输出设备。本章我们将介绍 C 程序员如何创建、打开、关闭文本文件或二进制文件。</p>
@@ -133,8 +118,3 @@ size_t fwrite(const void *ptr, size_t size_of_elements, size_t number_of_element
   </div>
 </div>
 <p>这两个函数都是用于存储块的读写 - 通常是数组或结构体。</p>	  
-	  
-	  
-
-</body>
-</html>

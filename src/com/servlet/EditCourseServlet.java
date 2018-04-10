@@ -17,9 +17,12 @@ public class EditCourseServlet extends HttpServlet {
 
         String id = request.getParameter("id");
         String title = request.getParameter("title");
+        String start = request.getParameter("start");
+        String end = request.getParameter("end");
         String introduce = request.getParameter("introduce");
 
-        String sql = "update course set title='" + title + "', introduce='" + introduce + "' where id=" + id;
+        String sql = "update course set title='" + title + "', introduce='" + introduce + "', start_date='" + start +
+                "', end_date='" + end + "' where id=" + id;
         DataProcess.updateDatabase(sql);
 
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("teacher_course.jsp?id=" + id);

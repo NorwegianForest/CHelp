@@ -11,7 +11,9 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -27,6 +29,7 @@ public class Paper {
     private int wrongCount; // 用户在此试题卷答错的提数
     private int checkCount;
     private List<String> userProgram;
+    private static int t = 1;
 
     public Paper(){}
 
@@ -65,32 +68,56 @@ public class Paper {
         wrongCount = 0;
         checkCount = 0;
         this.id = id;
+        // 插入用户id，试卷id，时间，插入up刷新时间
+        // 根据用户id，试卷id，获取testid
+        long currentTime = System.currentTimeMillis();
+        Date currentDate = new Date(currentTime); // 当前时间
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+        int userId = DataProcess.findUserId(userName);
+        int testId = -1;
+        if (userId != -1) {
+            String sql = "insert into test(user_id,paper_id,test_date)values(" + userId + "," + id + ",'"
+                    + sdf.format(currentDate) + "')";
+            DataProcess.updateDatabase(sql);
+            sql = "select * from test where user_id=" + userId + " and paper_id=" + id + " and test_date='"
+                    + sdf.format(currentDate) + "'";
+            testId = DataProcess.getTestId(sql);
+        }
         loadExerciseList();
         for (Exercise exercise : exerciseList) {
             // 根据题目的id查找request的对应参数，得到用户选择的选项，再赋值给对应的Exercise对象，并判断正误，并保存错题
             exercise.setUserCheck(this, request.getParameter(Integer.toString(exercise.getId())), userName);
+            // 根据testid插入选择，对错，题id，
+            if (userId != -1 && testId != -1) {
+                String option = exercise.getUserOption();
+                int correct = exercise.isCorrect() ? 1 : 0;
+                String sql = "insert into test_detail(`test_id`, `exercise_id`, `option`, `correct`)values('" + testId
+                        + "','" + exercise.getId() + "','" + option + "','" + correct + "')";
+                DataProcess.updateDatabase(sql);
+            }
         }
         userProgram = new ArrayList<>();
         for (Program program : getProgramList()) {
             userProgram.add(request.getParameter("code" + program.getProgramId()));
         }
-        // TODO 在此处判断程序题正误然后存入数据库
+        // TODO 在此处判断程序题正误然后存入数据库 注意判断没有程序题的试卷
 
-        Sandbox sandbox = new Sandbox();
-        RequestQueue requestQueue = new RequestQueue();
-        ResponseQueue responseQueue = new ResponseQueue();
-        Request codeRequest = new Request();
-        codeRequest.setData(userProgram.get(0));
-        codeRequest.setuserId(userName);
-        codeRequest.setproblemID("1");
-        try {
-            RequestQueue.requestQueue.put(codeRequest);
-            sandbox.startSandbox();
-            responseQueue.startResponseQueue();
-            requestQueue.startRequestQueue();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//        Sandbox sandbox = new Sandbox();
+//        RequestQueue requestQueue = new RequestQueue();
+//        ResponseQueue responseQueue = new ResponseQueue();
+//        Request codeRequest = new Request();
+//        codeRequest.setData(userProgram.get(0));
+//        codeRequest.setuserId(userName);
+//        codeRequest.setproblemID("1");
+//        try {
+//            RequestQueue.requestQueue.put(codeRequest);
+//            sandbox.startSandbox();
+//            responseQueue.startResponseQueue();
+//            requestQueue.startRequestQueue();
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
     }
 
     public Paper(int id, String title, String type, int courseId) {
@@ -152,6 +179,13 @@ public class Paper {
         return paperList;
     }
 
+    public static List<Paper> getTenPaperList(String type) {
+        List<Paper> paperList = new ArrayList<>();
+        String sql = "select * from papers where paper_type='" + type + "' limit 10";
+        DataProcess.loadPaperList(sql, paperList);
+        return paperList;
+    }
+
     public List<Exercise> getExerciseList() {
         return exerciseList;
     }
@@ -171,6 +205,16 @@ public class Paper {
             }
         }
         return str.toString();
+    }
+
+    public static String type() {
+        if (t == 1) {
+            t = 2;
+            return "item1";
+        } else {
+            t = 1;
+            return "item2";
+        }
     }
 
     public void addWrongCount() {

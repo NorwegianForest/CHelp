@@ -1,19 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
-    <%@ page import="java.io.*, java.util.*" import="com.DBQuery.DataProcess" import="java.sql.*"%>
-    
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link href="../highlight/styles/default.css" rel="stylesheet">   
-<title>C 语言教程 | C Help</title>
-</head>
-<body>
-<script src="../highlight/highlight.pack.js"></script>  
-<script >hljs.initHighlightingOnLoad();</script>
-
-	  
+<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <h1>C 字符串</h1>
 <p>在 C 语言中，字符串实际上是使用 <strong>null</strong> 字符 '\0' 终止的一维字符数组。因此，一个以 null 结尾的字符串，包含了组成字符串的字符。</p>
 <p>下面的声明和初始化创建了一个 &quot;Hello&quot; 字符串。由于在数组的末尾存储了空字符，所以字符数组的大小比单词 &quot;Hello&quot; 的字符数多一个。</p>
@@ -97,8 +82,5 @@ int main ()
 strcat( str1, str2):   HelloWorld  
 strlen(str1) :  10</pre>
 <p>您可以在 C 标准库中找到更多字符串相关的函数。</p>	  
-	  
-	  
-
 </body>
 </html>

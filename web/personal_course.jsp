@@ -10,6 +10,7 @@
 <head>
   <title>个人中心 | C Help</title>
   <style type="text/css">@import url(css/personal.css);</style>
+  <link rel="icon" href="images/logo16.png" type="image/x-icon">
   <jsp:include page="mdl_personal_head.jsp"/>
 </head>
 <body>

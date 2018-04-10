@@ -25,7 +25,7 @@ body {
     height: 240px;
     padding: 30px 15px;
 }
-.title {
+.course-title {
     font-size: 24px;
     color: #333333;
 }
@@ -65,4 +65,38 @@ body {
 form {
     padding: 0;
     margin: 0;
+}
+.delete {
+    width: 95px;
+    margin-top: 60px;
+    float: right;
+}
+.course-paper-item1, .course-paper-item2 {
+    display: flex;
+    padding: 10px 20px;
+}
+.to-paper {
+    width: 55%;
+}
+.to-edit-paper {
+    margin-left: 50px;
+}
+.edit-paper {
+    width: 650px;
+    padding: 10px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+}
+.course-paper-item1 {
+    background-color: #FAFAFA;
+}
+.course-paper-item2 {
+    background-color: #F5F5F7;
+}
+.course-paper-item1:hover {
+    background-color: #EBECED;
+}
+.course-paper-item2:hover {
+    background-color: #EBECED;
 }

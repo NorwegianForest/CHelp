@@ -1,20 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
-    <%@ page import="java.io.*, java.util.*" import="com.DBQuery.DataProcess" import="java.sql.*"%>
-    
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link href="../highlight/styles/default.css" rel="stylesheet">   
-<title>C 语言教程 | C Help</title>
-</head>
-<body>
-<script src="../highlight/highlight.pack.js"></script>  
-<script >hljs.initHighlightingOnLoad();</script>
-
-
-	  
+<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <h1>C typedef</h1>
 <p>C 语言提供了 <strong>typedef</strong> 关键字，您可以使用它来为类型取一个新的名字。下面的实例为单字节数字定义了一个术语 <strong>BYTE</strong>：</p>
 <pre>typedef unsigned char BYTE;</pre>
@@ -82,7 +66,3 @@ int main( )
 </div>
 <p>当上面的代码被编译和执行时，它会产生下列结果：</p>
 <pre>TRUE 的值: 1  FALSE 的值: 0</pre>	  
-	  
-
-</body>
-</html>

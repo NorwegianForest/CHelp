@@ -1,0 +1,24 @@
+@charset "UTF-8";
+body {
+    padding: 0;
+    background: #fafafa;
+    position: relative;
+}
+form {
+    padding: 0;
+    margin: 0;
+}
+.center {
+    width: 500px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mdl-textfield {
+    width: 500px;
+}

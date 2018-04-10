@@ -21,8 +21,8 @@ public class JoinCourseServlet extends HttpServlet {
         String username = request.getParameter("username");
         String courseId = request.getParameter("course_id");
 
-        if (username == null || username.equals("null")) {
-            response.getWriter().print("<HTML><SCRIPT language=javascript>alert('请先登录...');location.href='user_login.jsp';</SCRIPT></HTML>");
+        if (username == null || username.equals("null") || username.equals("")) {
+            response.getWriter().print("<HTML><SCRIPT language=javascript>alert('请先登录...');location.href='login.jsp';</SCRIPT></HTML>");
         } else {
             int userId = DataProcess.findUserId(username);
             String sql = "insert into user_course(user_id,course_id)values('" + userId + "','" + courseId + "')";

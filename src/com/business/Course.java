@@ -65,6 +65,21 @@ public class Course {
         return courseList;
     }
 
+    public static List<Course> getAllCourseList() {
+        List<Course> courseList = new ArrayList<>();
+        String sql = "select * from course";
+        DataProcess.loadCourseList(sql, courseList);
+        return courseList;
+    }
+
+    public String getShotIntro() {
+        String shortIntro = introduce;
+        if (shortIntro.length() > 80) {
+            shortIntro = shortIntro.substring(0,78) + "...";
+        }
+        return shortIntro;
+    }
+
     public TeacherUser getTeacher() {
         return DataProcess.findTeacher(teacherId);
     }

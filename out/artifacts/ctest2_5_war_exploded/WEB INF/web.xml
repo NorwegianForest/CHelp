@@ -108,4 +108,44 @@
     <servlet-name>EditCoursePaperServlet</servlet-name>
     <url-pattern>/edit_course_paper</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>DeleteCoursePaperServlet</servlet-name>
+    <servlet-class>com.servlet.DeleteCoursePaperServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteCoursePaperServlet</servlet-name>
+    <url-pattern>/delete_course_paper</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>CreateCourseServlet</servlet-name>
+    <servlet-class>com.servlet.CreateCourseServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateCourseServlet</servlet-name>
+    <url-pattern>/create_course</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DeleteCourseServlet</servlet-name>
+    <servlet-class>com.servlet.DeleteCourseServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteCourseServlet</servlet-name>
+    <url-pattern>/delete_course</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>RegisterTeacherServlet</servlet-name>
+    <servlet-class>com.servlet.RegisterTeacherServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterTeacherServlet</servlet-name>
+    <url-pattern>/register_teacher</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DeleteMistakeServlet</servlet-name>
+    <servlet-class>com.servlet.DeleteMistakeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteMistakeServlet</servlet-name>
+    <url-pattern>/delete_mistake</url-pattern>
+  </servlet-mapping>
 </web-app>

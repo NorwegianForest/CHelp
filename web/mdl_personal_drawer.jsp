@@ -11,9 +11,11 @@
   <div class="mdl-layout__header-row">
     <%String title = request.getParameter("title");
       switch (title) {
-        case "collection": title = "收藏";break;
+        case "collection": title = "收藏试题";break;
         case "mistake": title = "错题";break;
         case "course": title = "参与课程";break;
+        case "register": title = "注册教师用户";break;
+        case "test": title = "历史试卷";break;
         default:break;
       }%>
     <span class="mdl-layout-title"><%=title%></span>
@@ -34,12 +36,15 @@
       <a href="teacher_personal.jsp" style="text-decoration: none;">
         <li class="mdl-menu__item">进入教师中心</li>
       </a>
+      <a href="logout.jsp" style="text-decoration: none;">
+        <li class="mdl-menu__item">退出登录</li>
+      </a>
     </ul>
   </div>
 </header>
 <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
   <header class="demo-drawer-header">
-    <img src="images/user.jpg" class="demo-avatar">
+    <img src="images/logo112.png" class="demo-avatar">
     <div class="demo-avatar-dropdown">
       <span><%=request.getParameter("username")%></span>
       <div class="mdl-layout-spacer"></div>
@@ -56,8 +61,11 @@
     <a class="mdl-navigation__link" href="index.jsp">
       <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>主页
     </a>
+    <a class="mdl-navigation__link" href="personal_test.jsp">
+      <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">date_range</i>历史试卷
+    </a>
     <a class="mdl-navigation__link" href="personal_collection.jsp">
-      <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">star</i>收藏
+      <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">star</i>收藏试题
     </a>
     <a class="mdl-navigation__link" href="personal_mistake.jsp">
       <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">highlight_off</i>错题

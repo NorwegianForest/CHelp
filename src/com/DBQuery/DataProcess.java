@@ -2,6 +2,7 @@ package com.DBQuery;
 
 import com.business.*;
 
+import javax.swing.plaf.nimbus.State;
 import java.io.UnsupportedEncodingException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -476,5 +477,100 @@ public class DataProcess {
 			e.printStackTrace();
 		}
 		return null;
+	}
+
+	public static int getCount(String sql) {
+		int count = 0;
+		Connection con = getConnection();
+		try {
+			Statement s = con.createStatement();
+			ResultSet rs = s.executeQuery(sql);
+			if (rs.next()) {
+				count = rs.getInt("count(*)");
+			}
+			rs.close();
+			s.close();
+			con.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return count;
+	}
+
+	public static int getTestId(String sql) {
+		int testId = -1;
+		Connection con = getConnection();
+		try {
+			Statement s = con.createStatement();
+			ResultSet rs = s.executeQuery(sql);
+			if (rs.next()) {
+				testId = rs.getInt("id");
+			}
+			rs.close();
+			s.close();
+			con.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return testId;
+	}
+
+	public static String getPaperTitle(int paperId) {
+		String sql = "select * from papers where paper_id=" + paperId;
+		String title = null;
+		Connection con = getConnection();
+		try {
+			Statement s = con.createStatement();
+			ResultSet rs = s.executeQuery(sql);
+			if (rs.next()) {
+				title = rs.getString("paper_title");
+			}
+			rs.close();
+			s.close();
+			con.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return title;
+	}
+
+	public static void loadTestList(String sql, List<Test> testList) {
+		Connection con = DataProcess.getConnection();
+		try {
+			Statement s = con.createStatement();
+			ResultSet rs = s.executeQuery(sql);
+			while (rs.next()) {
+				testList.add(new Test(
+						rs.getInt("id"),
+						rs.getInt("user_id"),
+						rs.getInt("paper_id"),
+						rs.getString("test_date")
+				));
+			}
+			rs.close();
+			s.close();
+			con.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static String getUsername(int userId) {
+	    String username = null;
+	    String sql = "select * from users where id=" + userId;
+	    Connection con = getConnection();
+	    try {
+	    	Statement s = con.createStatement();
+	    	ResultSet rs = s.executeQuery(sql);
+	    	if (rs.next()) {
+	    		username = rs.getString("username");
+			}
+			rs.close();
+	    	s.close();
+	    	con.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return username;
 	}
 }

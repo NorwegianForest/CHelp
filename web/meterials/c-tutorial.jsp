@@ -1,19 +1,4 @@
-<%@ page contentType="text/html; charset=utf-8"
-         pageEncoding="gb2312"%>
-    
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link href="../highlight/styles/default.css" rel="stylesheet">  
-<title>C 语言教程 | C Help</title>
-</head>
-<body>
-<script src="../highlight/highlight.pack.js"></script>  
-<script >hljs.initHighlightingOnLoad();</script>
-
-
-	
+<%@ page contentType="text/html; charset=utf-8" pageEncoding="gb2312"%>
     <h1>C 语言教程</h1>
     <p>C 语言是一种通用的、面向过程式的计算机程序设计语言。1972 年，为了移植与开发 UNIX 操作系统，丹尼斯里奇在贝尔电话实验室设计开发了 C 语言。
     <p>C 语言是一种广泛使用的计算机语言，它与 Java 编程语言一样普及，二者在现代软件程序员之间都得到广泛使用。
@@ -45,6 +30,3 @@ int main()
       <li><strong>stdio.h</strong>是一个头文件(标准输入输出头文件),<strong>#include</strong>是一个预处理命令，用来引入头文件。当编译器遇到<strong>printf()</strong>函数时，如果没有找到<strong>stdio.h</strong>头文件，会发生编译错误。</li>
       <li><strong>return0;</strong>语句用于表示退出程序。</li>
     </ul>
-
-</body>
-</html>

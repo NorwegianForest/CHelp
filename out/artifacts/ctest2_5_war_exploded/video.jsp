@@ -14,13 +14,7 @@
   <script src="mdl/material.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <style>@import url(css/video.css);</style>
-  <style type="text/css">
-    @media screen and (max-width: 1050px) {
-      .mdl-layout__header {
-        display: block;
-      }
-    }
-  </style>
+  <link rel="icon" href="images/logo16.png" type="image/x-icon">
 </head>
 <body>
 <div class="mdl-layout mdl-js-layout">
@@ -29,11 +23,8 @@
     <jsp:param name="tab" value="5"/>
     <jsp:param name="username" value="<%=username%>"/>
   </jsp:include>
-
-  <%
-    String path = DataProcess.query(Video.TABLENAME, Video.ORDERNUMBER, request.getParameter("number"), Video.YOUKUPATH);
-    String title = DataProcess.query(Video.TABLENAME, Video.ORDERNUMBER, request.getParameter("number"), Video.VIDEOTITLE);
-  %>
+  <%String path = DataProcess.query(Video.TABLENAME, Video.ORDERNUMBER, request.getParameter("number"), Video.YOUKUPATH);
+    String title = DataProcess.query(Video.TABLENAME, Video.ORDERNUMBER, request.getParameter("number"), Video.VIDEOTITLE);%>
   <div class="top">
     <div class="center-div">
       <div class="video-title"><%=title%></div>
@@ -42,12 +33,13 @@
   <div class="center-div">
     <div class="main">
       <div class="video">
-        <iframe height=525 width=700 src='<%=path%>' frameborder=0 'allowfullscreen'></iframe>
+        <iframe height=525 width=700 src='<%=path%>' frameborder='0' allowfullscreen="true"></iframe>
       </div>
       <div class="video-left">
         <div class="left-title">相关视频</div>
         <div class="scroll">
-          <%  for (Video video : Video.getNextSixVideos(1)) {%>
+          <%int num = Integer.parseInt(request.getParameter("number"));%>
+          <%for (Video video : Video.getNextSixVideos(num)) {%>
           <a href="video.jsp?number=<%=video.getNumber()%>" class="video-a">
             <div class="left-video">
               <div class="left-img">
@@ -56,15 +48,14 @@
               <div class="left-video-title"><%=video.getTitle()%></div>
             </div>
           </a>
-          <%  }%>
+          <%}%>
         </div>
       </div>
     </div>
   </div>
   <main class="mdl-layout__content">
+    <jsp:include page="mdl_footer.jsp"/>
   </main>
-  <%@ include file = "mdl_footer.jsp" %>
 </div>
-
 </body>
 </html>

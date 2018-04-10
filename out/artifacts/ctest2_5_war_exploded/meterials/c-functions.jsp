@@ -1,20 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
-    <%@ page import="java.io.*, java.util.*" import="com.DBQuery.DataProcess" import="java.sql.*"%>
-    
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link href="../highlight/styles/default.css" rel="stylesheet">   
-<title>C 语言教程 | C Help</title>
-</head>
-<body>
-<script src="../highlight/highlight.pack.js"></script>  
-<script >hljs.initHighlightingOnLoad();</script>
-
-
-	  
+<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <h1>C 函数</h1>
 <div>
   <p>函数是一组一起执行一个任务的语句。每个 C 程序都至少有一个函数，即主函数 <strong>main()</strong> ，所有简单的程序都可以定义其他额外的函数。</p>
@@ -116,8 +100,3 @@ int max(int num1, int num2)
   </tbody>
 </table>
 <p>默认情况下，C 使用<strong>传值调用</strong>来传递参数。一般来说，这意味着函数内的代码不能改变用于调用函数的实际参数。</p>	  
-	  
-	  
-
-</body>
-</html>

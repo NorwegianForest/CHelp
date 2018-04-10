@@ -1,20 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
-    <%@ page import="java.io.*, java.util.*" import="com.DBQuery.DataProcess" import="java.sql.*"%>
-    
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link href="../highlight/styles/default.css" rel="stylesheet">   
-<title>C 语言教程 | C Help</title>
-</head>
-<body>
-<script src="../highlight/highlight.pack.js"></script>  
-<script >hljs.initHighlightingOnLoad();</script>
-
-
-	  
+<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <h1>C 头文件</h1>
 <div>
   <p>头文件是扩展名为 <strong>.h</strong> 的文件，包含了 C 函数声明和宏定义，被多个源文件中引用共享。有两种类型的头文件：程序员编写的头文件和编译器自带的头文件。</p>
@@ -73,7 +57,3 @@ the entire header file file
 ...   
 #include SYSTEM_H</code></pre>
 <p>SYSTEM_H 会扩展，预处理器会查找 system_1.h，就像 <strong>#include</strong> 最初编写的那样。SYSTEM_H 可通过 -D 选项被您的 Makefile 定义。</p>	  
-	  
-
-</body>
-</html>
