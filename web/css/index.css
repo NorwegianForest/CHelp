@@ -29,7 +29,7 @@ body {
     background-color: #2E323E;
 }
 .center-content {
-    width: 75%;
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -187,11 +187,9 @@ body {
     box-shadow: 0 0 5px #FFA000;
 }
 #letter-c, #letter-r, #letter-s, #letter-o {
-    font-size: 7em;
     height: 70%;
     text-align: center;
-    padding-top: 70px;
-    font-family: Nueva Std, serif;
+    padding-top: 40px;
 }
 #letter-c {
     color: #303F9F;
@@ -223,4 +221,7 @@ body {
 .mdl-layout__drawer-button {
     height: 24px;
     margin: 20px 12px;
+}
+.icons {
+    font-size: 70px;
 }

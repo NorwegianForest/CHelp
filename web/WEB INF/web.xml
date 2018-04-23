@@ -148,4 +148,12 @@
     <servlet-name>DeleteMistakeServlet</servlet-name>
     <url-pattern>/delete_mistake</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>ProgramResultServlet</servlet-name>
+    <servlet-class>com.servlet.ProgramResultServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProgramResultServlet</servlet-name>
+    <url-pattern>/program_result</url-pattern>
+  </servlet-mapping>
 </web-app>

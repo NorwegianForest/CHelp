@@ -45,12 +45,12 @@ public class LoginServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {		
 		HttpSession ses = request.getSession();	
-		String adminname = request.getParameter("adminname");
+		String admin = request.getParameter("admin");
 		String password = request.getParameter("password");
 		// 如果此用户存在
-		if(new AdminUser(1, adminname, password).checkLegal())	{
-			ses.setAttribute("adminname",adminname);			
-			RequestDispatcher requestDispatcher = request.getRequestDispatcher("success.jsp");			
+		if(new AdminUser(1, admin, password).checkLegal()) {
+			ses.setAttribute("admin",admin);
+			RequestDispatcher requestDispatcher = request.getRequestDispatcher("manage_chapter.jsp");
 			requestDispatcher.forward(request,response);
 		}else{
 			ses.setAttribute("error","error");			

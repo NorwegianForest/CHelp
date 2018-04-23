@@ -7,188 +7,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="287ef496-7f9b-4d17-96c8-4f90b161bf10" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/business/Test.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/business/TestDetail.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/servlet/CreateCourseServlet.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/servlet/DeleteCoursePaperServlet.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/servlet/DeleteCourseServlet.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/servlet/DeleteMistakeServlet.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/servlet/RegisterTeacherServlet.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/admin_login.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/courses.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/create_course.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/css/courses.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/css/home.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/css/papers.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/css/register_teacher.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/images/course/logo260.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/images/logo112.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/images/logo16.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/js/edit_course_paper.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/js/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/js/login.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/js/paper_card.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/js/register_teacher.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/js/teacher_course.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/js/videos.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/logout.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/personal_test.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/personal_test_detail.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/register_teacher.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/teacher_test.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/teacher_test_detail.jsp" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CTest2_5_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/CTest2_5_war_exploded.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/servlet/ProgramResultServlet.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/contact_us.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/css/contact_us.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/manage_chapter.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/mdl_manage_drawer.jsp" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/data/ctest2.sql" afterPath="$PROJECT_DIR$/data/ctest2.sql" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/WEB INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/WEB INF/web.xml" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/WEB-INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/course.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/course.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/css/course.css" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/css/course.css" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/admin_login.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/admin_login.jsp" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/css/index.css" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/css/index.css" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/css/personal.css" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/css/personal.css" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/edit_course_paper.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/edit_course_paper.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/images/android-desktop.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/images/course/un-2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/images/dog.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/images/favicon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/images/ios-desktop.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/images/timg (1).jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/images/user.jpg" afterPath="" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/login.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/login.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/materials.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/materials.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/js/login.js" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/js/login.js" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/js/paper_card.js" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/js/paper_card.js" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/logout.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/logout.jsp" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/mdl_footer.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/mdl_footer.jsp" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/mdl_header.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/mdl_header.jsp" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/mdl_personal_drawer.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/mdl_personal_drawer.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/mdl_personal_head.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/mdl_personal_head.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/mdl_teacher_drawer.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/mdl_teacher_drawer.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/NewFile.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/NewFile.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-arrays.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-arrays.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-basic-syntax.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-basic-syntax.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-bit-fields.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-bit-fields.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-constants.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-constants.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-data-types.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-data-types.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-decision.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-decision.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-environment-setup.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-environment-setup.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-error-handling.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-error-handling.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-file-io.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-file-io.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-fun-pointer-callback.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-fun-pointer-callback.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-functions.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-functions.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-header-files.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-header-files.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-input-output.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-input-output.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-intro.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-intro.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-loops.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-loops.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-operators.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-operators.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-pointers.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-pointers.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-preprocessors.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-preprocessors.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-program-structure.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-program-structure.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-scope-rules.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-scope-rules.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-storage-classes.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-storage-classes.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-strings.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-strings.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-structures.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-structures.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-tutorial.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-tutorial.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-type-casting.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-type-casting.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-typedef.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-typedef.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-unions.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-unions.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-variables.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/c-variables.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/testcode.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/meterials/testcode.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/paper.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/paper.jsp" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/paper_results.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/paper_results.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/papers.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/papers.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/personal.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/personal.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/personal_collection.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/personal_collection.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/personal_course.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/personal_course.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/personal_mistake.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/personal_mistake.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/recommend.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/recommend.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/recommend_result.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/recommend_result.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/register.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/register.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/search_results.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/teacher_course.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/teacher_course.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/teacher_course_edit.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/teacher_create_paper.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/teacher_create_paper.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/teacher_personal.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/teacher_personal.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/video.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/video.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/videos.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ctest2_5_war_exploded/videos.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/com/DBQuery/DataProcess.java" afterPath="$PROJECT_DIR$/src/com/DBQuery/DataProcess.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/business/Course.java" afterPath="$PROJECT_DIR$/src/com/business/Course.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/business/Exercise.java" afterPath="$PROJECT_DIR$/src/com/business/Exercise.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/business/AdminUser.java" afterPath="$PROJECT_DIR$/src/com/business/AdminUser.java" />
       <change beforePath="$PROJECT_DIR$/src/com/business/Paper.java" afterPath="$PROJECT_DIR$/src/com/business/Paper.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/business/TeacherUser.java" afterPath="$PROJECT_DIR$/src/com/business/TeacherUser.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/servlet/CollectionServlet.java" afterPath="$PROJECT_DIR$/src/com/servlet/CollectionServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/servlet/EditCourseServlet.java" afterPath="$PROJECT_DIR$/src/com/servlet/EditCourseServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/servlet/JoinCourseServlet.java" afterPath="$PROJECT_DIR$/src/com/servlet/JoinCourseServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/servlet/UserRegisterServlet.java" afterPath="$PROJECT_DIR$/src/com/servlet/UserRegisterServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/taglib/CourseTable.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/taglib/PapersTable.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/taglib/VideosTable.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/servlet/LoginServlet.java" afterPath="$PROJECT_DIR$/src/com/servlet/LoginServlet.java" />
       <change beforePath="$PROJECT_DIR$/web/WEB INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/web/course.jsp" afterPath="$PROJECT_DIR$/web/course.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/css/course.css" afterPath="$PROJECT_DIR$/web/css/course.css" />
+      <change beforePath="$PROJECT_DIR$/web/admin_login.jsp" afterPath="$PROJECT_DIR$/web/admin_login.jsp" />
       <change beforePath="$PROJECT_DIR$/web/css/index.css" afterPath="$PROJECT_DIR$/web/css/index.css" />
-      <change beforePath="$PROJECT_DIR$/web/css/personal.css" afterPath="$PROJECT_DIR$/web/css/personal.css" />
-      <change beforePath="$PROJECT_DIR$/web/edit_course_paper.jsp" afterPath="$PROJECT_DIR$/web/edit_course_paper.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/images/android-desktop.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/images/course/un-2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/images/dog.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/images/favicon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/images/ios-desktop.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/images/timg (1).jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/images/user.jpg" afterPath="" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/login.jsp" afterPath="$PROJECT_DIR$/web/login.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/materials.jsp" afterPath="$PROJECT_DIR$/web/materials.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/js/login.js" afterPath="$PROJECT_DIR$/web/js/login.js" />
+      <change beforePath="$PROJECT_DIR$/web/js/paper_card.js" afterPath="$PROJECT_DIR$/web/js/paper_card.js" />
+      <change beforePath="$PROJECT_DIR$/web/logout.jsp" afterPath="$PROJECT_DIR$/web/logout.jsp" />
       <change beforePath="$PROJECT_DIR$/web/mdl_footer.jsp" afterPath="$PROJECT_DIR$/web/mdl_footer.jsp" />
       <change beforePath="$PROJECT_DIR$/web/mdl_header.jsp" afterPath="$PROJECT_DIR$/web/mdl_header.jsp" />
       <change beforePath="$PROJECT_DIR$/web/mdl_personal_drawer.jsp" afterPath="$PROJECT_DIR$/web/mdl_personal_drawer.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/mdl_personal_head.jsp" afterPath="$PROJECT_DIR$/web/mdl_personal_head.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/mdl_teacher_drawer.jsp" afterPath="$PROJECT_DIR$/web/mdl_teacher_drawer.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/meterials/NewFile.jsp" afterPath="$PROJECT_DIR$/web/meterials/NewFile.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/meterials/c-arrays.jsp" afterPath="$PROJECT_DIR$/web/meterials/c-arrays.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/meterials/c-basic-syntax.jsp" afterPath="$PROJECT_DIR$/web/meterials/c-basic-syntax.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/meterials/c-bit-fields.jsp" afterPath="$PROJECT_DIR$/web/meterials/c-bit-fields.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/meterials/c-constants.jsp" afterPath="$PROJECT_DIR$/web/meterials/c-constants.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/meterials/c-data-types.jsp" afterPath="$PROJECT_DIR$/web/meterials/c-data-types.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/meterials/c-decision.jsp" afterPath="$PROJECT_DIR$/web/meterials/c-decision.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/meterials/c-environment-setup.jsp" afterPath="$PROJECT_DIR$/web/meterials/c-environment-setup.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/meterials/c-error-handling.jsp" afterPath="$PROJECT_DIR$/web/meterials/c-error-handling.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/meterials/c-file-io.jsp" afterPath="$PROJECT_DIR$/web/meterials/c-file-io.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/meterials/c-fun-pointer-callback.jsp" afterPath="$PROJECT_DIR$/web/meterials/c-fun-pointer-callback.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/meterials/c-functions.jsp" afterPath="$PROJECT_DIR$/web/meterials/c-functions.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/meterials/c-header-files.jsp" afterPath="$PROJECT_DIR$/web/meterials/c-header-files.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/meterials/c-input-output.jsp" afterPath="$PROJECT_DIR$/web/meterials/c-input-output.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/meterials/c-intro.jsp" afterPath="$PROJECT_DIR$/web/meterials/c-intro.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/meterials/c-loops.jsp" afterPath="$PROJECT_DIR$/web/meterials/c-loops.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/meterials/c-operators.jsp" afterPath="$PROJECT_DIR$/web/meterials/c-operators.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/meterials/c-pointers.jsp" afterPath="$PROJECT_DIR$/web/meterials/c-pointers.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/meterials/c-preprocessors.jsp" afterPath="$PROJECT_DIR$/web/meterials/c-preprocessors.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/meterials/c-program-structure.jsp" afterPath="$PROJECT_DIR$/web/meterials/c-program-structure.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/meterials/c-scope-rules.jsp" afterPath="$PROJECT_DIR$/web/meterials/c-scope-rules.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/meterials/c-storage-classes.jsp" afterPath="$PROJECT_DIR$/web/meterials/c-storage-classes.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/meterials/c-strings.jsp" afterPath="$PROJECT_DIR$/web/meterials/c-strings.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/meterials/c-structures.jsp" afterPath="$PROJECT_DIR$/web/meterials/c-structures.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/meterials/c-tutorial.jsp" afterPath="$PROJECT_DIR$/web/meterials/c-tutorial.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/meterials/c-type-casting.jsp" afterPath="$PROJECT_DIR$/web/meterials/c-type-casting.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/meterials/c-typedef.jsp" afterPath="$PROJECT_DIR$/web/meterials/c-typedef.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/meterials/c-unions.jsp" afterPath="$PROJECT_DIR$/web/meterials/c-unions.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/meterials/c-variables.jsp" afterPath="$PROJECT_DIR$/web/meterials/c-variables.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/meterials/testcode.jsp" afterPath="$PROJECT_DIR$/web/meterials/testcode.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/paper.jsp" afterPath="$PROJECT_DIR$/web/paper.jsp" />
       <change beforePath="$PROJECT_DIR$/web/paper_results.jsp" afterPath="$PROJECT_DIR$/web/paper_results.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/papers.jsp" afterPath="$PROJECT_DIR$/web/papers.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/personal.jsp" afterPath="$PROJECT_DIR$/web/personal.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/personal_collection.jsp" afterPath="$PROJECT_DIR$/web/personal_collection.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/personal_course.jsp" afterPath="$PROJECT_DIR$/web/personal_course.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/personal_mistake.jsp" afterPath="$PROJECT_DIR$/web/personal_mistake.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/recommend.jsp" afterPath="$PROJECT_DIR$/web/recommend.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/recommend_result.jsp" afterPath="$PROJECT_DIR$/web/recommend_result.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/register.jsp" afterPath="$PROJECT_DIR$/web/register.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/search_results.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/teacher_course.jsp" afterPath="$PROJECT_DIR$/web/teacher_course.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/teacher_course_edit.jsp" afterPath="$PROJECT_DIR$/web/edit_teacher_course.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/teacher_create_paper.jsp" afterPath="$PROJECT_DIR$/web/teacher_create_paper.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/teacher_personal.jsp" afterPath="$PROJECT_DIR$/web/teacher_personal.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/video.jsp" afterPath="$PROJECT_DIR$/web/video.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/videos.jsp" afterPath="$PROJECT_DIR$/web/videos.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -203,45 +55,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="teacher_test_detail.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/teacher_test_detail.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="52" column="52" lean-forward="false" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mdl_footer.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mdl_footer.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/mdl_footer.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="14" column="51" lean-forward="false" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+            <state relative-caret-position="675">
+              <caret line="45" column="51" lean-forward="false" selection-start-line="45" selection-start-column="51" selection-end-line="45" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="personal_test_detail.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/personal_test_detail.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="75" column="6" lean-forward="false" selection-start-line="75" selection-start-column="6" selection-end-line="75" selection-end-column="6" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="135">
+                <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="teacher_test.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/teacher_test.jsp">
+      <file leaf-file-name="contact_us.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/contact_us.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="41" column="14" lean-forward="false" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+            <state relative-caret-position="333">
+              <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact_us.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/css/contact_us.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/login.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -255,9 +116,9 @@
         <option value="FxmlFile" />
         <option value="HTML File" />
         <option value="JavaScript File" />
-        <option value="CSS File" />
         <option value="Class" />
         <option value="Jsp File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -275,22 +136,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/meterials/c-variables.jsp" />
-        <option value="$PROJECT_DIR$/web/meterials/NewFile.jsp" />
-        <option value="$PROJECT_DIR$/web/meterials/testcode.jsp" />
-        <option value="$PROJECT_DIR$/src/com/servlet/CreateCoursePaperServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/servlet/EditCourseServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/servlet/CreateCourseServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/servlet/DeleetCourseServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/servlet/DeleteCourseServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/servlet/CollectionServlet.java" />
-        <option value="$PROJECT_DIR$/web/paper.jsp" />
-        <option value="$PROJECT_DIR$/web/paper_results.jsp" />
-        <option value="$PROJECT_DIR$/web/recommend.jsp" />
-        <option value="$PROJECT_DIR$/web/recommend_result.jsp" />
-        <option value="$PROJECT_DIR$/web/js/teacher_course.js" />
-        <option value="$PROJECT_DIR$/web/css/index.css" />
-        <option value="$PROJECT_DIR$/web/mdl_teacher_drawer.jsp" />
         <option value="$PROJECT_DIR$/web/teacher_personal.jsp" />
         <option value="$PROJECT_DIR$/web/create_course.jsp" />
         <option value="$PROJECT_DIR$/web/edit_course_paper.jsp" />
@@ -307,15 +152,11 @@
         <option value="$PROJECT_DIR$/src/com/servlet/JoinCourseServlet.java" />
         <option value="$PROJECT_DIR$/web/personal_collection.jsp" />
         <option value="$PROJECT_DIR$/web/personal_mistake.jsp" />
-        <option value="$PROJECT_DIR$/web/js/paper_card.js" />
-        <option value="$PROJECT_DIR$/web/WEB INF/web.xml" />
         <option value="$PROJECT_DIR$/src/com/servlet/DeleteMistakeServlet.java" />
         <option value="$PROJECT_DIR$/web/mdl_personal_head.jsp" />
-        <option value="$PROJECT_DIR$/web/mdl_personal_drawer.jsp" />
         <option value="$PROJECT_DIR$/web/course.jsp" />
         <option value="$PROJECT_DIR$/web/css/personal.css" />
         <option value="$PROJECT_DIR$/src/com/business/TestDetail.java" />
-        <option value="$PROJECT_DIR$/src/com/business/Paper.java" />
         <option value="$PROJECT_DIR$/web/personal_test_detail.jsp" />
         <option value="$PROJECT_DIR$/web/personal_test.jsp" />
         <option value="$PROJECT_DIR$/web/css/papers.css" />
@@ -325,7 +166,27 @@
         <option value="$PROJECT_DIR$/web/teacher_course.jsp" />
         <option value="$PROJECT_DIR$/web/teacher_test.jsp" />
         <option value="$PROJECT_DIR$/web/teacher_test_detail.jsp" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/mdl_personal_drawer.jsp" />
+        <option value="$PROJECT_DIR$/web/logout.jsp" />
+        <option value="$PROJECT_DIR$/web/manage_chapter.jsp" />
+        <option value="$PROJECT_DIR$/src/com/servlet/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/business/AdminUser.java" />
+        <option value="$PROJECT_DIR$/web/mdl_manage_drawer.jsp" />
+        <option value="$PROJECT_DIR$/web/js/login.js" />
+        <option value="$PROJECT_DIR$/web/admin_login.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/com/servlet/ProgramResultServlet.java" />
+        <option value="$PROJECT_DIR$/web/js/paper_card.js" />
+        <option value="$PROJECT_DIR$/web/mdl_header.jsp" />
+        <option value="$PROJECT_DIR$/web/css/index.css" />
+        <option value="$PROJECT_DIR$/src/com/business/Paper.java" />
+        <option value="$PROJECT_DIR$/web/paper_results.jsp" />
+        <option value="$PROJECT_DIR$/web/contach_us.jsp" />
         <option value="$PROJECT_DIR$/web/mdl_footer.jsp" />
+        <option value="$PROJECT_DIR$/web/contact_us.jsp" />
+        <option value="$PROJECT_DIR$/web/css/contact_us.css" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -343,8 +204,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="301" />
-    <option name="y" value="29" />
+    <option name="x" value="397" />
+    <option name="y" value="98" />
     <option name="width" value="828" />
     <option name="height" value="698" />
   </component>
@@ -490,8 +351,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -503,6 +365,11 @@
             <path>
               <item name="CHelp" type="b2602c69:ProjectViewProjectNode" />
               <item name="CHelp" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CHelp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CHelp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -510,34 +377,6 @@
               <item name="CHelp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CHelp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CHelp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CHelp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CHelp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="DBQuery" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CHelp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CHelp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CHelp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CHelp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="taglib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CHelp" type="b2602c69:ProjectViewProjectNode" />
@@ -554,19 +393,12 @@
               <item name="CHelp" type="b2602c69:ProjectViewProjectNode" />
               <item name="CHelp" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CHelp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CHelp" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -628,7 +460,7 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="testSandbox" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="testSandbox" type="Application" factoryName="Application" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="cn.superman.sandbox.core.*" />
@@ -847,11 +679,6 @@
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
       <item index="1" class="java.lang.String" itemvalue="Application.testSandbox" />
     </list>
-    <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.testSandbox" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -918,6 +745,13 @@
       <workItem from="1523088618346" duration="3287000" />
       <workItem from="1523163212083" duration="31177000" />
       <workItem from="1523253656843" duration="14977000" />
+      <workItem from="1523363572544" duration="2876000" />
+      <workItem from="1523373875707" duration="18000" />
+      <workItem from="1523423517069" duration="2893000" />
+      <workItem from="1523509552163" duration="6371000" />
+      <workItem from="1523539662965" duration="1359000" />
+      <workItem from="1523591967844" duration="25000" />
+      <workItem from="1524469760749" duration="4793000" />
     </task>
     <task id="LOCAL-00001" summary="在README增加项目细节">
       <created>1516604784827</created>
@@ -930,7 +764,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="449418000" />
+    <option name="totallyTimeSpent" value="467753000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -962,10 +796,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36953" sideWeight="0.48789713" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20907618" sideWeight="0.48789713" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26096824" sideWeight="0.6940874" order="7" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26096824" sideWeight="0.30591258" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2602118" sideWeight="0.6838843" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27609682" sideWeight="0.3161157" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22559524" sideWeight="0.32212582" order="5" side_tool="true" content_ui="tabs" />
@@ -1039,158 +873,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/css/papers.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/personal.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/register.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/register_teacher.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="214" column="0" lean-forward="false" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/teacher_personal.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/video.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/videos.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/edit_course_paper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/paper_card.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/register_teacher.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/teacher_course.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/videos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="150" column="0" lean-forward="false" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin_login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/course.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/courses.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/create_course.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -1215,98 +897,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="162" column="0" lean-forward="false" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/logout.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/materials.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/mdl_header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/mdl_personal_drawer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/mdl_personal_head.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/mdl_teacher_drawer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/paper.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="204" column="0" lean-forward="false" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/paper_results.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/papers.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/personal.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1415,39 +1009,325 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/teacher_test.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/DBQuery/DataProcess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="41" column="14" lean-forward="false" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+        <state relative-caret-position="255">
+          <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher_test_detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="52" column="52" lean-forward="false" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/personal_test_detail.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
+        <state relative-caret-position="477">
           <caret line="75" column="6" lean-forward="false" selection-start-line="75" selection-start-column="6" selection-end-line="75" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher_test.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="41" column="14" lean-forward="false" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/mdl_personal_head.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/mdl_personal_drawer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="48" lean-forward="false" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/personal.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="37" lean-forward="false" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/business/TeacherUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="38" column="58" lean-forward="true" selection-start-line="38" selection-start-column="58" selection-end-line="38" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/mdl_teacher_drawer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="38" column="41" lean-forward="false" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/business/AdminUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="43" column="26" lean-forward="false" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#549#550#0" expanded="false" />
+            <element signature="e#580#581#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/teacher_test_detail.jsp">
+    <entry file="file://$PROJECT_DIR$/web/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/manage_chapter.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/servlet/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="48" column="57" lean-forward="false" selection-start-line="48" selection-start-column="57" selection-end-line="48" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin_login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="70" lean-forward="false" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/papers.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/paper.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2895">
+          <caret line="193" column="19" lean-forward="false" selection-start-line="193" selection-start-column="19" selection-end-line="193" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="156" column="31" lean-forward="false" selection-start-line="156" selection-start-column="31" selection-end-line="156" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/servlet/RegisterTeacherServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/paper_card.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="85" column="39" lean-forward="false" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/servlet/ProgramResultServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="43" column="19" lean-forward="false" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+          <folding>
+            <marker date="1523514295618" expanded="true" signature="951:987" ph="select * fro... user_program" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/mdl/material.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="52" column="52" lean-forward="false" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="30" column="25" lean-forward="false" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/mdl_header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="121" column="62" lean-forward="false" selection-start-line="121" selection-start-column="62" selection-end-line="121" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/mdl_manage_drawer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="43" column="42" lean-forward="false" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/business/Paper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="96" column="12" lean-forward="false" selection-start-line="96" selection-start-column="12" selection-end-line="96" selection-end-column="12" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#6812#6813#0" expanded="true" />
+            <element signature="e#6847#6848#0" expanded="true" />
+            <element signature="e#7585#7586#0" expanded="true" />
+            <element signature="e#7614#7615#0" expanded="true" />
+            <element signature="e#7649#7650#0" expanded="true" />
+            <element signature="e#7678#7679#0" expanded="true" />
+            <element signature="e#7712#7713#0" expanded="true" />
+            <element signature="e#7767#7768#0" expanded="true" />
+            <element signature="e#7798#7799#0" expanded="true" />
+            <element signature="e#7826#7827#0" expanded="true" />
+            <element signature="e#7873#7874#0" expanded="true" />
+            <element signature="e#7909#7910#0" expanded="true" />
+            <element signature="e#7974#7975#0" expanded="true" />
+            <element signature="e#8024#8025#0" expanded="true" />
+            <element signature="e#8066#8067#0" expanded="true" />
+            <element signature="e#8100#8101#0" expanded="true" />
+            <element signature="e#8131#8132#0" expanded="true" />
+            <element signature="e#8158#8159#0" expanded="true" />
+            <element signature="e#8198#8199#0" expanded="true" />
+            <element signature="e#8230#8231#0" expanded="true" />
+            <element signature="e#8256#8257#0" expanded="true" />
+            <element signature="e#8281#8282#0" expanded="true" />
+            <element signature="e#8314#8315#0" expanded="true" />
+            <element signature="e#8342#8343#0" expanded="true" />
+            <element signature="e#8374#8375#0" expanded="true" />
+            <element signature="e#8405#8406#0" expanded="true" />
+            <element signature="e#8450#8451#0" expanded="true" />
+            <element signature="e#8490#8491#0" expanded="true" />
+            <element signature="e#8554#8555#0" expanded="true" />
+            <element signature="e#8602#8603#0" expanded="true" />
+            <element signature="e#8636#8637#0" expanded="true" />
+            <element signature="e#8669#8670#0" expanded="true" />
+            <element signature="e#8713#8714#0" expanded="true" />
+            <element signature="e#8747#8748#0" expanded="true" />
+            <element signature="e#8807#8808#0" expanded="true" />
+            <element signature="e#8853#8854#0" expanded="true" />
+            <element signature="e#8887#8888#0" expanded="true" />
+            <element signature="e#8920#8921#0" expanded="true" />
+            <element signature="e#8969#8970#0" expanded="true" />
+            <element signature="e#9013#9014#0" expanded="true" />
+            <element signature="e#9062#9063#0" expanded="true" />
+            <element signature="e#9106#9107#0" expanded="true" />
+            <marker date="1524477439854" expanded="true" signature="3327:3402" ph="insert into user_program... " />
+            <marker date="1524477439854" expanded="true" signature="5691:5727" ph="select * fro... papers" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/paper_results.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="869">
+          <caret line="172" column="27" lean-forward="false" selection-start-line="172" selection-start-column="27" selection-end-line="172" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/logout.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/contact_us.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/contact_us.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/mdl_footer.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="14" column="51" lean-forward="false" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+        <state relative-caret-position="675">
+          <caret line="45" column="51" lean-forward="false" selection-start-line="45" selection-start-column="51" selection-end-line="45" selection-end-column="51" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

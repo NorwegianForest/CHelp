@@ -34,7 +34,7 @@
           <div id="top-left">
             <div class="left-left">
               <div class="paper-title">章节试题</div>
-              <div id="letter-c">C</div>
+              <div id="letter-c"><i class="material-icons icons">chrome_reader_mode</i></div>
             </div>
             <div class="left-right">
               <div class="card-right-list">
@@ -50,7 +50,7 @@
           <div id="top-right">
             <div class="right-left">
               <div class="paper-title">模拟试题</div>
-              <div id="letter-s">S</div>
+              <div id="letter-s"><i class="material-icons icons">description</i></div>
             </div>
             <div class="right-right">
               <div class="card-right-list">
@@ -72,7 +72,7 @@
           <div id="bottom-left">
             <div class="left-left">
               <div class="paper-title">学习资源</div>
-              <div id="letter-r">R</div>
+              <div id="letter-r"><i class="material-icons icons">import_contacts</i></div>
             </div>
             <div class="left-right">
               <div class="card-right-list">
@@ -88,7 +88,7 @@
           <div id="bottom-right">
             <div class="right-left">
               <div class="paper-title">真题练习</div>
-              <div id="letter-o">O</div>
+              <div id="letter-o"><i class="material-icons icons">library_books</i></div>
             </div>
             <div class="right-right">
               <div class="card-right-list">

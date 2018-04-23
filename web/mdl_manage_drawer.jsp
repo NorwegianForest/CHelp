@@ -1,8 +1,8 @@
-<%--
+<%@ page import="com.business.AdminUser" %><%--
   Created by IntelliJ IDEA.
   User: szl
-  Date: 2018/4/2
-  Time: 15:21
+  Date: 2018/4/11
+  Time: 14:04
 --%>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <meta charset="utf-8">
@@ -10,11 +10,9 @@
   <div class="mdl-layout__header-row">
     <%String title = request.getParameter("title");
       switch (title) {
-        case "collection": title = "收藏试题";break;
-        case "mistake": title = "错题";break;
-        case "course": title = "参与课程";break;
-        case "register": title = "注册教师用户";break;
-        case "test": title = "历史试卷";break;
+        case "chapter": title = "章节试题管理";break;
+        case "simulation": title = "模拟试题管理";break;
+        case "old": title = "真题练习管理";break;
         default:break;
       }%>
     <span class="mdl-layout-title"><%=title%></span>
@@ -32,9 +30,6 @@
       <i class="material-icons">more_vert</i>
     </button>
     <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
-      <a href="teacher_personal.jsp" style="text-decoration: none;">
-        <li class="mdl-menu__item">进入教师中心</li>
-      </a>
       <a href="logout.jsp" style="text-decoration: none;">
         <li class="mdl-menu__item">退出登录</li>
       </a>
@@ -45,7 +40,9 @@
   <header class="demo-drawer-header">
     <img src="images/logo112.png" class="demo-avatar">
     <div class="demo-avatar-dropdown">
-      <span><%=request.getParameter("username")%></span>
+      <%String admin = request.getParameter("admin");%>
+      <%=new AdminUser(admin).checkAdmin()%>
+      <span>Admin</span>
       <div class="mdl-layout-spacer"></div>
       <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
         <i class="material-icons" role="presentation">arrow_drop_down</i>
@@ -59,18 +56,6 @@
   <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
     <a class="mdl-navigation__link" href="index.jsp">
       <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>主页
-    </a>
-    <a class="mdl-navigation__link" href="personal_test.jsp">
-      <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">date_range</i>历史试卷
-    </a>
-    <a class="mdl-navigation__link" href="personal_collection.jsp">
-      <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">star</i>收藏试题
-    </a>
-    <a class="mdl-navigation__link" href="personal_mistake.jsp">
-      <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">highlight_off</i>错题
-    </a>
-    <a class="mdl-navigation__link" href="personal_course.jsp">
-      <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">library_books</i>参与课程
     </a>
     <div class="mdl-layout-spacer"></div>
     <a class="mdl-navigation__link" href="">

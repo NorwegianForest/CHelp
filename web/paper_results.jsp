@@ -90,6 +90,8 @@
           </div>
           <%}%>
           <%List<Program> programList = paper.getProgramList();%>
+          <%boolean login = true;%>
+          <%if (username == null || username.equals("null") || username.equals("")) login = false;%>
           <%if (!programList.isEmpty()) {%>
           <div class="single" id="single-<%=++orderNumer%>">
             <div class="title"><span class="order-number"><%=orderNumer%>&nbsp;[程序填空题]&nbsp;</span>
@@ -104,6 +106,17 @@
               </div>
             </div>
             <div class="answer">
+              <%if (!login) {%>
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" disabled>
+                未登录用户暂不能查看结果
+              </button><br><br>
+              <%} else {%>
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                      onclick="getResult('<%=paper.getUserProgramId().get(0).toString()%>')">
+                查看结果
+              </button>
+              <br><br><div id="text-<%=paper.getUserProgramId().get(0).toString()%>"></div><br>
+              <%}%>
               参考答案:&nbsp;<br>
               <span class="answer-text"><%=programList.get(0).getHTMLProgramAnswer()%></span>
             </div>
@@ -124,6 +137,17 @@
               </div>
             </div>
             <div class="answer">
+              <%if (!login) {%>
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" disabled>
+                未登录用户暂不能查看结果
+              </button><br><br>
+              <%} else {%>
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                      onclick="getResult('<%=paper.getUserProgramId().get(1).toString()%>')">
+                查看结果
+              </button>
+              <br><br><div id="text-<%=paper.getUserProgramId().get(1).toString()%>"></div><br>
+              <%}%>
               参考答案:&nbsp;<br>
               <span class="answer-text"><%=programList.get(1).getHTMLProgramAnswer()%></span>
             </div>
@@ -144,6 +168,17 @@
               </div>
             </div>
             <div class="answer">
+              <%if (!login) {%>
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" disabled>
+                未登录用户暂不能查看结果
+              </button><br><br>
+              <%} else {%>
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                      onclick="getResult('<%=paper.getUserProgramId().get(2).toString()%>')">
+                查看结果
+              </button>
+              <br><br><div id="text-<%=paper.getUserProgramId().get(2).toString()%>"></div><br>
+              <%}%>
               参考答案:&nbsp;<br>
               <span class="answer-text"><%=programList.get(2).getHTMLProgramAnswer()%></span>
             </div>

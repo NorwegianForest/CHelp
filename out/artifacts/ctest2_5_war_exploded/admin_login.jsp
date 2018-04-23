@@ -3,7 +3,6 @@
   User: szl
   Date: 2018/4/8
   Time: 14:15
-  To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
@@ -27,10 +26,10 @@
     <div id="content-div">
       <div id="center-div">
         <div id="login-div">
-          <form id="login-form" name="login" method="post" action="${pageContext.request.contextPath}/UserLoginServlet">
+          <form id="login-form" name="login" method="post" action="/login" >
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-              <input class="mdl-textfield__input" type="text" id="username" name="username">
-              <label class="mdl-textfield__label" for="username">用户名</label>
+              <input class="mdl-textfield__input" type="text" id="admin" name="admin">
+              <label class="mdl-textfield__label" for="admin">用户名</label>
             </div>
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
               <input class="mdl-textfield__input" type="password" id="password" name="password">
@@ -38,14 +37,9 @@
             </div>
           </form>
           <div id="button-div">
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" onclick="checkLogin()">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" onclick="checkAdmin();">
               登录
             </button>
-            <a href="register.jsp">
-              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-                注册
-              </button>
-            </a>
           </div>
         </div>
       </div>

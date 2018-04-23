@@ -22,6 +22,10 @@ public class AdminUser extends User {
         this.object = object;
     }
 
+    public AdminUser(String userName) {
+        super(userName);
+    }
+
     /**
      * 根据用户名，密码判断是否合法性
      * @return 合法true
@@ -40,6 +44,14 @@ public class AdminUser extends User {
     public String checkLogin() {
         if (object == null) {
             return "<SCRIPT language=javascript>alert('管理员请先登录...');location.href='login.jsp';</SCRIPT>";
+        } else {
+            return "";
+        }
+    }
+
+    public String checkAdmin() {
+        if (userName == null || "".equals(userName) || "null".equals(userName)) {
+            return "<SCRIPT language=javascript>alert('请先登录管理...');location.href='admin_login.jsp';</SCRIPT>";
         } else {
             return "";
         }

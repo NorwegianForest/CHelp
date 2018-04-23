@@ -12,7 +12,7 @@
       <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
       <h1 class="mdl-mega-footer__heading">Features</h1>
       <ul class="mdl-mega-footer__link-list">
-        <li><a href="admin_login.jsp">Admin</a></li>
+        <li><a href="admin_login.jsp" target="_blank">管理员</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Terms</a></li>
         <li><a href="#">Partners</a></li>
@@ -31,7 +31,7 @@
       <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
       <h1 class="mdl-mega-footer__heading">Technology</h1>
       <ul class="mdl-mega-footer__link-list">
-        <li><a href="#">How it works</a></li>
+        <li><a href="https://github.com/NorwegianForest/CHelp" target="_blank">项目代码</a></li>
         <li><a href="#">Usage</a></li>
         <li><a href="#">Products</a></li>
         <li><a href="#">Contracts</a></li>
@@ -43,7 +43,7 @@
       <ul class="mdl-mega-footer__link-list">
         <li><a href="#">Questions</a></li>
         <li><a href="#">Answers</a></li>
-        <li><a href="#">Contact us</a></li>
+        <li><a href="contact_us.jsp" target="_blank">联系我们</a></li>
       </ul>
     </div>
   </div>

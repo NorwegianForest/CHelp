@@ -1,16 +1,9 @@
 package com.business;
 
-import cn.superman.sandbox.core.RequestQueue;
-import cn.superman.sandbox.core.ResponseQueue;
-import cn.superman.sandbox.core.Sandbox;
-import cn.superman.sandbox.dto.Request;
 import com.DBQuery.DataProcess;
 
 import javax.servlet.http.HttpServletRequest;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -29,6 +22,7 @@ public class Paper {
     private int wrongCount; // 用户在此试题卷答错的提数
     private int checkCount;
     private List<String> userProgram;
+    private List<Integer> userProgramId;
     private static int t = 1;
 
     public Paper(){}
@@ -98,26 +92,31 @@ public class Paper {
             }
         }
         userProgram = new ArrayList<>();
+        userProgramId = new ArrayList<>();
         for (Program program : getProgramList()) {
             userProgram.add(request.getParameter("code" + program.getProgramId()));
+            if (userName != null && !userName.equals("") && !userName.equals("null")) {
+                String sql = "INSERT INTO user_program(user_id,program_id,user_code,state)VALUES(?,?,?,?)";
+                Connection connection = DataProcess.getConnection();
+                try {
+                    PreparedStatement s = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+                    s.setString(1, Integer.toString(DataProcess.findUserId(userName)));
+                    s.setString(2, Integer.toString(program.getProgramId()));
+                    s.setString(3, request.getParameter("code" + program.getProgramId()));
+                    s.setString(4, "0");
+                    s.executeUpdate();
+                    ResultSet rs = s.getGeneratedKeys();
+                    if (rs.next()) {
+                        userProgramId.add(rs.getInt(1));
+                    }
+                    rs.close();
+                    s.close();
+                    connection.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
         }
-        // TODO 在此处判断程序题正误然后存入数据库 注意判断没有程序题的试卷
-
-//        Sandbox sandbox = new Sandbox();
-//        RequestQueue requestQueue = new RequestQueue();
-//        ResponseQueue responseQueue = new ResponseQueue();
-//        Request codeRequest = new Request();
-//        codeRequest.setData(userProgram.get(0));
-//        codeRequest.setuserId(userName);
-//        codeRequest.setproblemID("1");
-//        try {
-//            RequestQueue.requestQueue.put(codeRequest);
-//            sandbox.startSandbox();
-//            responseQueue.startResponseQueue();
-//            requestQueue.startRequestQueue();
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
     }
 
     public Paper(int id, String title, String type, int courseId) {
@@ -230,6 +229,14 @@ public class Paper {
     }
     public String getTitle() {
         return title;
+    }
+
+    public List<Integer> getUserProgramId() {
+        return userProgramId;
+    }
+
+    public void setUserProgramId(List<Integer> userProgramId) {
+        this.userProgramId = userProgramId;
     }
 
     public void setTitle(String title) {

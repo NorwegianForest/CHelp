@@ -88,11 +88,12 @@
             </div>
         </div>
         <%  String username = request.getParameter("username");
-            if (username == null || "".equals(username) || "null".equals(username)) { %>
+            String personalUrl;
+            if (username == null || "".equals(username) || "null".equals(username)) { personalUrl = "login.jsp";%>
         <nav class="mdl-navigation">
             <a class="mdl-navigation__link" href="login.jsp" id="login">登录&nbsp;·&nbsp;注册</a>
         </nav>
-        <%  } else { %>
+        <%  } else { personalUrl = "personal.jsp";%>
         <ul class="demo-list-icon mdl-list">
             <li class="mdl-list__item">
                 <a href="personal.jsp" style="text-decoration: none;">
@@ -119,7 +120,7 @@
     <span class="mdl-layout-title">C Help</span>
     <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="index.jsp">首页</a>
-        <a class="mdl-navigation__link" href="personal.jsp">个人中心</a>
+        <a class="mdl-navigation__link" href="<%=personalUrl%>">个人中心</a>
         <a class="mdl-navigation__link" href="materials.jsp?file_name=c-tutorial">在线学习</a>
         <a class="mdl-navigation__link" href="papers.jsp">模考训练</a>
         <a class="mdl-navigation__link" href="courses.jsp">课程列表</a>

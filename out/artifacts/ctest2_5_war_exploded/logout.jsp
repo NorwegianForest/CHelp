@@ -12,6 +12,7 @@
 </head>
 <body>
 <%session.removeAttribute("username");%>
+<%session.removeAttribute("admin");%>
 <%response.sendRedirect("index.jsp");%>
 </body>
 </html>

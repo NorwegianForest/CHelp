@@ -1,0 +1,16 @@
+@charset "UTF-8";
+body {
+    padding: 0;
+    background: #fafafa;
+    position: relative;
+}
+.center {
+    width: 800px;
+    margin: 100px auto;
+}
+.email, .others, .otherwise {
+    margin-bottom: 80px;
+}
+.otherwise {
+    margin-left: 550px;
+}

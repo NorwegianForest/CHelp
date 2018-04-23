@@ -23,6 +23,29 @@ function checkLogin(){
             form.submit();
         }
     }
+    return true;
+}
+/**
+ * @returns {boolean}
+ */
+function checkAdmin() {
+    var form = document.getElementById("login-form");
+    var admin = document.getElementById("admin");
+    var password = document.getElementById("password");
+    if(admin.value === ""){
+        alert("请输入管理员用户名！");
+        admin.focus();
+        return false;
+    } else {
+        if (password.value === "") {
+            alert("请输入密码！");
+            password.focus();
+            return false;
+        } else {
+            form.submit();
+        }
+    }
+    return true;
 }
 /**
  * @returns {boolean}
@@ -57,4 +80,5 @@ function checkRegister(){
             }
         }
     }
+    return true;
 }
